@@ -1,0 +1,42 @@
+{
+  "surveys": [
+    {
+      "questions": [
+        {
+          "id": "1",
+          "parentID": "1",
+          "title": "Q1",
+          "choices": [
+            {
+              "id": 1,
+              "title": "Q1: op1",
+              "nextQuestion": "1"
+            },
+            {
+              "id": 2,
+              "title": "Q1: op2",
+              "nextQuestion": "2"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "parentID": "1",
+          "title": "Q2",
+          "choices": [
+            {
+              "id": 1,
+              "title": "Q2: op1",
+              "nextQuestion": "1"
+            },
+            {
+              "id": 2,
+              "title": "Q2: op2",
+              "nextQuestion": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
