@@ -1,6 +1,10 @@
 {
   "surveys": [
     {
+      "id": "1",
+      "title": "Challenge 1",
+      "type": "challenge",
+
       "questions": [
         {
           "id": "1",
@@ -10,6 +14,7 @@
             {
               "id": 1,
               "title": "Q1: op1",
+              "previousQuestion": "-1",
               "nextQuestion": "1"
             },
             {
