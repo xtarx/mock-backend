@@ -9,17 +9,17 @@
         {
           "id": "1",
           "parentID": "1",
-          "title": "Q11",
+          "title": "ما اسمك؟",
           "choices": [
             {
               "id": 1,
-              "title": "Q111: op1",
+              "title": "Rostum",
               "previousQuestion": "-1",
               "nextQuestion": "1"
             },
             {
               "id": 2,
-              "title": "Q1: op222",
+              "title": "Shaban",
               "nextQuestion": "2"
             }
           ]
