@@ -8,7 +8,6 @@
       "questions": [
         {
           "id": "1",
-          "parentID": "1",
           "title": "ما الهدف الذي تريد الوصول إليه من خلال برنامج كنزي؟",
           "type": "question",
           "pictures": [
