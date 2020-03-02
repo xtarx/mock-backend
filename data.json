@@ -4,27 +4,10 @@
       "id": "1",
       "title": "Signup",
       "type": "questionnaire",
-
       "questions": [
         {
-          "id": "21",
-          "title": "ما الهدف الذي تريد الوصول إليه من خلال برنامج كنزي؟",
-          "type": "slides",
-          "pictures": [
-            {
-              "description": "picture 1 caption",
-              "url": "challenge1/pic1.png"
-            },
-
-            {
-              "description": "picture 2 caption",
-              "url": "challenge1/pic2.png"
-            }
-          ],
-          "nextQuestion": [3, 1]
-        },
-        {
           "id": "1",
+          "parentID": "1",
           "title": "ما الهدف الذي تريد الوصول إليه من خلال برنامج كنزي؟",
           "type": "question",
           "pictures": [
@@ -32,7 +15,6 @@
               "description": "picture 1 caption",
               "url": "challenge1/pic1.png"
             },
-
             {
               "description": "picture 2 caption",
               "url": "challenge1/pic2.png"
@@ -40,10 +22,11 @@
           ],
           "previousQuestion": [-1],
           "nextQuestion": [3, 1],
-
-          "precondition": [
+          "preCondition": [
             {
-              "diagnosis": "diabetes-one or diabetes",
+              "diagnosis": "diabetes-one or diabetes"
+            },
+            {
               "signup-treatment": "none or lifestyle or non-insulin"
             }
           ],
@@ -134,14 +117,15 @@
               "nextQuestion": [3],
               "attribute": [
                 {
-                  "diagnosis": "diabetes",
+                  "diagnosis": "diabetes"
+                },
+                {
                   "educate-diabetes-type": "yes"
                 }
               ]
             }
           ]
         },
-
         {
           "id": "3",
           "title": "هل قمت بقياس السكر التراكمي من قبل (يسمى أيضاََ مخزون السكر أو الخضاب السكري)؟",
@@ -174,14 +158,15 @@
               "nextQuestion": [3],
               "attribute": [
                 {
-                  "diagnosis": "diabetes",
+                  "diagnosis": "diabetes"
+                },
+                {
                   "educate-diabetes-type": "yes"
                 }
               ]
             }
           ]
         },
-
         {
           "id": "4",
           "title": "السؤال الأخير, ماهي خطوات الوقاية أو العلاج التي تقوم بها حالياََ؟",
@@ -198,7 +183,6 @@
                 }
               ]
             },
-
             {
               "id": 2,
               "title": "حقن انسولين مع أدوية سكر أخرى",
@@ -209,7 +193,6 @@
                 }
               ]
             },
-
             {
               "id": 3,
               "title": "أدوية لضبط السكر دون انسولين",
@@ -220,7 +203,6 @@
                 }
               ]
             },
-
             {
               "id": 4,
               "title": "الحمية والرياضة فقط",
@@ -432,9 +414,11 @@
           "id": "26",
           "title": "إن السكر عندك هو من النمط الثاني وليس الأول! لأن مريض النمط الأول لايمكن أن يعيش بصورة طبيعية من دون أن يحقن الانسولين باستمرار\nتطبيق كنزي يساعدك على اتباع تغذية صحية للتغلب على مقاومة الانسولين و إيقاف تطور السكر",
           "type": "statement",
-          "precondition": [
+          "preCondition": [
             {
-              "diagnosis": "diabetes-one or diabetes",
+              "diagnosis": "diabetes-one or diabetes"
+            },
+            {
               "signup-treatment": "none or lifestyle or non-insulin"
             }
           ],
@@ -455,9 +439,11 @@
           "id": "7",
           "title": "لقد تم تسجيل اشتراكك بنجاح!\n تطبيق كنزي يساعدك على اتباع تغذية صحية للتغلب على مقاومة الانسولين و إيقاف تطور السكر",
           "type": "statement",
-          "precondition": [
+          "preCondition": [
             {
-              "signup-goal": "prevent",
+              "signup-goal": "prevent"
+            },
+            {
               "signup-treatment": "insulin or non-insulin or insulin-and-other"
             }
           ],
@@ -478,9 +464,11 @@
           "id": "9",
           "title": "لقد تم تسجيل اشتراكك بنجاح!\n تطبيق كنزي يساعدك على اتباع تغذية صحية للتغلب على مقاومة الانسولين و إيقاف تطور السكر",
           "type": "statement",
-          "precondition": [
+          "preCondition": [
             {
-              "signup-goal": "prevent",
+              "signup-goal": "prevent"
+            },
+            {
               "signup-treatment": "none or lifestyle"
             }
           ],
