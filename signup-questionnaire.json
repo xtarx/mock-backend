@@ -1,0 +1,308 @@
+{
+  "id": "signup",
+  "title": "تسجيل دخول",
+  "type": "questionnaire",
+  "questions": [
+    {
+      "id": "1",
+      "title": "من فضلك قم بإدخال هذه المعلومات الأساسية لتقوم بتسجيل الدخول \n ماهو الاسم الذي ترغب أن نناديك به؟",
+      "type": "question",
+      "choicesType": "text",
+      "choices": [
+        {
+          "title": "الاسم الكامل",
+          "inputType": "text",
+          "nextQuestion": [2],
+          "attribute": [
+            {
+              "username": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "من فضلك قم بإدخال هذه المعلومات الأساسية لتقوم بتسجيل الدخول:\n قم باختيار الجنس المناسب\n (بعض النصائح الغذائية تختلف بحسب الجنس)",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "ذكر",
+          "nextQuestion": [3],
+          "attribute": [
+            {
+              "gender": "male"
+            }
+          ]
+        },
+        {
+          "title": "أنثى",
+          "nextQuestion": [3],
+          "attribute": [
+            {
+              "gender": "female"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "من فضلك قم بإدخال هذه المعلومات الأساسية لتقوم بتسجيل الدخول:/nقم بإدخال العمر/n (بعض النصائح الغذائية والطبية تختلف بحسب العمر)",
+      "type": "question",
+      "choicesType": "text",
+      "choices": [
+        {
+          "title": "العمر",
+          "inputType": "decimal",
+          "nextQuestion": [4],
+          "attribute": [
+            {
+              "age": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "من فضلك قم بإدخال هذه المعلومات الأساسية لتقوم بتسجيل الدخول:/nقم بإدخال البلد الذي تقيم فيه/n(بعض المنتجات والخدمات تختلف بحسب بلد الإقامة)",
+      "type": "question",
+      "choicesType": "text",
+      "choices": [
+        {
+          "title": "بلد الإقامة",
+          "inputType": "text",
+          "nextQuestion": [5],
+          "attribute": [
+            {
+              "country": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "كي نقدم لك أفضل المعلومات والنصائح, نحتاج أن نتعرف على حالتك الصحية أكثر. من فضلك ساعدنا بالإجابة على هذه الأسئلة البسيطة./nما الهدف الذي تريد الوصول إليه من خلال برنامج كنزي؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "عندي سكر مرتفع و أريد علاج له",
+          "nextQuestion": [6],
+          "attribute": [
+            {
+              "signup-goal": "treat-diabetes"
+            }
+          ]
+        },
+        {
+          "title": "عندي بداية سكر و لا أريده  أن يتطور",
+          "nextQuestion": [6],
+          "attribute": [
+            {
+              "signup-goal": "treat-pre-diabetes"
+            }
+          ]
+        },
+        {
+          "title": "ليس عندي سكر ولكن أريد أن أحمي نفسي",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "signup-goal": "prevent-diabetes"
+            }
+          ]
+        },
+        {
+          "title": "أريد أن أعرف إذا عندي سكر",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "signup-goal": "diagnose-diabetes"
+            }
+          ]
+        },
+        {
+          "title": "أريد أن أساعد قريب لي مصاب بالسكر",
+          "nextQuestion": [6],
+          "attribute": [
+            {
+              "signup-goal": "help-family-member"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "هل هذا السكر من النمط الأول أو الثاني؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "id": 1,
+          "title": "سكر نمط أول (شباب أو أطفال)",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "diabetes-type": "one"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "سكر نمط ثاني (بالغين)",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "diabetes-type": "two"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "لست متأكد من النمط",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "diabetes-type": "not-sure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "هل قمت بقياس السكر التراكمي من قبل (يسمى أيضاََ مخزون السكر أو الخضاب السكري)؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "نعم قمت بقياسه خلال 3 أشهر الماضية",
+          "nextQuestion": [8],
+          "attribute": [
+            {
+              "last-hba1c": "less-3-months"
+            }
+          ]
+        },
+        {
+          "title": "نعم قمت بقياسه منذ أكثر من 3 أشهر",
+          "nextQuestion": [8],
+          "attribute": [
+            {
+              "last-hba1c": "more-3-months"
+            }
+          ]
+        },
+        {
+          "title": "لم أقم بقياسه من قبل",
+          "nextQuestion": [9],
+          "attribute": [
+            {
+              "last-hba1c": "never"
+            }
+          ]
+        },
+        {
+          "title": "لا أعرف ماهو السكر التراكمي",
+          "nextQuestion": [9],
+          "attribute": [
+            {
+              "last-hba1c": "explain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "من فضلك اكتب نتيجة آخر تحليل سكر تراكمي قمت به!/n (بعض النصائح التي سنقدمها تختلف بحسب النتيجة)",
+      "type": "question",
+      "choicesType": "text",
+      "canSkip": true,
+      "choices": [
+        {
+          "title": "السكر التراكمي",
+          "inputType": "decimal",
+          "nextQuestion": [9],
+          "attribute": [
+            {
+              "hba1c-value": "hba1c-value"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "السؤال الأخير قبل أن نبدأ, ماهي خطوات الوقاية أو علاج السكر التي تقوم بها حالياََ؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "لم أبدأ بأي خطوات بعد",
+          "nextQuestion": [10],
+          "attribute": [
+            {
+              "treatment": "none"
+            }
+          ]
+        },
+        {
+          "title": "الحمية والرياضة فقط  دون أدوية سكر",
+          "nextQuestion": [10],
+          "attribute": [
+            {
+              "treatment": "lifestyle"
+            }
+          ]
+        },
+        {
+          "title": "أدوية لضبط السكر دون انسولين",
+          "nextQuestion": [10],
+          "attribute": [
+            {
+              "treatment": "non-insulin-only"
+            }
+          ]
+        },
+        {
+          "title": "حقن الانسولين دون أدوية سكر أخرى",
+          "nextQuestion": [10],
+          "attribute": [
+            {
+              "treatment": "insulin-only"
+            }
+          ]
+        },
+        {
+          "title": "حقن انسولين مع أدوية سكر أخرى",
+          "nextQuestion": [10],
+          "attribute": [
+            {
+              "treatment": "insulin-and-non"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "10",
+      "title": "رائع جداََ! لقد أكملت تسجيل الدخول بنجاح و أصبحت جاهزاََ لاستخدام تطبيق كنزي",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "ابدأ الاستخدام",
+          "url": "/app/tabs/today"
+        }
+      ]
+    }
+  ]
+}
