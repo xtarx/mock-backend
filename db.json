@@ -1,0 +1,672 @@
+{
+  "surveys": [
+    {
+      "id": "signup",
+      "title": "تسجيل دخول",
+      "type": "questionnaire",
+      "questions": [
+        {
+          "id": "1",
+          "title": "من فضلك قم بإدخال هذه المعلومات الأساسية لتقوم بتسجيل الدخول \n ماهو الاسم الذي ترغب أن نناديك به؟",
+          "type": "question",
+          "choicesType": "text",
+          "choices": [
+            {
+              "title": "الاسم الكامل",
+              "inputType": "text",
+              "nextQuestion": [2],
+              "attribute": [
+                {
+                  "username": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "من فضلك قم بإدخال هذه المعلومات الأساسية لتقوم بتسجيل الدخول:\n قم باختيار الجنس المناسب\n (بعض النصائح الغذائية تختلف بحسب الجنس)",
+          "type": "question",
+          "choicesType": "multiselect",
+          "choices": [
+            {
+              "title": "ذكر",
+              "nextQuestion": [3],
+              "attribute": [
+                {
+                  "gender": "male"
+                }
+              ]
+            },
+            {
+              "title": "أنثى",
+              "nextQuestion": [3],
+              "attribute": [
+                {
+                  "gender": "female"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "من فضلك قم بإدخال هذه المعلومات الأساسية لتقوم بتسجيل الدخول:/nقم بإدخال العمر/n (بعض النصائح الغذائية والطبية تختلف بحسب العمر)",
+          "type": "question",
+          "choicesType": "text",
+          "choices": [
+            {
+              "title": "العمر",
+              "inputType": "decimal",
+              "nextQuestion": [4],
+              "attribute": [
+                {
+                  "age": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "title": "من فضلك قم بإدخال هذه المعلومات الأساسية لتقوم بتسجيل الدخول:/nقم بإدخال البلد الذي تقيم فيه/n(بعض المنتجات والخدمات تختلف بحسب بلد الإقامة)",
+          "type": "question",
+          "choicesType": "text",
+          "choices": [
+            {
+              "title": "بلد الإقامة",
+              "inputType": "text",
+              "nextQuestion": [5],
+              "attribute": [
+                {
+                  "country": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "title": "كي نقدم لك أفضل المعلومات والنصائح, نحتاج أن نتعرف على حالتك الصحية أكثر. من فضلك ساعدنا بالإجابة على هذه الأسئلة البسيطة./nما الهدف الذي تريد الوصول إليه من خلال برنامج كنزي؟",
+          "type": "question",
+          "choicesType": "multiselect",
+          "choices": [
+            {
+              "title": "عندي سكر مرتفع و أريد علاج له",
+              "nextQuestion": [6],
+              "attribute": [
+                {
+                  "signup-goal": "treat-diabetes"
+                }
+              ]
+            },
+            {
+              "title": "عندي بداية سكر و لا أريده  أن يتطور",
+              "nextQuestion": [6],
+              "attribute": [
+                {
+                  "signup-goal": "treat-pre-diabetes"
+                }
+              ]
+            },
+            {
+              "title": "ليس عندي سكر ولكن أريد أن أحمي نفسي",
+              "nextQuestion": [7],
+              "attribute": [
+                {
+                  "signup-goal": "prevent-diabetes"
+                }
+              ]
+            },
+            {
+              "title": "أريد أن أعرف إذا عندي سكر",
+              "nextQuestion": [7],
+              "attribute": [
+                {
+                  "signup-goal": "diagnose-diabetes"
+                }
+              ]
+            },
+            {
+              "title": "أريد أن أساعد قريب لي مصاب بالسكر",
+              "nextQuestion": [6],
+              "attribute": [
+                {
+                  "signup-goal": "help-family-member"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "title": "هل هذا السكر من النمط الأول أو الثاني؟",
+          "type": "question",
+          "choicesType": "multiselect",
+          "choices": [
+            {
+              "id": 1,
+              "title": "سكر نمط أول (شباب أو أطفال)",
+              "nextQuestion": [7],
+              "attribute": [
+                {
+                  "diabetes-type": "one"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "سكر نمط ثاني (بالغين)",
+              "nextQuestion": [7],
+              "attribute": [
+                {
+                  "diabetes-type": "two"
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "لست متأكد من النمط",
+              "nextQuestion": [7],
+              "attribute": [
+                {
+                  "diabetes-type": "not-sure"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "title": "هل قمت بقياس السكر التراكمي من قبل (يسمى أيضاََ مخزون السكر أو الخضاب السكري)؟",
+          "type": "question",
+          "choicesType": "multiselect",
+          "choices": [
+            {
+              "title": "نعم قمت بقياسه خلال 3 أشهر الماضية",
+              "nextQuestion": [8],
+              "attribute": [
+                {
+                  "last-hba1c": "less-3-months"
+                }
+              ]
+            },
+            {
+              "title": "نعم قمت بقياسه منذ أكثر من 3 أشهر",
+              "nextQuestion": [8],
+              "attribute": [
+                {
+                  "last-hba1c": "more-3-months"
+                }
+              ]
+            },
+            {
+              "title": "لم أقم بقياسه من قبل",
+              "nextQuestion": [9],
+              "attribute": [
+                {
+                  "last-hba1c": "never"
+                }
+              ]
+            },
+            {
+              "title": "لا أعرف ماهو السكر التراكمي",
+              "nextQuestion": [9],
+              "attribute": [
+                {
+                  "last-hba1c": "explain"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "title": "من فضلك اكتب نتيجة آخر تحليل سكر تراكمي قمت به!/n (بعض النصائح التي سنقدمها تختلف بحسب النتيجة)",
+          "type": "question",
+          "choicesType": "text",
+          "canSkip": true,
+          "choices": [
+            {
+              "title": "السكر التراكمي",
+              "inputType": "decimal",
+              "nextQuestion": [9],
+              "attribute": [
+                {
+                  "hba1c-value": "hba1c-value"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "title": "السؤال الأخير قبل أن نبدأ, ماهي خطوات الوقاية أو علاج السكر التي تقوم بها حالياََ؟",
+          "type": "question",
+          "choicesType": "multiselect",
+          "choices": [
+            {
+              "title": "لم أبدأ بأي خطوات بعد",
+              "nextQuestion": [10],
+              "attribute": [
+                {
+                  "treatment": "none"
+                }
+              ]
+            },
+            {
+              "title": "الحمية والرياضة فقط  دون أدوية سكر",
+              "nextQuestion": [10],
+              "attribute": [
+                {
+                  "treatment": "lifestyle"
+                }
+              ]
+            },
+            {
+              "title": "أدوية لضبط السكر دون انسولين",
+              "nextQuestion": [10],
+              "attribute": [
+                {
+                  "treatment": "non-insulin-only"
+                }
+              ]
+            },
+            {
+              "title": "حقن الانسولين دون أدوية سكر أخرى",
+              "nextQuestion": [10],
+              "attribute": [
+                {
+                  "treatment": "insulin-only"
+                }
+              ]
+            },
+            {
+              "title": "حقن انسولين مع أدوية سكر أخرى",
+              "nextQuestion": [10],
+              "attribute": [
+                {
+                  "treatment": "insulin-and-non"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "title": "رائع جداََ! لقد أكملت تسجيل الدخول بنجاح و أصبحت جاهزاََ لاستخدام تطبيق كنزي",
+          "type": "statement",
+          "choicesType": "navigation",
+          "checkpoint": true,
+          "choices": [
+            {
+              "title": "ابدأ الاستخدام",
+              "url": "/app/tabs/today"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lowcarb-1",
+      "title": "الخطوة الأولى",
+      "type": "questionnaire",
+      "questions": [
+        {
+          "id": "1",
+          "title": "",
+          "pictures": [
+            {
+              "caption": "هذا البرنامج يساعدك على تقليل مقاومة الانسولين والسيطرة على قياسات السكر من خلال اتباع التغذية قليلة الكاربوهيدرات",
+              "url": "pic15.png"
+            },
+            {
+              "caption": "البرنامج  يتألف من تحديات و خطوات أسبوعية معتمدة من أطباء /n للحصول على النتيجة المطلوبة ننصحك بتطبيقه لمدة شهرين الى 4 شهور",
+              "url": "pic15.png"
+            },
+            {
+              "caption": "من فضلك اتبع النصائح التي نقدمها لك بخطوة بخطوة ولاتحاول الاستعجال لأن التطبيق المفاجئ قد يعرضك للتعب و نقص التغذية",
+              "url": "pic19.png"
+            }
+          ],
+          "choices": [
+            {
+              "title": "",
+              "nextQuestion": [2]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "اختبر معلوماتك, ماهي الأطعمة التي تحوي نشويات وعلينا أن نقللها؟",
+          "type": "question",
+          "choicesType": "multiselect",
+          "choices": [
+            {
+              "title": "المكرونة والرز",
+              "nextQuestion": [3]
+            },
+            {
+              "title": "الخضار المطبوخة",
+              "nextQuestion": [4]
+            },
+            {
+              "title": "اللحوم والأسماك",
+              "nextQuestion": [4]
+            },
+            {
+              "title": "الزبدة وزيت الزيتون",
+              "nextQuestion": [4]
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "",
+          "pictures": [
+            {
+              "caption": "إجابتك صحيحة تماماََ! هدفنا أن نقلل الأطعمة الغنية بالكاربوهيدرات مثل الرز والمكرونة",
+              "url": "pic18.png"
+            },
+            {
+              "caption": "كل طعام تتناوله يحوي كاربوهيدرات وبروتينات ودهون. التحديات القادمة ستعرفك على كل مصادر الكاربوهيدرات وتعطيك بدائل صحيّة لها",
+              "url": "pic16.png"
+            }
+          ],
+          "choices": [
+            {
+              "title": "",
+              "nextQuestion": [5, 6]
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "title": "",
+          "pictures": [
+            {
+              "caption": "للأسف إجابتك خاطئة! هدفنا أن نقلل الأطعمة الغنية بالكاربوهيدرات مثل الرز والمكرونة",
+              "url": "pic20.png"
+            },
+            {
+              "caption": "كل طعام تتناوله يحوي كاربوهيدرات وبروتينات ودهون. التحديات القادمة ستعرفك على كل مصادر الكاربوهيدرات وتعطيك بدائل صحيّة لها",
+              "url": "pic16.png"
+            }
+          ],
+          "choices": [
+            {
+              "title": "",
+              "nextQuestion": [5, 6]
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "title": "بعض الأدوية والحالات الصحيّة تجعل برنامج التغذية غير آمن. من فضلك أخبرنا هل تنطبق عليك أي من هذه الحالات الطبية؟",
+          "type": "question",
+          "choicesType": "multiselect",
+          "preCondition": [
+            {
+              "gender": "male"
+            }
+          ],
+          "choices": [
+            {
+              "title": "أتناول أدوية خافضة للضغط أو مدرة للبول",
+              "nextQuestion": [38],
+              "attribute": [
+                {
+                  "comorbidities": "hypertension-drugs-or-duiretics"
+                }
+              ]
+            },
+            {
+              "title": "أعاني من أمراض في المرارة أو قمت باستئصالها",
+              "nextQuestion": [37],
+              "attribute": [
+                {
+                  "comorbidities": "gallbladder-issues"
+                }
+              ]
+            },
+            {
+              "title": "أنا عندي قصور في الكبد أو الكلى",
+              "nextQuestion": [7],
+              "attribute": [
+                {
+                  "comorbidities": "liver-or-kidney-impairment"
+                }
+              ]
+            },
+            {
+              "title": "أنا عندي خناق أو قصور في القلب",
+              "nextQuestion": [35],
+              "attribute": [
+                {
+                  "comorbidities": "heart-disease"
+                }
+              ]
+            },
+            {
+              "title": "ليس عندي أي من الحالات السابقة",
+              "nextQuestion": [8, 10],
+              "attribute": [
+                {
+                  "comorbidities": "not-relevant"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "title": "بعض الأدوية والحالات الصحيّة تجعل برنامج التغذية غير آمن. من فضلك أخبرنا هل تنطبق عليك أي من هذه الحالات الطبية؟",
+          "type": "question",
+          "choicesType": "multiselect",
+          "preCondition": [
+            {
+              "gender": "female"
+            }
+          ],
+          "choices": [
+            {
+              "title": "أتناول أدوية خافضة للضغط أو مدرة للبول",
+              "nextQuestion": [38],
+              "attribute": [
+                {
+                  "comorbidities": "hypertension-drugs-or-duiretics"
+                }
+              ]
+            },
+            {
+              "title": "أعاني من أمراض في المرارة أو قمت باستئصالها",
+              "nextQuestion": [37],
+              "attribute": [
+                {
+                  "comorbidities": "gallbladder-issues"
+                }
+              ]
+            },
+            {
+              "title": "أنا عندي قصور في الكبد أو الكلى",
+              "nextQuestion": [7],
+              "attribute": [
+                {
+                  "comorbidities": "liver-or-kidney-impairment"
+                }
+              ]
+            },
+            {
+              "title": "أنا عندي خناق أو قصور في القلب",
+              "nextQuestion": [35],
+              "attribute": [
+                {
+                  "comorbidities": "heart-disease"
+                }
+              ]
+            },
+            {
+              "title": "أنا حامل أو مرضع",
+              "nextQuestion": [36],
+              "attribute": [
+                {
+                  "comorbidities": "pregnant-or-nursing"
+                }
+              ]
+            },
+            {
+              "title": "ليس عندي أي من الحالات السابقة",
+              "nextQuestion": [8, 10],
+              "attribute": [
+                {
+                  "comorbidities": "not-relevant"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "title": "",
+          "nextQuestion": [9],
+          "pictures": [
+            {
+              "caption": "إن قصورالكبد أو الكلى هي حالات طبية مهمة وتتطلب متابعة طبية مختصة /n من فضلك استشر الطبيب قبل البدء بتطبيق أي حمية أو نظام تغذية  جديد",
+              "url": ""
+            }
+          ],
+          "choices": [
+            {
+              "title": "",
+              "nextQuestion": [9]
+            }
+          ]
+        },
+        {
+          "id": "35",
+          "title": "",
+          "pictures": [
+            {
+              "caption": "إن خناق الصدر وقصور القلب هي حالات طبية مهمة وتتطلب متابعة طبية مختصة /n من فضلك استشر الطبيب قبل البدء بتطبيق أي حمية أو نظام تغذية  جديد",
+              "url": ""
+            }
+          ],
+          "choices": [
+            {
+              "title": "",
+              "nextQuestion": [9]
+            }
+          ]
+        },
+        {
+          "id": "36",
+          "title": "",
+          "pictures": [
+            {
+              "caption": "إن هذا البرنامج قد لا يكون آمن في مرحلة الحمل و الإرضاع. /n من فضلك قومي باستشارة طبيبك قبل اتباع أي حمية أو نظام تغذية جديد",
+              "url": ""
+            }
+          ],
+          "choices": [
+            {
+              "title": "",
+              "nextQuestion": [9]
+            }
+          ]
+        },
+        {
+          "id": "37",
+          "title": "",
+          "pictures": [
+            {
+              "caption": "عند اتباعك لهذا البرنامج سيزيد اعتمادنا على الدهون في الطعام /n هذا قد يسبب لك مشاكل في الهضم إذا كنت تعاني من حصيات مرارة أو كانت المرارة لديك مستأصلة",
+              "url": ""
+            }
+          ],
+          "choices": [
+            {
+              "title": "",
+              "nextQuestion": [9]
+            }
+          ]
+        },
+        {
+          "id": "38",
+          "title": "",
+          "pictures": [
+            {
+              "caption": "عند اتباعك لهذا البرنامج سيزيد جسمك من طرح السوائل والأملاح وهذا سيؤدي الى هبوط في الضغط /n  هذا الهبوط قد يكون مفاجئ وخطير اذا كنت تأخذ أدوية لخفض الضغط أو مدرات بولية",
+              "url": ""
+            }
+          ],
+          "choices": [
+            {
+              "title": "",
+              "nextQuestion": [9]
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "title": "",
+          "preCondition": [
+            {
+              "treatment": "insulin-only OR non-insulin-only OR insulin-and-non"
+            }
+          ],
+          "pictures": [
+            {
+              "caption": "انتبه! الالتزام بالبرنامج قد يسبب لك هبوط مفاجئ  في السكر ويحتاج الى تخفيضجرعات العلاج/n  استشر طبيبك فوراََ اذا شعرت بأي عرض",
+              "url": ""
+            }
+          ],
+          "choices": [
+            {
+              "title": "",
+              "nextQuestion": [9]
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "title": "فريقنا الطبي متوافر لتقديم الاستشارات والمتابعة مباشرة من خلال تطبيق كنزي. هل تريد  استشارة الطبيب أو متابعة البرنامج؟",
+          "type": "statement",
+          "choicesType": "navigation",
+          "checkpoint": true,
+          "choices": [
+            {
+              "title": "تابع برنامج التغذية",
+              "url": "/app/challenge/lowcarb"
+            },
+            {
+              "title": "احصل على متابعة طبية",
+              "url": "/app/tabs/chat"
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "title": "شكراََ لك, يمكنك تطبيق البرنامج بأمان!/n تذكر, فريقنا الطبي متوافر لتقديم الاستشارات والمتابعة مباشرة من خلال تطبيق كنزي",
+          "type": "statement",
+          "choicesType": "navigation",
+          "checkpoint": true,
+          "preCondition": [
+            {
+              "treatment": "none OR lifestyle-only"
+            }
+          ],
+          "choices": [
+            {
+              "title": "تابع برنامج التغذية",
+              "url": "/app/challenge/lowcarb"
+            },
+            {
+              "title": "احصل على متابعة طبية",
+              "url": "/app/tabs/chat"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
