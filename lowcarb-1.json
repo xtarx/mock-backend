@@ -10,44 +10,28 @@
         {
           "caption": "هذا البرنامج يساعدك على تقليل مقاومة الانسولين والسيطرة على قياسات السكر من خلال اتباع التغذية قليلة الكاربوهيدرات",
           "url": "pic15.png"
-        },
-        {
-          "caption": "البرنامج  يتألف من تحديات و خطوات أسبوعية معتمدة من أطباء /n للحصول على النتيجة المطلوبة ننصحك بتطبيقه لمدة شهرين الى 4 شهور",
-          "url": "pic15.png"
-        },
-        {
-          "caption": "من فضلك اتبع النصائح التي نقدمها لك بخطوة بخطوة ولاتحاول الاستعجال لأن التطبيق المفاجئ قد يعرضك للتعب و نقص التغذية",
-          "url": "pic19.png"
         }
       ],
       "choices": [
         {
-          "title": "",
+          "title": "تابع",
           "nextQuestion": [2]
         }
       ]
     },
     {
       "id": "2",
-      "title": "اختبر معلوماتك, ماهي الأطعمة التي تحوي نشويات وعلينا أن نقللها؟",
-      "type": "question",
-      "choicesType": "multiselect",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "البرنامج  يتألف من تحديات و خطوات أسبوعية معتمدة من أطباء /n للحصول لى النتيجة المطلوبة ننصحك بتطبيقه لمدة شهرين الى 4 شهور",
+          "url": "pic15.png"
+        }
+      ],
       "choices": [
         {
-          "title": "المكرونة والرز",
+          "title": "تابع",
           "nextQuestion": [3]
-        },
-        {
-          "title": "الخضار المطبوخة",
-          "nextQuestion": [4]
-        },
-        {
-          "title": "اللحوم والأسماك",
-          "nextQuestion": [4]
-        },
-        {
-          "title": "الزبدة وزيت الزيتون",
-          "nextQuestion": [4]
         }
       ]
     },
@@ -56,29 +40,77 @@
       "title": "",
       "pictures": [
         {
-          "caption": "إجابتك صحيحة تماماََ! هدفنا أن نقلل الأطعمة الغنية بالكاربوهيدرات مثل الرز والمكرونة",
-          "url": "pic18.png"
-        },
-        {
-          "caption": "كل طعام تتناوله يحوي كاربوهيدرات وبروتينات ودهون. التحديات القادمة ستعرفك على كل مصادر الكاربوهيدرات وتعطيك بدائل صحيّة لها",
-          "url": "pic16.png"
+          "caption": "من فضلك اتبع النصائح التي نقدمها لك بخطوة بخطوة ولاتحاول الاستعجال لأن التطبيق المفاجئ قد يعرضك للتعب و نقص التغذية",
+          "url": "pic19.png"
         }
       ],
       "choices": [
         {
-          "title": "",
-          "nextQuestion": [5, 6]
+          "title": "اختبر معلوماتك",
+          "nextQuestion": [4]
         }
       ]
     },
     {
       "id": "4",
+      "title": "اختبر معلوماتك, ماهي الأطعمة التي تحوي نشويات وعلينا أن نقللها؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "المكرونة والرز",
+          "nextQuestion": [5]
+        },
+        {
+          "title": "الخضار المطبوخة",
+          "nextQuestion": [6]
+        },
+        {
+          "title": "اللحوم والأسماك",
+          "nextQuestion": [6]
+        },
+        {
+          "title": "الزبدة وزيت الزيتون",
+          "nextQuestion": [6]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "إجابتك صحيحة تماماََ! هدفنا أن نقلل الأطعمة الغنية بالكاربوهيدرات مثل الرز والمكرونة",
+          "url": "pic18.png"
+        }
+      ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [7]
+        }
+      ]
+    },
+    {
+      "id": "6",
       "title": "",
       "pictures": [
         {
           "caption": "للأسف إجابتك خاطئة! هدفنا أن نقلل الأطعمة الغنية بالكاربوهيدرات مثل الرز والمكرونة",
           "url": "pic20.png"
-        },
+        }
+      ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [7]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "",
+      "pictures": [
         {
           "caption": "كل طعام تتناوله يحوي كاربوهيدرات وبروتينات ودهون. التحديات القادمة ستعرفك على كل مصادر الكاربوهيدرات وتعطيك بدائل صحيّة لها",
           "url": "pic16.png"
@@ -86,13 +118,13 @@
       ],
       "choices": [
         {
-          "title": "",
-          "nextQuestion": [5, 6]
+          "title": "اختبار السلامة",
+          "nextQuestion": [8, 9]
         }
       ]
     },
     {
-      "id": "5",
+      "id": "8",
       "title": "بعض الأدوية والحالات الصحيّة تجعل برنامج التغذية غير آمن. من فضلك أخبرنا هل تنطبق عليك أي من هذه الحالات الطبية؟",
       "type": "question",
       "choicesType": "multiselect",
@@ -104,7 +136,7 @@
       "choices": [
         {
           "title": "أتناول أدوية خافضة للضغط أو مدرة للبول",
-          "nextQuestion": [38],
+          "nextQuestion": [10],
           "attribute": [
             {
               "comorbidities": "hypertension-drugs-or-duiretics"
@@ -113,7 +145,7 @@
         },
         {
           "title": "أعاني من أمراض في المرارة أو قمت باستئصالها",
-          "nextQuestion": [37],
+          "nextQuestion": [11],
           "attribute": [
             {
               "comorbidities": "gallbladder-issues"
@@ -122,7 +154,7 @@
         },
         {
           "title": "أنا عندي قصور في الكبد أو الكلى",
-          "nextQuestion": [7],
+          "nextQuestion": [12],
           "attribute": [
             {
               "comorbidities": "liver-or-kidney-impairment"
@@ -131,7 +163,7 @@
         },
         {
           "title": "أنا عندي خناق أو قصور في القلب",
-          "nextQuestion": [35],
+          "nextQuestion": [13],
           "attribute": [
             {
               "comorbidities": "heart-disease"
@@ -140,7 +172,7 @@
         },
         {
           "title": "ليس عندي أي من الحالات السابقة",
-          "nextQuestion": [8, 10],
+          "nextQuestion": [15, 17],
           "attribute": [
             {
               "comorbidities": "not-relevant"
@@ -150,7 +182,7 @@
       ]
     },
     {
-      "id": "6",
+      "id": "9",
       "title": "بعض الأدوية والحالات الصحيّة تجعل برنامج التغذية غير آمن. من فضلك أخبرنا هل تنطبق عليك أي من هذه الحالات الطبية؟",
       "type": "question",
       "choicesType": "multiselect",
@@ -162,7 +194,7 @@
       "choices": [
         {
           "title": "أتناول أدوية خافضة للضغط أو مدرة للبول",
-          "nextQuestion": [38],
+          "nextQuestion": [10],
           "attribute": [
             {
               "comorbidities": "hypertension-drugs-or-duiretics"
@@ -171,7 +203,7 @@
         },
         {
           "title": "أعاني من أمراض في المرارة أو قمت باستئصالها",
-          "nextQuestion": [37],
+          "nextQuestion": [11],
           "attribute": [
             {
               "comorbidities": "gallbladder-issues"
@@ -180,7 +212,7 @@
         },
         {
           "title": "أنا عندي قصور في الكبد أو الكلى",
-          "nextQuestion": [7],
+          "nextQuestion": [12],
           "attribute": [
             {
               "comorbidities": "liver-or-kidney-impairment"
@@ -189,7 +221,7 @@
         },
         {
           "title": "أنا عندي خناق أو قصور في القلب",
-          "nextQuestion": [35],
+          "nextQuestion": [13],
           "attribute": [
             {
               "comorbidities": "heart-disease"
@@ -198,7 +230,7 @@
         },
         {
           "title": "أنا حامل أو مرضع",
-          "nextQuestion": [36],
+          "nextQuestion": [14],
           "attribute": [
             {
               "comorbidities": "pregnant-or-nursing"
@@ -207,7 +239,7 @@
         },
         {
           "title": "ليس عندي أي من الحالات السابقة",
-          "nextQuestion": [8, 10],
+          "nextQuestion": [15, 17],
           "attribute": [
             {
               "comorbidities": "not-relevant"
@@ -217,24 +249,55 @@
       ]
     },
     {
-      "id": "7",
+      "id": "10",
       "title": "",
-      "nextQuestion": [9],
       "pictures": [
         {
-          "caption": "إن قصورالكبد أو الكلى هي حالات طبية مهمة وتتطلب متابعة طبية مختصة /n من فضلك استشر الطبيب قبل البدء بتطبيق أي حمية أو نظام تغذية  جديد",
+          "caption": "عند اتباعك لهذا البرنامج سيزيد جسمك من طرح السوائل والأملاح وهذا سيؤدي الى هبوط في الضغط /n  هذا الهبوط قد يكون مفاجئ وخطير اذا كنت تأخذ أدوية لخفض الضغط أو مدرات بولية",
           "url": ""
         }
       ],
       "choices": [
         {
-          "title": "",
-          "nextQuestion": [9]
+          "title": "موافق",
+          "nextQuestion": [16]
         }
       ]
     },
     {
-      "id": "35",
+      "id": "11",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "عند اتباعك لهذا البرنامج سيزيد اعتمادنا على الدهون في الطعام /n هذا قد يسبب لك مشاكل في الهضم إذا كنت تعاني من حصيات مرارة أو كانت المرارة لديك مستأصلة",
+          "url": ""
+        }
+      ],
+      "choices": [
+        {
+          "title": "موافق",
+          "nextQuestion": [16]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "إن قصورالكبد أو الكلى هي حالات طبية مهمة وتتطلب متابعة طبية مختصة /n من فضلك استشر الطبيب قبل البدء بتطبيق أي حمية أو نظام تغذية جديد",
+          "url": ""
+        }
+      ],
+      "choices": [
+        {
+          "title": "موافق",
+          "nextQuestion": [16]
+        }
+      ]
+    },
+    {
+      "id": "13",
       "title": "",
       "pictures": [
         {
@@ -244,13 +307,13 @@
       ],
       "choices": [
         {
-          "title": "",
-          "nextQuestion": [9]
+          "title": "موافق",
+          "nextQuestion": [16]
         }
       ]
     },
     {
-      "id": "36",
+      "id": "14",
       "title": "",
       "pictures": [
         {
@@ -260,47 +323,13 @@
       ],
       "choices": [
         {
-          "title": "",
-          "nextQuestion": [9]
+          "title": "موافق",
+          "nextQuestion": [16]
         }
       ]
     },
     {
-      "id": "37",
-      "title": "",
-
-      "pictures": [
-        {
-          "caption": "عند اتباعك لهذا البرنامج سيزيد اعتمادنا على الدهون في الطعام /n هذا قد يسبب لك مشاكل في الهضم إذا كنت تعاني من حصيات مرارة أو كانت المرارة لديك مستأصلة",
-          "url": ""
-        }
-      ],
-      "choices": [
-        {
-          "title": "",
-          "nextQuestion": [9]
-        }
-      ]
-    },
-    {
-      "id": "38",
-      "title": "",
-
-      "pictures": [
-        {
-          "caption": "عند اتباعك لهذا البرنامج سيزيد جسمك من طرح السوائل والأملاح وهذا سيؤدي الى هبوط في الضغط /n  هذا الهبوط قد يكون مفاجئ وخطير اذا كنت تأخذ أدوية لخفض الضغط أو مدرات بولية",
-          "url": ""
-        }
-      ],
-      "choices": [
-        {
-          "title": "",
-          "nextQuestion": [9]
-        }
-      ]
-    },
-    {
-      "id": "8",
+      "id": "15",
       "title": "",
       "preCondition": [
         {
@@ -309,19 +338,19 @@
       ],
       "pictures": [
         {
-          "caption": "انتبه! الالتزام بالبرنامج قد يسبب لك هبوط مفاجئ  في السكر ويحتاج الى تخفيضجرعات العلاج/n  استشر طبيبك فوراََ اذا شعرت بأي عرض",
+          "caption": "انتبه! الالتزام بالبرنامج قد يسبب لك هبوط مفاجئ  في السكر ويحتاج الى تخفيض جرعات العلاج/n  استشر طبيبك فوراََ اذا شعرت بأي عرض",
           "url": ""
         }
       ],
       "choices": [
         {
-          "title": "",
-          "nextQuestion": [9]
+          "title": "موافق",
+          "nextQuestion": [16]
         }
       ]
     },
     {
-      "id": "9",
+      "id": "16",
       "title": "فريقنا الطبي متوافر لتقديم الاستشارات والمتابعة مباشرة من خلال تطبيق كنزي. هل تريد  استشارة الطبيب أو متابعة البرنامج؟",
       "type": "statement",
       "choicesType": "navigation",
@@ -329,19 +358,30 @@
       "choices": [
         {
           "title": "تابع برنامج التغذية",
-          "url": "/app/challenge/lowcarb"
+          "url": "/app/challenge/lowcarb",
+          "attribute": [
+            {
+              "unlock-next-step": true
+            }
+          ]
         },
         {
           "title": "احصل على متابعة طبية",
-          "url": "/app/tabs/chat"
+          "url": "/app/tabs/chat",
+          "attribute": [
+            {
+              "unlock-next-step": true
+            }
+          ]
         }
       ]
     },
     {
-      "id": "10",
+      "id": "17",
       "title": "شكراََ لك, يمكنك تطبيق البرنامج بأمان!/n تذكر, فريقنا الطبي متوافر لتقديم الاستشارات والمتابعة مباشرة من خلال تطبيق كنزي",
       "type": "statement",
       "choicesType": "navigation",
+      "": "0",
       "checkpoint": true,
       "preCondition": [
         {
@@ -351,11 +391,21 @@
       "choices": [
         {
           "title": "تابع برنامج التغذية",
-          "url": "/app/challenge/lowcarb"
+          "url": "/app/challenge/lowcarb",
+          "attribute": [
+            {
+              "unlock-next-step": true
+            }
+          ]
         },
         {
           "title": "احصل على متابعة طبية",
-          "url": "/app/tabs/chat"
+          "url": "/app/tabs/chat",
+          "attribute": [
+            {
+              "unlock-next-step": true
+            }
+          ]
         }
       ]
     }
