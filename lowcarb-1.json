@@ -361,7 +361,7 @@
           "url": "/app/challenge/lowcarb",
           "attribute": [
             {
-              "unlock-next-step": true
+              "unlock-next-step": 0
             }
           ]
         },
@@ -370,7 +370,7 @@
           "url": "/app/tabs/chat",
           "attribute": [
             {
-              "unlock-next-step": true
+              "unlock-next-step": 0
             }
           ]
         }
@@ -394,7 +394,7 @@
           "url": "/app/challenge/lowcarb",
           "attribute": [
             {
-              "unlock-next-step": true
+              "unlock-next-step": 0
             }
           ]
         },
@@ -403,7 +403,7 @@
           "url": "/app/tabs/chat",
           "attribute": [
             {
-              "unlock-next-step": true
+              "unlock-next-step": 0
             }
           ]
         }
