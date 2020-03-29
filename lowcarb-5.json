@@ -1,91 +1,121 @@
 {
-  "id": "lowcarb-2",
-  "title": "الخطوة الثانية",
+  "id": "lowcarb-5",
+  "title": "الخطوة الخامسة",
   "type": "questionnaire",
   "questions": [
-      {
+{
       "id": "1",
+      "title": "اختبر معلوماتك, أي من هذه المخبوزات لاتحوي كربوهيدرات ولا ترفع السكر؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "الخبز المعمول من طحين القمح",
+          "nextQuestion": [2]
+        },
+        {
+          "title": "الخبز الأسمر المعمول من الشعير أو النخالة",
+          "nextQuestion": [2]
+        },
+        {
+          "title": "الخبز المعمول من طحين الدرة",
+          "nextQuestion": [2]
+        },
+        {
+          "title": "كل هذه المخبوزات ترفع السكر",
+          "nextQuestion": [3]
+        }
+      ]
+    },
+    {
+      "id": "2",
       "title": "",
       "pictures": [
         {
-          "caption": "هل تعلم أن السكاكر البسيطة لا تعني فقط السكر الأبيض؟",
-          "url": "pic1.png"
+          "caption": "جوابك خاطئ للأسف! إن كل المعجنات الحاوية على طحين القمح, الشعير, النخالة أو الذرة هي غنية بالكاربوهيدرات و تتحول الى سكر في الجسم!",
+          "url": "pic18.png"
         }
         ],
       "choices": [
         {
           "title": "تابع",
-          "nextQuestion": [2],
+          "nextQuestion": [4],
            "attribute": [
             {
-              "lowcarb-2": "checked"
+              "lowcarb-5": "checked"
             }
           ]
         }
       ]
     },
-        {
-      "id": "2",
+   {
+      "id": "3",
       "title": "",
       "pictures": [
         {
-          "caption": "هذا البرنامج يساعدك على تقليل مقاومة الانسولين والسيطرة على قياسات السكر من خلال اتباع التغذية قليلة الكاربوهيدرات",
-          "url": "pic2.png"
+          "caption": "بالفعل! إن كل المعجنات الحاوية على طحين القمح, الشعير, النخالة أو الذرة هي غنية بالكاربوهيدرات وتتحول الى سكر في الجسم!",
+          "url": "pic20.png"
         }
         ],
       "choices": [
         {
           "title": "تابع",
-          "nextQuestion": [3]
+          "nextQuestion": [4],
+           "attribute": [
+            {
+              "lowcarb-5": "checked"
+            }
+          ]
         }
       ]
-    },    {
-      "id": "3",
-      "title": "هل تتناول أي من هذه المحليّات أو تضيفها إلى المشروبات التي تشربها؟",
+    },
+    {
+      "id": "4",
+      "title": "هل تتناول هذه المخبوزات بكميات كبيرة؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
-          "title": "أتناول هذه المحليات بشكل دائم",
-          "nextQuestion": [4],
+          "title": "أتناول المخبوزات مع كل وجبة",
+          "nextQuestion": [6],
           "attribute": [
             {
-              "using-sweetners": "always"
+              "intake-bread": "always"
             }
           ]
         },
         {
-          "title": "أضيف بعضها بكميات قليلة",
-          "nextQuestion": [4],
+          "title": "أتناول المخبوزات قليلاََ كل يوم",
+          "nextQuestion": [6],
           "attribute": [
             {
-             "using-sweetners": "sometimes"
+             "intake-bread": "daily"
             }
           ]
         },
         {
-          "title": "لا أضيفها أبداََ",
+          "title": "لا أتناول المخبوزات إلا نادراََ",
           "nextQuestion": [5],
           "attribute": [
             {
-              "using-sweetners": "never"
+              "intake-bread": "rarely"
             },
             {
                "unlock-next-step": "0"
             },
             {
-              "lowcarb-2": "no-need"
+              "lowcarb-5": "no-need"
             }
           ]
         }
       ]
     },
-        {
+    {
       "id": "5",
-      "title": "هذا خبر رائع, أنت على الطريق الصحيح ولا تحتاج هذا التحدي! يمكنك الانتقال الى التحدي التالي مباشرة",
+      "title": " هذا فعلاََ رائع! أنت تحمي جسمك من أخطار عديدة تسببها الكاربوهيدرات. يمكنك الانتقال الى التحدي التالي مباشرة. هل أنت مستعد؟",
       "type": "statement",
       "choicesType": "navigation",
-      "checkpoint": true,
+       "checkpoint": true,
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
@@ -97,45 +127,29 @@
         }
       ]
     },
-        {
-      "id": "4",
+    {
+ "id": "6",
       "title": "",
       "pictures": [
         {
-          "caption": "هذه السكريات هي سبب أساسي في رفع سكر الدم و إجهاد البنكرياس. حاول أن توقفها بالكامل",
-          "url": "pic3.png"
+          "caption": "إن تقليل الخبز والمعجنات ضروري جداََ لعلاج السكر. أوقف الخبز أو قم بتقليله بالتدريج واستعن ببدائل صحية",
+          "url": "pic50.png"
         }
         ],
       "choices": [
         {
-          "title": "تابع",
-          "nextQuestion": [6]
-        }
-      ]
-    },
-        {
-      "id": "6",
-      "title": "",
-      "pictures": [
-        {
-          "caption": "لحسن الحظ هناك محليات بديلة لاترفع السكر مثل سكر استيفيا الطبيعي ,مونك فروت أو اكزيلتول",
-          "url": "pic4.png"
-        }
-        ],
-      "choices": [
-        {
-          "title": "تابع",
+          "title": "ماهي البدائل؟",
           "nextQuestion": [7]
         }
       ]
     },
-        {
+    {
       "id": "7",
       "title": "",
       "pictures": [
         {
-          "caption": "يمكنك أيضاََ إضافة القليل من الحليب أو القشطة الى القهوة والشاي كبديل عن السكر",
-          "url": "pic5.png"
+          "caption": "استبدل طحين القمح ببدائل قليلة الكاربوهيدرات مثل دقيق اللوز, دقيق السمسم , بذور الكتان, الشوفان أو جوز الهند المبروش",
+          "url": "pic51.png"
         }
         ],
       "choices": [
@@ -144,24 +158,41 @@
           "nextQuestion": [8]
         }
       ]
-    },    {
-      "id": "8",
-      "title": "هل أنت مستعد لتوقف أو تستبدل السكريات الضارة هذا الأسبوع؟",
+    },
+    {
+ "id": "8",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "والأفضل من ذلك أن تلغي الخبز نهائياََ وتتناول الطعام بالملعقة او بالخضار الورقية كالخس و الملفوف",
+          "url": "pic52.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [9]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "هل أنت مستعد للبدء بتقليل الخبز والمعجنات هذا الأسبوع؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
           "title": "قبلت التحدي",
-          "nextQuestion": [9],
+          "nextQuestion": [10],
           "attribute": [
             {
-              "lowcarb-2": "accepted"
+              "lowcarb-5": "accepted"
             },
             {
-              "activate-daily-survey": "11"
+              "activate-daily-survey": "12"
             },
             {
-              "activate-weekly-followup": "12"
+              "activate-weekly-followup": "13"
             },
             {
                "unlock-next-step": "7"
@@ -170,38 +201,38 @@
         },
         {
           "title": "سأحاول تطبيقه",
-          "nextQuestion": [9],
+          "nextQuestion": [10],
           "attribute": [
            {
                "unlock-next-step": "7"
             },
             {
-              "activate-daily-survey": "11"
+              "activate-daily-survey": "12"
             },
             {
-              "activate-weekly-followup": "12"
+              "activate-weekly-followup": "13"
             },
             {
-            "lowcarb-2": "accepted"
+            "lowcarb-5": "accepted"
             }
           ]
         },
         {
           "title": "لا أريد هذا التحدي",
-          "nextQuestion": [10],
+          "nextQuestion": [11],
           "attribute": [
             {
                "unlock-next-step": "1"
             },
             {
-              "lowcarb-2": "rejected"
+              "lowcarb-5": "rejected"
             }
           ]
         }
       ]
     },
     {
-      "id": "9",
+      "id": "10",
       "title": " هذا رائع, تمنياتنا لك بالتوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
       "type": "statement",
       "choicesType": "navigation",
@@ -218,7 +249,7 @@
       ]
     },
     {
-      "id": "10",
+      "id": "11",
       "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
       "checkpoint": true,
       "choices": [
@@ -233,8 +264,8 @@
       ]
     },
     {
-          "id": "11",
-          "title": "كم ملعقة من المحليات (سكر بني أو أبيض أو عسل)  تناولت اليوم؟",
+          "id": "12",
+          "title": "كم حصة من الخبز تناولت اليوم؟ (الحصة هي قطعة خبز بحجم كف اليد)",
           "type": "question",
           "choicesType": "range",
           "canSkip": true,
@@ -247,33 +278,33 @@
               "nextQuestion": [ ],
               "attribute": [
                 {
-                  "daily-sugar-spoons": " "
+                  "daily-bread-portion": " "
                 }
               ]
             }
           ]
-        }, 
-            {
+        },
+        {
       "id": "13",
-      "title": "كيف كان التزامك بتحدي إيقاف السكريات خلال الأيام الماضية؟",
+      "title": "كيف كان التزامك إيقاف الخبز والمعجنات خلال الأيام الماضية؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
-          "title": "لقد أوقفتها بالكامل",
+          "title": "لقد أوقفت المعجنات والخبز بالكامل",
           "nextQuestion": [14],
           "attribute": [
             {
-              "lowcarb-2": "completed"
+              "lowcarb-5": "completed"
             }
           ]
         },
         {
-          "title": "بدأت بتقليلها أو استبدالها",
+          "title": "بدأت بتقليل المعجنات أو استبدالها",
           "nextQuestion": [14],
           "attribute": [
             {
-            "lowcarb-2": "in-progress"
+            "lowcarb-5": "in-progress"
             }
           ]
         },
@@ -282,15 +313,15 @@
           "nextQuestion": [15],
           "attribute": [
             {
-              "lowcarb-2": "no-start"
+              "lowcarb-5": "no-start"
             }
           ]
         }
       ]
     },
-        {
+    {
       "id": "14",
-      "title": "ماشاء الله, هذا يسعدنا كثيراََ! هل أنت مستعد لتبدأ تحدي جديد؟",
+      "title": "هذا خبر رائع! هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [
@@ -304,9 +335,9 @@
         }
       ]
     },
-         {
+    {
       "id": "15",
-      "title": " إن إيقاف تناول السكريات هي عادة بسيطة ولكن مفيدة جداََ لك هل أنت مستعد لتبدأ تحدي جديد؟",
+      "title": "إن التقليل من الخبز والمعجنات ضروري جداََ لضبط السكر وزيادة فعالية الانسولين من فضلك حاول أن تقللها خلال الأسبوع القادم. هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [

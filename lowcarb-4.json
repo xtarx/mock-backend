@@ -1,15 +1,15 @@
 {
-  "id": "lowcarb-2",
-  "title": "الخطوة الثانية",
+  "id": "lowcarb-4",
+  "title": "الخطوة الرابعة",
   "type": "questionnaire",
   "questions": [
-      {
+    {
       "id": "1",
       "title": "",
       "pictures": [
         {
-          "caption": "هل تعلم أن السكاكر البسيطة لا تعني فقط السكر الأبيض؟",
-          "url": "pic1.png"
+          "caption": "إن سلطات الخضار صحيّة جداََ ,تقلل حاجتك للكاربوهيدرات وتعطيك الشعور بالشبع دون أن ترفع السكر",
+          "url": "pic21.png"
         }
         ],
       "choices": [
@@ -18,7 +18,7 @@
           "nextQuestion": [2],
            "attribute": [
             {
-              "lowcarb-2": "checked"
+              "lowcarb-4": "checked"
             }
           ]
         }
@@ -29,8 +29,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": "هذا البرنامج يساعدك على تقليل مقاومة الانسولين والسيطرة على قياسات السكر من خلال اتباع التغذية قليلة الكاربوهيدرات",
-          "url": "pic2.png"
+          "caption": "بالإضافة لذلك فإن الخضار الورقية تعطيك الأملاح الضرورية و تحميك من عسر الهضم والامساك",
+          "url": "pic22.png"
         }
         ],
       "choices": [
@@ -39,53 +39,95 @@
           "nextQuestion": [3]
         }
       ]
-    },    {
+    },
+        {
       "id": "3",
-      "title": "هل تتناول أي من هذه المحليّات أو تضيفها إلى المشروبات التي تشربها؟",
+      "title": "كم مرة تتناول الخضارالورقية والسلطات مع الطعام؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
-          "title": "أتناول هذه المحليات بشكل دائم",
+          "title": "أتناول منها صحن كبير كل يوم",
           "nextQuestion": [4],
           "attribute": [
             {
-              "using-sweetners": "always"
-            }
-          ]
-        },
-        {
-          "title": "أضيف بعضها بكميات قليلة",
-          "nextQuestion": [4],
-          "attribute": [
-            {
-             "using-sweetners": "sometimes"
-            }
-          ]
-        },
-        {
-          "title": "لا أضيفها أبداََ",
-          "nextQuestion": [5],
-          "attribute": [
-            {
-              "using-sweetners": "never"
+              "intake-salad": "enough"
             },
             {
                "unlock-next-step": "0"
             },
             {
-              "lowcarb-2": "no-need"
+              "lowcarb-4": "no-need"
+            }
+          ]
+        },        
+          {
+          "title": "أتناول كمية صغيرة كل يوم",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "intake-salad": "daily"
+            }
+          ]
+        },        
+          {
+          "title": "أتناولها عدة مرات في الأسبوع",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "intake-salad": "weekly"
+            }
+          ]
+        },        
+          {
+          "title": "لا أتناولها إلا أحياناََ",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "intake-salad": "rarely"
             }
           ]
         }
       ]
     },
         {
+      "id": "4",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "هذه العادة صحية جداََ, حافظ عليها قدر ما تستطيع!",
+          "url": "pic23.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [5]
+        }
+      ]
+    },
+        {
       "id": "5",
-      "title": "هذا خبر رائع, أنت على الطريق الصحيح ولا تحتاج هذا التحدي! يمكنك الانتقال الى التحدي التالي مباشرة",
+      "title": "",
+      "pictures": [
+        {
+          "caption": " حاول أن تجرّب سلطات مختلفة كل مرة ولا تنسى إضافة المكسرات والجبنة وزيت الزيتون لتجعل طبق السلطة مفيد و مشبع أكثر!",
+          "url": "pic24.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [6]
+        }
+      ]
+    },
+        {
+      "id": "6",
+      "title": " يمكنك الانتقال الى التحدي التالي مباشرة. هل أنت مستعد؟",
       "type": "statement",
       "choicesType": "navigation",
-      "checkpoint": true,
+       "checkpoint": true,
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
@@ -98,44 +140,12 @@
       ]
     },
         {
-      "id": "4",
-      "title": "",
-      "pictures": [
-        {
-          "caption": "هذه السكريات هي سبب أساسي في رفع سكر الدم و إجهاد البنكرياس. حاول أن توقفها بالكامل",
-          "url": "pic3.png"
-        }
-        ],
-      "choices": [
-        {
-          "title": "تابع",
-          "nextQuestion": [6]
-        }
-      ]
-    },
-        {
-      "id": "6",
-      "title": "",
-      "pictures": [
-        {
-          "caption": "لحسن الحظ هناك محليات بديلة لاترفع السكر مثل سكر استيفيا الطبيعي ,مونك فروت أو اكزيلتول",
-          "url": "pic4.png"
-        }
-        ],
-      "choices": [
-        {
-          "title": "تابع",
-          "nextQuestion": [7]
-        }
-      ]
-    },
-        {
       "id": "7",
       "title": "",
       "pictures": [
         {
-          "caption": "يمكنك أيضاََ إضافة القليل من الحليب أو القشطة الى القهوة والشاي كبديل عن السكر",
-          "url": "pic5.png"
+          "caption": "حاول أن تأكل صحن كبير من الخضار الورقية أو السلطة كل يوم",
+          "url": "pic23.png"
         }
         ],
       "choices": [
@@ -144,24 +154,41 @@
           "nextQuestion": [8]
         }
       ]
-    },    {
+    },
+        {
       "id": "8",
-      "title": "هل أنت مستعد لتوقف أو تستبدل السكريات الضارة هذا الأسبوع؟",
+      "title": "",
+      "pictures": [
+        {
+          "caption": " حاول أن تجرّب سلطات مختلفة كل مرة ولا تنسى إضافة المكسرات والجبنة وزيت الزيتون لتجعل طبق السلطة مفيد و مشبع أكثر!",
+          "url": "pic24.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [9]
+        }
+      ]
+    },
+        {
+      "id": "9",
+      "title": "هل أنت مستعد لزيادة تناول السلطات والخضار الورقية هذا الأسبوع؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
           "title": "قبلت التحدي",
-          "nextQuestion": [9],
+          "nextQuestion": [10],
           "attribute": [
             {
-              "lowcarb-2": "accepted"
+              "lowcarb-4": "accepted"
             },
             {
-              "activate-daily-survey": "11"
+              "activate-daily-survey": "12"
             },
             {
-              "activate-weekly-followup": "12"
+              "activate-weekly-followup": "13"
             },
             {
                "unlock-next-step": "7"
@@ -170,38 +197,38 @@
         },
         {
           "title": "سأحاول تطبيقه",
-          "nextQuestion": [9],
+          "nextQuestion": [10],
           "attribute": [
            {
                "unlock-next-step": "7"
             },
             {
-              "activate-daily-survey": "11"
+              "activate-daily-survey": "12"
             },
             {
-              "activate-weekly-followup": "12"
+              "activate-weekly-followup": "13"
             },
             {
-            "lowcarb-2": "accepted"
+            "lowcarb-4": "accepted"
             }
           ]
         },
         {
           "title": "لا أريد هذا التحدي",
-          "nextQuestion": [10],
+          "nextQuestion": [11],
           "attribute": [
             {
                "unlock-next-step": "1"
             },
             {
-              "lowcarb-2": "rejected"
+              "lowcarb-4": "rejected"
             }
           ]
         }
       ]
     },
-    {
-      "id": "9",
+        {
+      "id": "10",
       "title": " هذا رائع, تمنياتنا لك بالتوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
       "type": "statement",
       "choicesType": "navigation",
@@ -217,8 +244,8 @@
         }
       ]
     },
-    {
-      "id": "10",
+        {
+      "id": "11",
       "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
       "checkpoint": true,
       "choices": [
@@ -233,8 +260,8 @@
       ]
     },
     {
-          "id": "11",
-          "title": "كم ملعقة من المحليات (سكر بني أو أبيض أو عسل)  تناولت اليوم؟",
+          "id": "12",
+          "title": "كم كوب من السلطات والخضار الورقية لهذا اليوم؟ (الكوب هو كمية تملأ كباية ماء أو قبضة اليد)",
           "type": "question",
           "choicesType": "range",
           "canSkip": true,
@@ -247,7 +274,7 @@
               "nextQuestion": [ ],
               "attribute": [
                 {
-                  "daily-sugar-spoons": " "
+                  "daily-salad-cup": " "
                 }
               ]
             }
@@ -255,25 +282,25 @@
         }, 
             {
       "id": "13",
-      "title": "كيف كان التزامك بتحدي إيقاف السكريات خلال الأيام الماضية؟",
+      "title": "كيف كان التزامك بتحدي الخضار الورقية والسلطات خلال الأيام الماضية؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
-          "title": "لقد أوقفتها بالكامل",
+          "title": "صرت أتناول صحن كبير كل يوم",
           "nextQuestion": [14],
           "attribute": [
             {
-              "lowcarb-2": "completed"
+              "lowcarb-4": "completed"
             }
           ]
         },
         {
-          "title": "بدأت بتقليلها أو استبدالها",
+          "title": "أحاول زيادة الكمية بالتدريج",
           "nextQuestion": [14],
           "attribute": [
             {
-            "lowcarb-2": "in-progress"
+            "lowcarb-4": "in-progress"
             }
           ]
         },
@@ -282,15 +309,15 @@
           "nextQuestion": [15],
           "attribute": [
             {
-              "lowcarb-2": "no-start"
+              "lowcarb-4": "no-start"
             }
           ]
         }
       ]
     },
-        {
+            {
       "id": "14",
-      "title": "ماشاء الله, هذا يسعدنا كثيراََ! هل أنت مستعد لتبدأ تحدي جديد؟",
+      "title": "هذا خبر رائع! هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [
@@ -304,16 +331,17 @@
         }
       ]
     },
-         {
+        {
       "id": "15",
-      "title": " إن إيقاف تناول السكريات هي عادة بسيطة ولكن مفيدة جداََ لك هل أنت مستعد لتبدأ تحدي جديد؟",
+      "title": "إن الخضار الورقية مهمة جداََ للحفاظ على صحتك. من فضلك حاول أن تزيد تناولها خلال الأسبوع القادم. هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
           "url": "/app/challenge/lowcarb"
-        },  {
+        },
+        {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
           "url": "/app/home"
         }
