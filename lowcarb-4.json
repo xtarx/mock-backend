@@ -11,12 +11,12 @@
           "caption": "إن سلطات الخضار صحيّة جداََ ,تقلل حاجتك للكاربوهيدرات وتعطيك الشعور بالشبع دون أن ترفع السكر",
           "url": "pic21.png"
         }
-        ],
+      ],
       "choices": [
         {
           "title": "تابع",
           "nextQuestion": [2],
-           "attribute": [
+          "attribute": [
             {
               "lowcarb-4": "checked"
             }
@@ -24,7 +24,7 @@
         }
       ]
     },
-        {
+    {
       "id": "2",
       "title": "",
       "pictures": [
@@ -32,7 +32,7 @@
           "caption": "بالإضافة لذلك فإن الخضار الورقية تعطيك الأملاح الضرورية و تحميك من عسر الهضم والامساك",
           "url": "pic22.png"
         }
-        ],
+      ],
       "choices": [
         {
           "title": "تابع",
@@ -40,7 +40,7 @@
         }
       ]
     },
-        {
+    {
       "id": "3",
       "title": "كم مرة تتناول الخضارالورقية والسلطات مع الطعام؟",
       "type": "question",
@@ -54,14 +54,14 @@
               "intake-salad": "enough"
             },
             {
-               "unlock-next-step": "0"
+              "unlock-next-step": "0"
             },
             {
               "lowcarb-4": "no-need"
             }
           ]
-        },        
-          {
+        },
+        {
           "title": "أتناول كمية صغيرة كل يوم",
           "nextQuestion": [7],
           "attribute": [
@@ -69,8 +69,8 @@
               "intake-salad": "daily"
             }
           ]
-        },        
-          {
+        },
+        {
           "title": "أتناولها عدة مرات في الأسبوع",
           "nextQuestion": [7],
           "attribute": [
@@ -78,8 +78,8 @@
               "intake-salad": "weekly"
             }
           ]
-        },        
-          {
+        },
+        {
           "title": "لا أتناولها إلا أحياناََ",
           "nextQuestion": [7],
           "attribute": [
@@ -90,7 +90,7 @@
         }
       ]
     },
-        {
+    {
       "id": "4",
       "title": "",
       "pictures": [
@@ -98,7 +98,7 @@
           "caption": "هذه العادة صحية جداََ, حافظ عليها قدر ما تستطيع!",
           "url": "pic23.png"
         }
-        ],
+      ],
       "choices": [
         {
           "title": "تابع",
@@ -106,7 +106,7 @@
         }
       ]
     },
-        {
+    {
       "id": "5",
       "title": "",
       "pictures": [
@@ -114,7 +114,7 @@
           "caption": " حاول أن تجرّب سلطات مختلفة كل مرة ولا تنسى إضافة المكسرات والجبنة وزيت الزيتون لتجعل طبق السلطة مفيد و مشبع أكثر!",
           "url": "pic24.png"
         }
-        ],
+      ],
       "choices": [
         {
           "title": "تابع",
@@ -122,24 +122,24 @@
         }
       ]
     },
-        {
+    {
       "id": "6",
       "title": " يمكنك الانتقال الى التحدي التالي مباشرة. هل أنت مستعد؟",
       "type": "statement",
       "choicesType": "navigation",
-       "checkpoint": true,
+      "checkpoint": true,
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
-          "url": "/app/challenge/lowcarb"
+          "url": "/app/tabs/today"
         },
         {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/home"
+          "url": "/app/tabs/today"
         }
       ]
     },
-        {
+    {
       "id": "7",
       "title": "",
       "pictures": [
@@ -147,7 +147,7 @@
           "caption": "حاول أن تأكل صحن كبير من الخضار الورقية أو السلطة كل يوم",
           "url": "pic23.png"
         }
-        ],
+      ],
       "choices": [
         {
           "title": "تابع",
@@ -155,7 +155,7 @@
         }
       ]
     },
-        {
+    {
       "id": "8",
       "title": "",
       "pictures": [
@@ -163,7 +163,7 @@
           "caption": " حاول أن تجرّب سلطات مختلفة كل مرة ولا تنسى إضافة المكسرات والجبنة وزيت الزيتون لتجعل طبق السلطة مفيد و مشبع أكثر!",
           "url": "pic24.png"
         }
-        ],
+      ],
       "choices": [
         {
           "title": "تابع",
@@ -171,7 +171,7 @@
         }
       ]
     },
-        {
+    {
       "id": "9",
       "title": "هل أنت مستعد لزيادة تناول السلطات والخضار الورقية هذا الأسبوع؟",
       "type": "question",
@@ -191,7 +191,7 @@
               "activate-weekly-followup": "13"
             },
             {
-               "unlock-next-step": "7"
+              "unlock-next-step": "7"
             }
           ]
         },
@@ -199,8 +199,8 @@
           "title": "سأحاول تطبيقه",
           "nextQuestion": [10],
           "attribute": [
-           {
-               "unlock-next-step": "7"
+            {
+              "unlock-next-step": "7"
             },
             {
               "activate-daily-survey": "12"
@@ -209,7 +209,7 @@
               "activate-weekly-followup": "13"
             },
             {
-            "lowcarb-4": "accepted"
+              "lowcarb-4": "accepted"
             }
           ]
         },
@@ -218,7 +218,7 @@
           "nextQuestion": [11],
           "attribute": [
             {
-               "unlock-next-step": "1"
+              "unlock-next-step": "1"
             },
             {
               "lowcarb-4": "rejected"
@@ -227,7 +227,7 @@
         }
       ]
     },
-        {
+    {
       "id": "10",
       "title": " هذا رائع, تمنياتنا لك بالتوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
       "type": "statement",
@@ -236,22 +236,7 @@
       "choices": [
         {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/home/"
-        },
-        {
-          "title": "احصل على متابعة طبية",
-          "url": "/app/tabs/chat"
-        }
-      ]
-    },
-        {
-      "id": "11",
-      "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
-      "checkpoint": true,
-      "choices": [
-        {
-          "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/home/"
+          "url": "/app/tabs/today/"
         },
         {
           "title": "احصل على متابعة طبية",
@@ -260,27 +245,42 @@
       ]
     },
     {
-          "id": "12",
-          "title": "كم كوب من السلطات والخضار الورقية لهذا اليوم؟ (الكوب هو كمية تملأ كباية ماء أو قبضة اليد)",
-          "type": "question",
-          "choicesType": "range",
-          "canSkip": true,
-          "choices": [
+      "id": "11",
+      "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today/"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "كم كوب من السلطات والخضار الورقية لهذا اليوم؟ (الكوب هو كمية تملأ كباية ماء أو قبضة اليد)",
+      "type": "question",
+      "choicesType": "range",
+      "canSkip": true,
+      "choices": [
+        {
+          "id": 1,
+          "title": "",
+          "min": "0",
+          "max": "10",
+          "nextQuestion": [],
+          "attribute": [
             {
-              "id": 1,
-              "title": "",
-              "min": "0",
-              "max": "10",
-              "nextQuestion": [ ],
-              "attribute": [
-                {
-                  "daily-salad-cup": " "
-                }
-              ]
+              "daily-salad-cup": " "
             }
           ]
-        }, 
-            {
+        }
+      ]
+    },
+    {
       "id": "13",
       "title": "كيف كان التزامك بتحدي الخضار الورقية والسلطات خلال الأيام الماضية؟",
       "type": "question",
@@ -300,7 +300,7 @@
           "nextQuestion": [14],
           "attribute": [
             {
-            "lowcarb-4": "in-progress"
+              "lowcarb-4": "in-progress"
             }
           ]
         },
@@ -315,7 +315,7 @@
         }
       ]
     },
-            {
+    {
       "id": "14",
       "title": "هذا خبر رائع! هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
@@ -323,15 +323,15 @@
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
-          "url": "/app/challenge/lowcarb"
+          "url": "/app/tabs/today"
         },
         {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/home"
+          "url": "/app/tabs/today"
         }
       ]
     },
-        {
+    {
       "id": "15",
       "title": "إن الخضار الورقية مهمة جداََ للحفاظ على صحتك. من فضلك حاول أن تزيد تناولها خلال الأسبوع القادم. هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
@@ -339,11 +339,11 @@
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
-          "url": "/app/challenge/lowcarb"
+          "url": "/app/tabs/today"
         },
         {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/home"
+          "url": "/app/tabs/today"
         }
       ]
     }
