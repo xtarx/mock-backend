@@ -69,15 +69,50 @@
       "id": "4",
       "title": "من فضلك قم بإدخال هذه المعلومات الأساسية لتقوم بتسجيل الدخول:قم بإدخال البلد الذي تقيم فيه(بعض المنتجات والخدمات تختلف بحسب بلد الإقامة)",
       "type": "question",
-      "choicesType": "text",
+      "choicesType": "multiselect",
       "choices": [
         {
-          "title": "بلد الإقامة",
-          "inputType": "text",
+          "title": "الكويت",
           "nextQuestion": [5],
           "attribute": [
             {
-              "country": ""
+              "country": "KW"
+            }
+          ]
+        },
+        {
+          "title": "المملكة العربية السعودية",
+          "nextQuestion": [5],
+          "attribute": [
+            {
+              "country": "SA"
+            }
+          ]
+        },
+        {
+          "title": "الامارات العربية المتحدة",
+          "nextQuestion": [5],
+          "attribute": [
+            {
+              "country": "AE"
+            }
+          ]
+        },
+        {
+          "title": "مصر",
+          "nextQuestion": [5],
+          "attribute": [
+            {
+              "country": "EG"
+            }
+          ]
+        },
+        {
+          "title": "بلد اخري",
+          "nextQuestion": [5],
+          "attribute": [
+            {
+              "country": "OTHER"
             }
           ]
         }
@@ -290,7 +325,6 @@
         }
       ]
     },
-
     {
       "id": "10",
       "title": "رائع جداََ! لقد أكملت تسجيل الدخول بنجاح و أصبحت جاهزاََ لاستخدام تطبيق كنزي",
