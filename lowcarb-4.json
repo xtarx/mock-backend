@@ -9,7 +9,7 @@
       "pictures": [
         {
           "caption": "إن سلطات الخضار صحيّة جداََ ,تقلل حاجتك للكاربوهيدرات وتعطيك الشعور بالشبع دون أن ترفع السكر",
-          "url": "pic21.png"
+          "url": "lc0401.png"
         }
       ],
       "choices": [
@@ -30,7 +30,7 @@
       "pictures": [
         {
           "caption": "بالإضافة لذلك فإن الخضار الورقية تعطيك الأملاح الضرورية و تحميك من عسر الهضم والامساك",
-          "url": "pic22.png"
+          "url": "lc0402.png"
         }
       ],
       "choices": [
@@ -96,7 +96,7 @@
       "pictures": [
         {
           "caption": "هذه العادة صحية جداََ, حافظ عليها قدر ما تستطيع!",
-          "url": "pic23.png"
+          "url": "lc0404.png"
         }
       ],
       "choices": [
@@ -112,7 +112,7 @@
       "pictures": [
         {
           "caption": " حاول أن تجرّب سلطات مختلفة كل مرة ولا تنسى إضافة المكسرات والجبنة وزيت الزيتون لتجعل طبق السلطة مفيد و مشبع أكثر!",
-          "url": "pic24.png"
+          "url": "lc0405.png"
         }
       ],
       "choices": [
@@ -145,7 +145,7 @@
       "pictures": [
         {
           "caption": "حاول أن تأكل صحن كبير من الخضار الورقية أو السلطة كل يوم",
-          "url": "pic23.png"
+          "url": "lc0407.png"
         }
       ],
       "choices": [
@@ -161,7 +161,7 @@
       "pictures": [
         {
           "caption": " حاول أن تجرّب سلطات مختلفة كل مرة ولا تنسى إضافة المكسرات والجبنة وزيت الزيتون لتجعل طبق السلطة مفيد و مشبع أكثر!",
-          "url": "pic24.png"
+          "url": "lc0408.png"
         }
       ],
       "choices": [
@@ -191,7 +191,7 @@
               "activate-weekly-followup": "13"
             },
             {
-              "unlock-next-step": "7"
+              "unlock-next-step": "0"
             }
           ]
         },
@@ -200,7 +200,7 @@
           "nextQuestion": [10],
           "attribute": [
             {
-              "unlock-next-step": "7"
+              "unlock-next-step": "0"
             },
             {
               "activate-daily-survey": "12"
@@ -218,7 +218,7 @@
           "nextQuestion": [11],
           "attribute": [
             {
-              "unlock-next-step": "1"
+              "unlock-next-step": "0"
             },
             {
               "lowcarb-4": "rejected"
@@ -247,6 +247,8 @@
     {
       "id": "11",
       "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
+      "type": "statement",
+      "choicesType": "navigation",
       "checkpoint": true,
       "choices": [
         {

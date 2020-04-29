@@ -1,6 +1,6 @@
 {
-  "id": "lowcarb-3",
-  "title": "الخطوة الثالثة",
+  "id": "lowcarb-11",
+  "title": "الخطوة الحادية عشرة",
   "type": "questionnaire",
   "questions": [
     {
@@ -8,17 +8,17 @@
       "title": "",
       "pictures": [
         {
-          "caption": "إن الكثير من المشروبات تعطينا كميات كبيرة من السكر دون أن نشعر بها",
-          "url": "lc0301.png"
+          "caption": "هل سمعت بالصوديوم و البوتاسيوم و المغنيزيوم؟ هذه الأملاح الثلاثة ضرورية جداََ لصحتك و نقصها يسبب الكثير من الأعراض الصحيّة",
+          "url": "lc1101.png"
         }
       ],
       "choices": [
         {
-          "title": "ماهي هذه المشروبات؟",
+          "title": "ماهي أعراض نقص الأملاح؟",
           "nextQuestion": [2],
           "attribute": [
             {
-              "lowcarb-3": "checked"
+              "lowcarb-11": "checked"
             }
           ]
         }
@@ -29,8 +29,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": "أهمها مشروبات الطاقة والمشروبات الغازية المحلاة بالسكر",
-          "url": "lc0302.png"
+          "caption": "نقص الأملاح يسبب مشاكل صحية كثيرة مثل الشعور بالتعب والدوخة, التشنجات العضلية, الإمساك, وجع الرأس بالإضافة الى هبوط أو ارتفاع الضغط",
+          "url": "lc1102.png"
         }
       ],
       "choices": [
@@ -42,80 +42,48 @@
     },
     {
       "id": "3",
-      "title": "",
-      "pictures": [
-        {
-          "caption": "عصير الفواكه الطازج و المعلب حتى لو كتب عليه خالي من السكر",
-          "url": "lc0303.png"
-        }
-      ],
-      "choices": [
-        {
-          "title": "تابع",
-          "nextQuestion": [4]
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "title": "",
-      "pictures": [
-        {
-          "caption": "بالإضافة الى مشروبات الشعير والشاي والقهوة المعلبة",
-          "url": "lc0304.png"
-        }
-      ],
-      "choices": [
-        {
-          "title": "تابع",
-          "nextQuestion": [5]
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "title": "هل تتناول أي من هذه المشروبات المحلاة؟",
+      "title": "هل تقوم بتناول أغذية مناسبة أو مكملات غذائية لتعويض نقص هذه الأملاح؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
-          "title": "نعم أشربها باستمرار",
-          "nextQuestion": [7],
+          "title": "لا أقوم بتعويض الأملاح",
+          "nextQuestion": [5],
           "attribute": [
             {
-              "drinking-sugary-drinks": "always"
+              "intake-minerals-supplement": "none"
             }
           ]
         },
         {
-          "title": "أشرب بعض منها بكميات قليلة",
-          "nextQuestion": [7],
+          "title": "أحاول تعويض الأملاح بالطعام فقط",
+          "nextQuestion": [5],
           "attribute": [
             {
-              "drinking-sugary-drinks": "sometimes"
+              "intake-minerals-supplement": "food"
             }
           ]
         },
         {
-          "title": "لا أشرب أي منها",
-          "nextQuestion": [6],
+          "title": "أتناول مكملات غذائية لتعويض الأملاح",
+          "nextQuestion": [4],
           "attribute": [
             {
-              "drinking-sugary-drinks": "never"
+              "intake-minerals-supplement": "supplements"
             },
             {
               "unlock-next-step": "0"
             },
             {
-              "lowcarb-3": "no-need"
+              "lowcarb-11": "no-need"
             }
           ]
         }
       ]
     },
     {
-      "id": "6",
-      "title": "أنت تقدم لجسمك خدمة ممتازة بتجنب هذه المشروبات. حافظ على هذه العادة الصحية! يمكنك الانتقال الى التحدي التالي مباشرة",
+      "id": "4",
+      "title": "هذا رائع, حافظ على هذه العادة وتذكر أن تشرب كمية كافبة من السوائل كل يوم. هل أنت مستعد لتحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "checkpoint": true,
@@ -131,17 +99,49 @@
       ]
     },
     {
-      "id": "7",
+      "id": "5",
       "title": "",
       "pictures": [
         {
-          "caption": "هل تعلم أن كل كوب من المشروبات الغازية يحوي على 10 ملاعق من السكر؟!",
-          "url": "lc0307.png"
+          "caption": "هذه الأملاح الهامة تجدها عادة في الطعام ولكن عندما تقلل الكاربوهيدرات فانك تحتاجها بكميات أكبر من المعتاد",
+          "url": "lc1105.png"
         }
       ],
       "choices": [
         {
-          "title": "ماهي البدائل؟",
+          "title": "كيف أمنع نقص الأملاح؟",
+          "nextQuestion": [6]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "احرص أن تتناول صحن كبير من الخضار الورقية كل يوم - بقدونس - جرجير - خس - سبانخ وغيرها",
+          "url": "lc1106.png"
+        }
+      ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [7]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "تناول حبوب المكملات غذائية لتضمن تزويدك بالأملاح الأساسية وخاصة المغنيزيوم لأن نقصه قد يكون خطيرجدا",
+          "url": "lc1107.png"
+        }
+      ],
+      "choices": [
+        {
+          "title": "تابع",
           "nextQuestion": [8]
         }
       ]
@@ -151,8 +151,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": "يمكنك استبدال المشروبات الغازية المحلاة بتلك الخالية من السكر (دايت - لايت أو زيرو) لكن باعتدال",
-          "url": "lc0308.png"
+          "caption": "حاول تناول مرق العطم والمواسيروالدجاج قدر الإمكان لأنها غنية بالأملاح والدهون الصحية",
+          "url": "lc1108.png"
         }
       ],
       "choices": [
@@ -167,8 +167,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": "يمكنك دوماََ شرب القهوة أو الكاكاو بشرط ان تكون خالية من السكر ولا ضرر من إضافة الحليب أو القشطة باعتدال",
-          "url": "lc0309.png"
+          "caption": "استبدل الملح الأبيض بملح الهملايا الأحمر وخاصة اذا كان عندك ضغط مرتفع فهو غني بالبوتاسيوم ولايرفع الضغط مثل الملح العادي",
+          "url": "lc1109.png"
         }
       ],
       "choices": [
@@ -180,54 +180,22 @@
     },
     {
       "id": "10",
-      "title": "",
-      "pictures": [
-        {
-          "caption": "يمكنك أيضاََ شرب الشاي أو منقوع الأعشاب (زهور) بأنواعها و مسموح إضافة محليات بديلة للسكر مثل استيفيا",
-          "url": "lc0310.png"
-        }
-      ],
-      "choices": [
-        {
-          "title": "تابع",
-          "nextQuestion": [11]
-        }
-      ]
-    },
-    {
-      "id": "11",
-      "title": "",
-      "pictures": [
-        {
-          "caption": "وتذكر أن الماء هو أفضل الشروبات. حاول أن تضيف له قطع من الفاكهة أو النعناع للحصول على طعم مميز وصحي",
-          "url": "lc0311.png"
-        }
-      ],
-      "choices": [
-        {
-          "title": "تابع",
-          "nextQuestion": [12]
-        }
-      ]
-    },
-    {
-      "id": "12",
-      "title": "هل أنت مستعد لإيقاف المشروبات المحلاة هذا الأسبوع؟",
+      "title": "إبدأ هذا الأسبوع باتباع الخطوات الضرورية لتعويض الأملاح وحماية نفسك من نقصها. هل أنت مستعد؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
           "title": "قبلت التحدي",
-          "nextQuestion": [13],
+          "nextQuestion": [11],
           "attribute": [
             {
-              "lowcarb-3": "accepted"
+              "lowcarb-11": "accepted"
             },
             {
-              "activate-daily-survey": "15"
+              "activate-daily-survey": "13"
             },
             {
-              "activate-weekly-followup": "16"
+              "activate-weekly-followup": "14"
             },
             {
               "unlock-next-step": "0"
@@ -236,39 +204,39 @@
         },
         {
           "title": "سأحاول تطبيقه",
-          "nextQuestion": [13],
+          "nextQuestion": [11],
           "attribute": [
             {
               "unlock-next-step": "0"
             },
             {
-              "activate-daily-survey": "15"
+              "activate-daily-survey": "13"
             },
             {
-              "activate-weekly-followup": "16"
+              "activate-weekly-followup": "14"
             },
             {
-              "lowcarb-3": "accepted"
+              "lowcarb-11": "accepted"
             }
           ]
         },
         {
           "title": "لا أريد هذا التحدي",
-          "nextQuestion": [14],
+          "nextQuestion": [12],
           "attribute": [
             {
               "unlock-next-step": "0"
             },
             {
-              "lowcarb-3": "rejected"
+              "lowcarb-11": "rejected"
             }
           ]
         }
       ]
     },
     {
-      "id": "13",
-      "title": " هذا رائع, تمنياتنا لك بالتوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
+      "id": "11",
+      "title": "رائع, نتمنى لك التوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
       "type": "statement",
       "choicesType": "navigation",
       "checkpoint": true,
@@ -284,7 +252,7 @@
       ]
     },
     {
-      "id": "14",
+      "id": "12",
       "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
       "type": "statement",
       "choicesType": "navigation",
@@ -301,8 +269,8 @@
       ]
     },
     {
-      "id": "15",
-      "title": "كم كوب من العصائر أو المشروبات المحلاة تناولت اليوم؟",
+      "id": "13",
+      "title": "ماعدد مصادر الأملاح التي تناولتها اليوم؟ (مصادر الأملاح قد تكون مكملات, خضار ورقية, مرق عظام أو لحم أحمر أو طيور)",
       "type": "question",
       "choicesType": "range",
       "canSkip": true,
@@ -311,54 +279,54 @@
           "id": 1,
           "title": "",
           "min": "0",
-          "max": "5",
+          "max": "10",
           "nextQuestion": [],
           "attribute": [
             {
-              "daily-sugary-drinks-glas": " "
+              "daily-mineral-sources": ""
             }
           ]
         }
       ]
     },
     {
-      "id": "16",
-      "title": "كيف كان التزامك بتحدي إيقاف االمشروبات المحلاة خلال الأيام الماضية؟",
+      "id": "14",
+      "title": "كيف وجدت التزامك بتعويض الأملاح والمعادن خلال الأيام الماضية؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
-          "title": "لقد أوقفتها بالكامل",
-          "nextQuestion": [17],
+          "title": "أتناول مصادر للأملاح كل يوم",
+          "nextQuestion": [15],
           "attribute": [
             {
-              "lowcarb-3": "completed"
+              "lowcarb-11": "completed"
             }
           ]
         },
         {
-          "title": "بدأت بتقليلها أو استبدالها",
-          "nextQuestion": [17],
+          "title": "أحاول تناولها عندما أذكر",
+          "nextQuestion": [15],
           "attribute": [
             {
-              "lowcarb-3": "in-progress"
+              "lowcarb-11": "in-progress"
             }
           ]
         },
         {
           "title": "لم أبدأ بالتحدي بعد",
-          "nextQuestion": [18],
+          "nextQuestion": [16],
           "attribute": [
             {
-              "lowcarb-3": "no-start"
+              "lowcarb-11": "no-start"
             }
           ]
         }
       ]
     },
     {
-      "id": "17",
-      "title": "هذا خبر رائع! هل أنت مستعد لتبدأ تحدي جديد؟",
+      "id": "15",
+      "title": "هذا خبر رائع, حافظ على هذه العادة الصحيَة! هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [
@@ -373,8 +341,8 @@
       ]
     },
     {
-      "id": "18",
-      "title": "صحّتك غالية وهذه العادة البسيطة ستساعدك بالحفاظ عليها. هل أنت مستعد لتبدأ تحدي جديد؟",
+      "id": "16",
+      "title": "من فضلك انتبه لأعراض نقص الأملاح و ابدأ بتعويها حالاََ عندما تشعر بأي عرض. هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [

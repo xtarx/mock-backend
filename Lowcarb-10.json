@@ -1,6 +1,6 @@
 {
-  "id": "lowcarb-2",
-  "title": "الخطوة الثانية",
+  "id": "lowcarb-10",
+  "title": "الخطوة العاشرة",
   "type": "questionnaire",
   "questions": [
     {
@@ -8,17 +8,17 @@
       "title": "",
       "pictures": [
         {
-          "caption": "هل تعلم أن السكاكر البسيطة لا تعني فقط السكر الأبيض؟",
-          "url": "lc0201.png"
+          "caption": "هل تعرف أن بعض الفواكه فيها كمية سكر ونشويات مثل البطاطا و الرز أو حتى أكثر؟",
+          "url": "lc1001.png"
         }
       ],
       "choices": [
         {
-          "title": "تابع",
+          "title": "ماهي الفواكه عالية السكر؟",
           "nextQuestion": [2],
           "attribute": [
             {
-              "lowcarb-2": "checked"
+              "lowcarb-10": "checked"
             }
           ]
         }
@@ -29,53 +29,69 @@
       "title": "",
       "pictures": [
         {
-          "caption": "بل تضم أيضاََ السكر البني وسكر القصب والعسل بجميع أنواعه",
-          "url": "lc0202.png"
+          "caption": "الفواكه عالية السكر تضم التمر, التين, العنب , المانجو, الزبيب و كل أنواع الفواكه المجففة بالإضافة الى عصائر الفواكه بكل أنواعها",
+          "url": "lc1002.png"
         }
       ],
       "choices": [
         {
-          "title": "تابع",
+          "title": "ماهي الفواكه متوسطة السكر؟",
           "nextQuestion": [3]
         }
       ]
     },
     {
       "id": "3",
-      "title": "هل تتناول أي من هذه المحليّات أو تضيفها إلى المشروبات التي تشربها؟",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "الفواكه متوسطة السكر تضم التفاح, البرتقال بأنواعه, الكيوي, الكرز, الدراق, المشمش, الخوخ (البرقوق) , الأناناس ,الإجاص, الجوافة, الرمان",
+          "url": "lc1003.png"
+        }
+      ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [4]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "هل تتناول الفواكه بكثرة في نهارك؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
-          "title": "أتناول هذه المحليات بشكل دائم",
-          "nextQuestion": [4],
+          "title": "نعم أتناولها يومياََ",
+          "nextQuestion": [6],
           "attribute": [
             {
-              "using-sweetners": "always"
+              "intake-fruits": "daily"
             }
           ]
         },
         {
-          "title": "أضيف بعضها بكميات قليلة",
-          "nextQuestion": [4],
+          "title": "أتناولها مرة أو أكثر كل أسبوع",
+          "nextQuestion": [6],
           "attribute": [
             {
-              "using-sweetners": "sometimes"
+              "intake-fruits": "weekly"
             }
           ]
         },
         {
-          "title": "لا أضيفها أبداََ",
+          "title": "لا أتناول الفواكه أبداََ",
           "nextQuestion": [5],
           "attribute": [
             {
-              "using-sweetners": "never"
+              "intake-fruits": "rarely"
             },
             {
               "unlock-next-step": "0"
             },
             {
-              "lowcarb-2": "no-need"
+              "lowcarb-10": "no-need"
             }
           ]
         }
@@ -83,7 +99,7 @@
     },
     {
       "id": "5",
-      "title": "هذا خبر رائع, أنت على الطريق الصحيح ولا تحتاج هذا التحدي! يمكنك الانتقال الى التحدي التالي مباشرة",
+      "title": "هناك الكثير من الفواكه المفيدة وقليلة السكر مثل الفروالة والتوت البري والبطيخ وجوز الهند. حاول أن تتناولها من وقت لآخر. هل أنت مستعد لتحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "checkpoint": true,
@@ -99,33 +115,17 @@
       ]
     },
     {
-      "id": "4",
-      "title": "",
-      "pictures": [
-        {
-          "caption": "هذه السكريات هي سبب أساسي في رفع سكر الدم و إجهاد البنكرياس. حاول أن توقفها بالكامل",
-          "url": "lc0204.png"
-        }
-      ],
-      "choices": [
-        {
-          "title": "تابع",
-          "nextQuestion": [6]
-        }
-      ]
-    },
-    {
       "id": "6",
       "title": "",
       "pictures": [
         {
-          "caption": "لحسن الحظ هناك محليات بديلة لاترفع السكر مثل سكر استيفيا الطبيعي ,مونك فروت أو اكزيلتول",
-          "url": "lc0206.png"
+          "caption": "حاول أن تمنع الفواكه عالية السكر و أن تقلل الفواكه متوسطة السكر الى أقل من حجم قبضة اليد في اليوم أو أن تتناول فقط الفواكه قليلة السكر",
+          "url": "lc1006.png"
         }
       ],
       "choices": [
         {
-          "title": "تابع",
+          "title": "ماهي الفواكه قليلة السكر؟",
           "nextQuestion": [7]
         }
       ]
@@ -135,8 +135,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": "يمكنك أيضاََ إضافة القليل من الحليب أو القشطة الى القهوة والشاي كبديل عن السكر",
-          "url": "lc0207.png"
+          "caption": "الفواكه قليلة السكرتضم الفراولة ,التوت البري, الحرنكش, البطيخ الأصفر والأحمر, جوز الهند, الليمون, الأفوكادو, التين الشوكي (الصبار)",
+          "url": "lc1007.png"
         }
       ],
       "choices": [
@@ -148,7 +148,7 @@
     },
     {
       "id": "8",
-      "title": "هل أنت مستعد لتوقف أو تستبدل السكريات الضارة هذا الأسبوع؟",
+      "title": "إبدأ هذا الأسبوع بتقليل الفاكهة عالية لسكر واستبدالها بفاكهة قليلة السكر. هل أنت مستعد؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
@@ -157,7 +157,7 @@
           "nextQuestion": [9],
           "attribute": [
             {
-              "lowcarb-2": "accepted"
+              "lowcarb-10": "accepted"
             },
             {
               "activate-daily-survey": "11"
@@ -184,7 +184,7 @@
               "activate-weekly-followup": "12"
             },
             {
-              "lowcarb-2": "accepted"
+              "lowcarb-10": "accepted"
             }
           ]
         },
@@ -196,7 +196,7 @@
               "unlock-next-step": "0"
             },
             {
-              "lowcarb-2": "rejected"
+              "lowcarb-10": "rejected"
             }
           ]
         }
@@ -204,7 +204,7 @@
     },
     {
       "id": "9",
-      "title": " هذا رائع, تمنياتنا لك بالتوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
+      "title": "رائع, نتمنى لك التوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
       "type": "statement",
       "choicesType": "navigation",
       "checkpoint": true,
@@ -238,7 +238,7 @@
     },
     {
       "id": "11",
-      "title": "كم ملعقة من المحليات (سكر بني أو أبيض أو عسل)  تناولت اليوم؟",
+      "title": "كم حصة من الفواكه عالية السكر تناولت اليوم؟ (الفواكه عالية السكر تضم العنب والموز والتمر والفواكه المحففة والحصة منها هي بحجم الكوب أو قبضة اليد المغلقة)",
       "type": "question",
       "choicesType": "range",
       "canSkip": true,
@@ -251,7 +251,42 @@
           "nextQuestion": [],
           "attribute": [
             {
-              "daily-sugar-spoons": " "
+              "daily-sweet-fruits-portion": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "كيف وجدت التزامك بتناول الفواكه قليلة السكر خلال الأيام الماضية؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "أوقفت الفواكه عالية السكر بالكامل",
+          "nextQuestion": [13],
+          "attribute": [
+            {
+              "lowcarb-10": "completed"
+            }
+          ]
+        },
+        {
+          "title": "أحاول تقليل الفواكه عالية السكر",
+          "nextQuestion": [13],
+          "attribute": [
+            {
+              "lowcarb-10": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "لم أبدأ بالتحدي بعد",
+          "nextQuestion": [14],
+          "attribute": [
+            {
+              "lowcarb-10": "no-start"
             }
           ]
         }
@@ -259,42 +294,7 @@
     },
     {
       "id": "13",
-      "title": "كيف كان التزامك بتحدي إيقاف السكريات خلال الأيام الماضية؟",
-      "type": "question",
-      "choicesType": "multiselect",
-      "choices": [
-        {
-          "title": "لقد أوقفتها بالكامل",
-          "nextQuestion": [14],
-          "attribute": [
-            {
-              "lowcarb-2": "completed"
-            }
-          ]
-        },
-        {
-          "title": "بدأت بتقليلها أو استبدالها",
-          "nextQuestion": [14],
-          "attribute": [
-            {
-              "lowcarb-2": "in-progress"
-            }
-          ]
-        },
-        {
-          "title": "لم أبدأ بالتحدي بعد",
-          "nextQuestion": [15],
-          "attribute": [
-            {
-              "lowcarb-2": "no-start"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "14",
-      "title": "ماشاء الله, هذا يسعدنا كثيراََ! هل أنت مستعد لتبدأ تحدي جديد؟",
+      "title": "هذا خبر رائع! هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [
@@ -309,8 +309,8 @@
       ]
     },
     {
-      "id": "15",
-      "title": " إن إيقاف تناول السكريات هي عادة بسيطة ولكن مفيدة جداََ لك هل أنت مستعد لتبدأ تحدي جديد؟",
+      "id": "14",
+      "title": "من فضلك حاول أن تراقب أنواع الفواكه التي تتناولها و تجنب الفواكه عالية السكر. هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [

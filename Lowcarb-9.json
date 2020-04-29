@@ -1,6 +1,6 @@
 {
-  "id": "lowcarb-2",
-  "title": "الخطوة الثانية",
+  "id": "lowcarb-9",
+  "title": "الخطوة التاسعة",
   "type": "questionnaire",
   "questions": [
     {
@@ -8,17 +8,17 @@
       "title": "",
       "pictures": [
         {
-          "caption": "هل تعلم أن السكاكر البسيطة لا تعني فقط السكر الأبيض؟",
-          "url": "lc0201.png"
+          "caption": "معظمنا يجد صعوبة في إيقاف تناول الحلويات والسكاكر على الرغم من أنها ضارة بالصحة",
+          "url": "lc0901.png"
         }
       ],
       "choices": [
         {
-          "title": "تابع",
+          "title": "ماهو الحل لهذه المشكلة؟",
           "nextQuestion": [2],
           "attribute": [
             {
-              "lowcarb-2": "checked"
+              "lowcarb-9": "checked"
             }
           ]
         }
@@ -26,64 +26,57 @@
     },
     {
       "id": "2",
-      "title": "",
-      "pictures": [
-        {
-          "caption": "بل تضم أيضاََ السكر البني وسكر القصب والعسل بجميع أنواعه",
-          "url": "lc0202.png"
-        }
-      ],
-      "choices": [
-        {
-          "title": "تابع",
-          "nextQuestion": [3]
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "title": "هل تتناول أي من هذه المحليّات أو تضيفها إلى المشروبات التي تشربها؟",
+      "title": "لحسن الحظ هناك بدائل الطبيعية التي لاترفع السكر. هل تتناول الحلويات بكثرة وتحتاج بدائل صحيّة؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
         {
-          "title": "أتناول هذه المحليات بشكل دائم",
+          "title": "أتناولها يومياََ وأحتاج بدائل",
           "nextQuestion": [4],
           "attribute": [
             {
-              "using-sweetners": "always"
+              "intake-sweets": "daily"
             }
           ]
         },
         {
-          "title": "أضيف بعضها بكميات قليلة",
+          "title": "أتناولها أسبوعياََ وأحتاج بدائل",
           "nextQuestion": [4],
           "attribute": [
             {
-              "using-sweetners": "sometimes"
+              "intake-sweets": "weekly"
             }
           ]
         },
         {
-          "title": "لا أضيفها أبداََ",
-          "nextQuestion": [5],
+          "title": "أتناولها أحياناََ وأحتاج بدائل",
+          "nextQuestion": [4],
           "attribute": [
             {
-              "using-sweetners": "never"
+              "intake-sweets": "sometimes"
+            }
+          ]
+        },
+        {
+          "title": "لا أتناولها ولا أحتاج بدائل",
+          "nextQuestion": [3],
+          "attribute": [
+            {
+              "intake-sweets": "rarely"
             },
             {
               "unlock-next-step": "0"
             },
             {
-              "lowcarb-2": "no-need"
+              "lowcarb-9": "no-need"
             }
           ]
         }
       ]
     },
     {
-      "id": "5",
-      "title": "هذا خبر رائع, أنت على الطريق الصحيح ولا تحتاج هذا التحدي! يمكنك الانتقال الى التحدي التالي مباشرة",
+      "id": "3",
+      "title": "ماشاء الله, هذا يعني أن إرادتك قوية جداََ. يمكنك الانتقال الى التحدي التالي مباشرة. هل أنت مستعد؟",
       "type": "statement",
       "choicesType": "navigation",
       "checkpoint": true,
@@ -103,8 +96,24 @@
       "title": "",
       "pictures": [
         {
-          "caption": "هذه السكريات هي سبب أساسي في رفع سكر الدم و إجهاد البنكرياس. حاول أن توقفها بالكامل",
-          "url": "lc0204.png"
+          "caption": "للحصول على حلويات قليلة الكاربوهيدرات علينا ان نستبدل كل مصادر النشويات مثل الطحين والسميد والسكر والعسل",
+          "url": "lc0904.png"
+        }
+      ],
+      "choices": [
+        {
+          "title": "ماهي البدائل قليلة الكاربوهيدرات؟",
+          "nextQuestion": [5]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "استبدل الطحين والسميد بدقيق اللوز, دقيق جوز الهند او جوز الهند المبروش, دقيق بذور الكتان أو دوار الشمس (اللب السوري)",
+          "url": "lc0905.png"
         }
       ],
       "choices": [
@@ -119,8 +128,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": "لحسن الحظ هناك محليات بديلة لاترفع السكر مثل سكر استيفيا الطبيعي ,مونك فروت أو اكزيلتول",
-          "url": "lc0206.png"
+          "caption": "استبدل السكر والعسل بمحليات طبيعية مثل استيفيا, اكزيلتول, مونك فروت ويمكنك إضافة قطع الفواكه أو مربى الفواكه المعمول بسكر استيفيا",
+          "url": "lc0906.png"
         }
       ],
       "choices": [
@@ -135,8 +144,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": "يمكنك أيضاََ إضافة القليل من الحليب أو القشطة الى القهوة والشاي كبديل عن السكر",
-          "url": "lc0207.png"
+          "caption": "يمكنك دوماََ إضافة الزبدة الحيوانية والحليب و القشطة كاملة الدسم بالإضافة الى الكاكاو و الشوكولاته الداكنة الخالية من السكر",
+          "url": "lc0907.png"
         }
       ],
       "choices": [
@@ -148,7 +157,7 @@
     },
     {
       "id": "8",
-      "title": "هل أنت مستعد لتوقف أو تستبدل السكريات الضارة هذا الأسبوع؟",
+      "title": "إبدأ هذا الأسبوع بإيقاف الحلويات أو اتبع وصفات بديلة لحلويات صحية لا ترفع السكر. هل أنت مستعد؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
@@ -157,7 +166,7 @@
           "nextQuestion": [9],
           "attribute": [
             {
-              "lowcarb-2": "accepted"
+              "lowcarb-9": "accepted"
             },
             {
               "activate-daily-survey": "11"
@@ -184,7 +193,7 @@
               "activate-weekly-followup": "12"
             },
             {
-              "lowcarb-2": "accepted"
+              "lowcarb-9": "accepted"
             }
           ]
         },
@@ -196,7 +205,7 @@
               "unlock-next-step": "0"
             },
             {
-              "lowcarb-2": "rejected"
+              "lowcarb-9": "rejected"
             }
           ]
         }
@@ -204,7 +213,7 @@
     },
     {
       "id": "9",
-      "title": " هذا رائع, تمنياتنا لك بالتوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
+      "title": "ممتاز, تمنياتنا لك بالصحة والعافية! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
       "type": "statement",
       "choicesType": "navigation",
       "checkpoint": true,
@@ -238,7 +247,7 @@
     },
     {
       "id": "11",
-      "title": "كم ملعقة من المحليات (سكر بني أو أبيض أو عسل)  تناولت اليوم؟",
+      "title": "كم حصة من الحلويات تناولت اليوم؟ (الحصة هي قطعة بحجم ملعقة كبيرة)",
       "type": "question",
       "choicesType": "range",
       "canSkip": true,
@@ -251,7 +260,42 @@
           "nextQuestion": [],
           "attribute": [
             {
-              "daily-sugar-spoons": " "
+              "daily-sweets-portion": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "كيف وجدت التزامك بإيقاف الحلويات خلال الأيام الماضية؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "بدأت بإيقافها أو استبدالها نهائياََ",
+          "nextQuestion": [13],
+          "attribute": [
+            {
+              "lowcarb-9": "completed"
+            }
+          ]
+        },
+        {
+          "title": "أحاول تقليلها أو استبدالها بالتدريج",
+          "nextQuestion": [13],
+          "attribute": [
+            {
+              "lowcarb-9": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "لم أبدأ بالتحدي بعد",
+          "nextQuestion": [14],
+          "attribute": [
+            {
+              "lowcarb-9": "no-start"
             }
           ]
         }
@@ -259,42 +303,7 @@
     },
     {
       "id": "13",
-      "title": "كيف كان التزامك بتحدي إيقاف السكريات خلال الأيام الماضية؟",
-      "type": "question",
-      "choicesType": "multiselect",
-      "choices": [
-        {
-          "title": "لقد أوقفتها بالكامل",
-          "nextQuestion": [14],
-          "attribute": [
-            {
-              "lowcarb-2": "completed"
-            }
-          ]
-        },
-        {
-          "title": "بدأت بتقليلها أو استبدالها",
-          "nextQuestion": [14],
-          "attribute": [
-            {
-              "lowcarb-2": "in-progress"
-            }
-          ]
-        },
-        {
-          "title": "لم أبدأ بالتحدي بعد",
-          "nextQuestion": [15],
-          "attribute": [
-            {
-              "lowcarb-2": "no-start"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "14",
-      "title": "ماشاء الله, هذا يسعدنا كثيراََ! هل أنت مستعد لتبدأ تحدي جديد؟",
+      "title": "هذا خبر رائع! هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [
@@ -309,8 +318,8 @@
       ]
     },
     {
-      "id": "15",
-      "title": " إن إيقاف تناول السكريات هي عادة بسيطة ولكن مفيدة جداََ لك هل أنت مستعد لتبدأ تحدي جديد؟",
+      "id": "14",
+      "title": "لا تقلق, يمكنك أن تبدأ في أي وقت. ولكن تذكر أن إيقاف السكر ومضاعفاته سيكون أصعب بكثير مع الحلويات. هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
       "choicesType": "navigation",
       "choices": [
