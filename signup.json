@@ -1,6 +1,6 @@
 {
   "id": "signup",
-  "title": "تسجيل دخول",
+  "title": "المعلومات الأساسية",
   "type": "questionnaire",
   "questions": [
     {
@@ -33,7 +33,22 @@
           "attribute": [
             {
               "gender": "male"
-            }
+            },
+            {
+              "treatment": "not-set"
+            },
+            {
+              "diagnosis": "not-set"
+            },
+            {
+              "diabetes-type": "not-set"
+            }, 
+            {
+              "unlock-fasting": "no"
+            },
+            {
+              "hba1c": "not-set"
+            }      
           ]
         },
         {
@@ -42,6 +57,21 @@
           "attribute": [
             {
               "gender": "female"
+            },
+            {
+              "treatment": "not-set"
+            },
+            {
+              "diagnosis": "not-set"
+            },
+            {
+              "diabetes-type": "not-set"
+            },
+            {
+              "hba1c": "not-set"
+            }, 
+            {
+              "unlock-fasting": "no"
             }
           ]
         }
@@ -72,47 +102,12 @@
       "choicesType": "text",
       "choices": [
         {
-          "title": "الكويت",
+          "title": "بلد الإقامة",
+          "inputType": "text",
           "nextQuestion": [5],
           "attribute": [
             {
-              "country": "KW"
-            }
-          ]
-        },
-        {
-          "title": "المملكة العربية السعودية",
-          "nextQuestion": [5],
-          "attribute": [
-            {
-              "country": "SA"
-            }
-          ]
-        },
-        {
-          "title": "الامارات العربية المتحدة",
-          "nextQuestion": [5],
-          "attribute": [
-            {
-              "country": "AE"
-            }
-          ]
-        },
-        {
-          "title": "مصر",
-          "nextQuestion": [5],
-          "attribute": [
-            {
-              "country": "EG"
-            }
-          ]
-        },
-        {
-          "title": "بلد اخري",
-          "nextQuestion": [5],
-          "attribute": [
-            {
-              "country": "OTHER"
+              "country": ""
             }
           ]
         }
@@ -126,7 +121,7 @@
       "choices": [
         {
           "title": "عندي سكر مرتفع و أريد علاج له",
-          "nextQuestion": [6],
+          "nextQuestion": [10],
           "attribute": [
             {
               "signup-goal": "treat-diabetes"
@@ -135,7 +130,7 @@
         },
         {
           "title": "عندي بداية سكر و لا أريده  أن يتطور",
-          "nextQuestion": [6],
+          "nextQuestion": [10],
           "attribute": [
             {
               "signup-goal": "treat-pre-diabetes"
@@ -144,7 +139,7 @@
         },
         {
           "title": "ليس عندي سكر ولكن أريد أن أحمي نفسي",
-          "nextQuestion": [7],
+          "nextQuestion": [10],
           "attribute": [
             {
               "signup-goal": "prevent-diabetes"
@@ -153,7 +148,7 @@
         },
         {
           "title": "أريد أن أعرف إذا عندي سكر",
-          "nextQuestion": [7],
+          "nextQuestion": [10],
           "attribute": [
             {
               "signup-goal": "diagnose-diabetes"
@@ -162,7 +157,7 @@
         },
         {
           "title": "أريد أن أساعد قريب لي مصاب بالسكر",
-          "nextQuestion": [6],
+          "nextQuestion": [10],
           "attribute": [
             {
               "signup-goal": "help-family-member"
