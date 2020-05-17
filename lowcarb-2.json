@@ -3,7 +3,7 @@
   "title": "الخطوة الثانية",
   "type": "questionnaire",
   "questions": [
-    {
+      {
       "id": "1",
       "title": "",
       "pictures": [
@@ -11,12 +11,12 @@
           "caption": "هل تعلم أن السكاكر البسيطة لا تعني فقط السكر الأبيض؟",
           "url": "lc0201.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
           "nextQuestion": [2],
-          "attribute": [
+           "attribute": [
             {
               "lowcarb-2": "checked"
             }
@@ -24,7 +24,7 @@
         }
       ]
     },
-    {
+        {
       "id": "2",
       "title": "",
       "pictures": [
@@ -32,15 +32,14 @@
           "caption": "بل تضم أيضاََ السكر البني وسكر القصب والعسل بجميع أنواعه",
           "url": "lc0202.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
           "nextQuestion": [3]
         }
       ]
-    },
-    {
+    },    {
       "id": "3",
       "title": "هل تتناول أي من هذه المحليّات أو تضيفها إلى المشروبات التي تشربها؟",
       "type": "question",
@@ -60,7 +59,7 @@
           "nextQuestion": [4],
           "attribute": [
             {
-              "using-sweetners": "sometimes"
+             "using-sweetners": "sometimes"
             }
           ]
         },
@@ -72,7 +71,7 @@
               "using-sweetners": "never"
             },
             {
-              "unlock-next-step": "0"
+               "unlock-next-step": "0"
             },
             {
               "lowcarb-2": "no-need"
@@ -81,7 +80,7 @@
         }
       ]
     },
-    {
+        {
       "id": "5",
       "title": "هذا خبر رائع, أنت على الطريق الصحيح ولا تحتاج هذا التحدي! يمكنك الانتقال الى التحدي التالي مباشرة",
       "type": "statement",
@@ -98,7 +97,7 @@
         }
       ]
     },
-    {
+        {
       "id": "4",
       "title": "",
       "pictures": [
@@ -106,7 +105,7 @@
           "caption": "هذه السكريات هي سبب أساسي في رفع سكر الدم و إجهاد البنكرياس. حاول أن توقفها بالكامل",
           "url": "lc0204.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
@@ -114,7 +113,7 @@
         }
       ]
     },
-    {
+        {
       "id": "6",
       "title": "",
       "pictures": [
@@ -122,7 +121,7 @@
           "caption": "لحسن الحظ هناك محليات بديلة لاترفع السكر مثل سكر استيفيا الطبيعي ,مونك فروت أو اكزيلتول",
           "url": "lc0206.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
@@ -130,7 +129,7 @@
         }
       ]
     },
-    {
+        {
       "id": "7",
       "title": "",
       "pictures": [
@@ -138,15 +137,14 @@
           "caption": "يمكنك أيضاََ إضافة القليل من الحليب أو القشطة الى القهوة والشاي كبديل عن السكر",
           "url": "lc0207.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
           "nextQuestion": [8]
         }
       ]
-    },
-    {
+    },    {
       "id": "8",
       "title": "هل أنت مستعد لتوقف أو تستبدل السكريات الضارة هذا الأسبوع؟",
       "type": "question",
@@ -166,7 +164,7 @@
               "activate-weekly-followup": "12"
             },
             {
-              "unlock-next-step": "0"
+               "unlock-next-step": "0"
             }
           ]
         },
@@ -174,8 +172,8 @@
           "title": "سأحاول تطبيقه",
           "nextQuestion": [9],
           "attribute": [
-            {
-              "unlock-next-step": "0"
+           {
+               "unlock-next-step": "0"
             },
             {
               "activate-daily-survey": "11"
@@ -184,7 +182,7 @@
               "activate-weekly-followup": "12"
             },
             {
-              "lowcarb-2": "accepted"
+            "lowcarb-2": "accepted"
             }
           ]
         },
@@ -193,7 +191,7 @@
           "nextQuestion": [10],
           "attribute": [
             {
-              "unlock-next-step": "0"
+               "unlock-next-step": "0"
             },
             {
               "lowcarb-2": "rejected"
@@ -237,27 +235,27 @@
       ]
     },
     {
-      "id": "11",
-      "title": "كم ملعقة من المحليات (سكر بني أو أبيض أو عسل)  تناولت اليوم؟",
-      "type": "question",
-      "choicesType": "range",
-      "canSkip": true,
-      "choices": [
-        {
-          "id": 1,
-          "title": "",
-          "min": "0",
-          "max": "10",
-          "nextQuestion": [],
-          "attribute": [
+          "id": "11",
+          "title": "كم ملعقة من المحليات (سكر بني أو أبيض أو عسل)  تناولت اليوم؟",
+          "type": "question",
+          "choicesType": "range",
+          "canSkip": true,
+          "choices": [
             {
-              "daily-sugar-spoons": " "
+              "id": 1,
+              "title": "",
+              "min": "0",
+              "max": "10",
+              "nextQuestion": [ ],
+              "attribute": [
+                {
+                  "daily-sugar-spoons": " "
+                }
+              ]
             }
           ]
-        }
-      ]
-    },
-    {
+        }, 
+            {
       "id": "13",
       "title": "كيف كان التزامك بتحدي إيقاف السكريات خلال الأيام الماضية؟",
       "type": "question",
@@ -277,7 +275,7 @@
           "nextQuestion": [14],
           "attribute": [
             {
-              "lowcarb-2": "in-progress"
+            "lowcarb-2": "in-progress"
             }
           ]
         },
@@ -292,7 +290,7 @@
         }
       ]
     },
-    {
+        {
       "id": "14",
       "title": "ماشاء الله, هذا يسعدنا كثيراََ! هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
@@ -308,7 +306,7 @@
         }
       ]
     },
-    {
+         {
       "id": "15",
       "title": " إن إيقاف تناول السكريات هي عادة بسيطة ولكن مفيدة جداََ لك هل أنت مستعد لتبدأ تحدي جديد؟",
       "type": "statement",
@@ -317,8 +315,7 @@
         {
           "title": "ابدأ تحدي جديد",
           "url": "/app/tabs/today"
-        },
-        {
+        },  {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
           "url": "/app/tabs/today"
         }
@@ -326,3 +323,5 @@
     }
   ]
 }
+
+

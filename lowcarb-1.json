@@ -11,12 +11,12 @@
           "caption": "هذا البرنامج يساعدك على تقليل مقاومة الانسولين والسيطرة على قياسات السكر من خلال اتباع التغذية قليلة الكاربوهيدرات",
           "url": "lc0101.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
           "nextQuestion": [2],
-          "attribute": [
+           "attribute": [
             {
               "lowcarb-1": "checked"
             }
@@ -24,15 +24,15 @@
         }
       ]
     },
-    {
+     {
       "id": "2",
       "title": "",
       "pictures": [
-        {
-          "caption": "البرنامج  يتألف من تحديات و خطوات أسبوعية معتمدة من أطباء للحصول لى النتيجة المطلوبة ننصحك بتطبيقه لمدة شهرين الى 4 شهور",
+       {
+          "caption": "البرنامج  يتألف من تحديات و خطوات أسبوعية معتمدة من أطباء. للحصول على النتيجة المطلوبة ننصحك بتطبيقه لمدة شهرين الى 4 شهور",
           "url": "lc0102.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
@@ -45,17 +45,17 @@
       "title": "",
       "pictures": [
         {
-          "caption": "من فضلك اتبع النصائح التي نقدمها لك بخطوة بخطوة ولاتحاول الاستعجال لأن التطبيق المفاجئ قد يعرضك للتعب و نقص التغذية",
+          "caption": "من فضلك اتبع النصائح التي نقدمها لك خطوة بخطوة ولاتحاول الاستعجال لأن التطبيق المفاجئ قد يعرضك للتعب و نقص التغذية",
           "url": "lc0103.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "اختبر معلوماتك",
           "nextQuestion": [4]
         }
       ]
-    },
+    },   
     {
       "id": "4",
       "title": "اختبر معلوماتك, ماهي الأطعمة التي تحوي نشويات وعلينا أن نقللها؟",
@@ -96,8 +96,8 @@
         }
       ]
     },
-    {
-      "id": "6",
+        {
+          "id": "6",
       "title": "",
       "pictures": [
         {
@@ -124,7 +124,65 @@
       "choices": [
         {
           "title": "اختبار السلامة",
-          "nextQuestion": [8, 9]
+          "nextQuestion": [18, 8, 9]
+        }
+      ]
+    },
+    {
+ "id": "18",
+ "title": "قبل أن تبدأ, نريد ان نتأكد أن برنامج التغذية آمن لك تماماََ. من فضلك أخبرنا ماهي الخطوات التي تقوم بها لعلاج السكر أو الوقاية منه؟",
+ "type": "question",
+      "choicesType": "multiselect",
+      "preCondition": [
+        {
+          "treatment": "not-set"
+        }
+      ],
+      "choices": [
+        {
+          "title": "لم أبدأ بأي خطوات بعد",
+          "nextQuestion": [8, 9],
+          "attribute": [
+           {
+               "treatment": "none"
+            }
+          ]
+        },
+       {
+          "title": "الحمية والرياضة فقط دون أدوية سكر",
+          "nextQuestion": [8, 9],
+          "attribute": [
+           {
+               "treatment": "lifestyle"
+            }
+          ]
+        },
+       {
+          "title": "أدوية لضبط السكر دون انسولين",
+          "nextQuestion": [8, 9],
+          "attribute": [
+           {
+               "treatment": "non-insulin-only"
+            }
+          ]
+        },
+        {
+          "title": " أحقن الانسولين فقط",
+          "nextQuestion": [8, 9],
+          "attribute": [
+           {
+               "treatment": "insulin-only"
+            }
+          ]
+        },
+       {
+          "title": "انسولين مع أدوية سكر أخرى",
+          "nextQuestion": [8, 9],
+          "attribute": [
+           {
+               "treatment": "insulin-and-non"
+            }
+          ]
         }
       ]
     },
@@ -136,6 +194,9 @@
       "preCondition": [
         {
           "gender": "male"
+        },
+        {
+          "treatment": "none OR lifestyle OR insulin-only OR non-insulin-only OR insulin-and-non"
         }
       ],
       "choices": [
@@ -183,7 +244,7 @@
               "comorbidities": "not-relevant"
             },
             {
-              "unlock-next-step": "0"
+            "unlock-next-step": "0"
             }
           ]
         }
@@ -197,6 +258,9 @@
       "preCondition": [
         {
           "gender": "female"
+        },
+        {
+          "treatment": "none OR lifestyle OR insulin-only OR non-insulin-only OR insulin-and-non"
         }
       ],
       "choices": [
@@ -253,17 +317,17 @@
               "comorbidities": "not-relevant"
             },
             {
-              "unlock-next-step": "0"
+            "unlock-next-step": "0"
             }
           ]
         }
       ]
     },
     {
-      "id": "10",
+          "id": "10",
       "title": "",
-      "pictures": [
-        {
+      "pictures": [ 
+      {
           "caption": "عند اتباعك لهذا البرنامج سيزيد جسمك من طرح السوائل والأملاح وهذا سيؤدي الى هبوط في الضغط. هذا الهبوط قد يكون مفاجئ وخطير اذا كنت تأخذ أدوية لخفض الضغط أو مدرات بولية",
           "url": "lc0112.png"
         }
@@ -274,17 +338,17 @@
           "nextQuestion": [16],
           "attribute": [
             {
-              "unlock-next-step": "0"
+            "unlock-next-step": "0"
             }
           ]
         }
       ]
     },
-    {
-      "id": "11",
-      "title": "",
-      "pictures": [
         {
+          "id": "11",
+      "title": "",
+      "pictures": [ 
+      {
           "caption": "عند اتباعك لهذا البرنامج سيزيد اعتمادنا على الدهون في الطعام. هذا قد يسبب لك مشاكل في الهضم إذا كنت تعاني من حصيات مرارة أو كانت المرارة لديك مستأصلة",
           "url": "lc0112.png"
         }
@@ -295,17 +359,17 @@
           "nextQuestion": [16],
           "attribute": [
             {
-              "unlock-next-step": "0"
+            "unlock-next-step": "0"
             }
           ]
         }
       ]
     },
-    {
-      "id": "12",
+      {
+          "id": "12",
       "title": "",
       "pictures": [
-        {
+      {
           "caption": "إن قصورالكبد أو الكلى هي حالات طبية مهمة وتتطلب متابعة طبية مختصة. من فضلك استشر الطبيب قبل البدء بتطبيق أي حمية أو نظام تغذية جديد",
           "url": "lc0112.png"
         }
@@ -316,14 +380,14 @@
           "nextQuestion": [16],
           "attribute": [
             {
-              "unlock-next-step": "0"
+            "unlock-next-step": "0"
             }
           ]
         }
       ]
     },
-    {
-      "id": "13",
+      {
+          "id": "13",
       "title": "",
       "pictures": [
         {
@@ -337,14 +401,14 @@
           "nextQuestion": [16],
           "attribute": [
             {
-              "unlock-next-step": "0"
+            "unlock-next-step": "0"
             }
           ]
         }
       ]
     },
-    {
-      "id": "14",
+        {
+          "id": "14",
       "title": "",
       "pictures": [
         {
@@ -358,7 +422,7 @@
           "nextQuestion": [16],
           "attribute": [
             {
-              "unlock-next-step": "0"
+            "unlock-next-step": "0"
             }
           ]
         }
@@ -384,7 +448,7 @@
           "nextQuestion": [16],
           "attribute": [
             {
-              "unlock-next-step": "0"
+            "unlock-next-step": "0"
             }
           ]
         }
@@ -398,7 +462,7 @@
       "checkpoint": true,
       "choices": [
         {
-          "title": "تابع برنامج التغذية",
+          "title": "سأتابع على مسؤوليتي",
           "url": "/app/tabs/today"
         },
         {
@@ -431,3 +495,4 @@
     }
   ]
 }
+

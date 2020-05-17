@@ -1,0 +1,235 @@
+{
+  "id": "fasting-4",
+  "title": "المرحلة الثالثة",
+  "type": "questionnaire",
+  "questions": [
+{
+      "id": "1",
+      "title": "هل جربت الصيام المتقطع لمدة 13 ساعة ليومين متتاليين خلال الأسبوع الماضي؟ كيف شعرت بعدها؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "شعرت بالنشاط دون جوع",
+          "nextQuestion": [5],
+          "attribute": [
+            {
+              "fasting-3": "completed"
+            }
+          ]
+        },
+        {
+          "title": "شعرت ببعض الجوع",
+          "nextQuestion": [2],
+          "attribute": [
+            {
+            "fasting-3": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "شعرت بالتعب ونقص النشاط",
+          "nextQuestion": [2],
+          "attribute": [
+            {
+            "fasting-3": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "لم أستطع الصيام خلال الأسبوع الماضي",
+          "nextQuestion": [2],
+          "attribute": [
+            {
+              "fasting-3": "no-start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "تابع على نفس الخطة خلال الأسبوع القادم. قم بالصيام لمدة 13 ساعة ليومين متواليين ثم خذ يوم أو يومين للراحة وبعدها أعد الصيام ليومين جديدين",
+          "url": "fa0306.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي الشروط؟",
+          "nextQuestion": [3]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "لا تنسا أن تزيد من تناول السوائل والمرق الدسمة والأملاح لتعطي جسمك الطاقة وتمنع التجفاف خلال الصيام. وتناول الطعام فوراََ إذا شعرت بالتعب",
+          "url": "fa0307.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "موافق",
+          "nextQuestion": [4]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "سنتواصل معك بعد أسبوع لنسألك عن تجربتك ونعطيك الخطوة التالية",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرَف على البرامج الأخرى",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "ما شاء الله! أنت الآن جاهز لتبدأ المرحلة الثالثة من الصيام المتقطع",
+          "url": "fa0405.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي المرحلة الثالثة؟",
+          "nextQuestion": [6],
+           "attribute": [
+            {
+              "fasting-4": "checked"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "6",
+      "title": "",
+      "pictures": [
+        {
+          "caption": " في هذه المرحلة سنطلب منك أن تجرب الصيام المتقطّع لمدة 16 ساعة ليومين أو ثلاثة في الأسبوع مع يوم أو يومين راحة بين أيام الصيام",
+          "url": "fa0406.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي قواعد الصيام؟",
+          "nextQuestion": [7]
+        }
+      ]
+    },
+{
+      "id": "7",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "خلال الصيام المتقطع يمنع الطعام فقط ولكن يسمح تناول كل أنواع المشروبات الخالية من السكر بالإضافة الى مرق العظم أو مرق الدجاج أو مرق اللحم",
+          "url": "fa0307.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [8]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "اختر يومين أو ثلاثة خلال الأسبوع القادم وقم بتجربة الصيام المتقطع لمدة 16 ساعة ولكن قم بإيقاف الصيام فوراََ إذا شعرت بالتعب أو الجوع. هل أنت مستعد؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "قبلت تحدي الصيام",
+          "nextQuestion": [10],
+          "attribute": [
+            {
+              "fasting-4": "accepted"
+            },
+            {
+              "activate-weekly-followup": "9"
+            },
+            {
+               "unlock-next-step": "0"
+            }
+          ]
+        },
+        {
+          "title": "سأحاول تطبيقه",
+          "nextQuestion": [10],
+          "attribute": [
+           {
+               "unlock-next-step": "0"
+            },
+            {
+              "activate-weekly-followup": "9"
+            },
+            {
+            "fasting-4": "accepted"
+            }
+          ]
+        },
+        {
+          "title": "لا أستطيع تطبيقه",
+          "nextQuestion": [9],
+          "attribute": [
+            {
+              "fasting-4": "rejected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "لا تقلق يمكنك أن تبقى على صيام 13 ساعة أو أقل و حاول أن تزيد عدد الساعات بالتدريج عندما تشعر بالطاقة الكافية. لاتتردد بطلب استشارة أخصائي من خلال التطبيق عند الحاجة",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرَف على البرامج الأخرى",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "نتمنى لك التوفيق! سنتواصل معك بعد أسبوع لنعرف كيف تشعر بعد الصيام ونعطيك الخطوة التالية",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرَف على البرامج الأخرى",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    }
+  ]
+}
+
+
