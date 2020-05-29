@@ -1,0 +1,318 @@
+{
+  "id": "lowcarb-7",
+  "title": "الخطوة السابعة",
+  "type": "questionnaire",
+  "questions": [
+{
+      "id": "1",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "إن المرق والشوربات الغنية بالدهون مغذية جداََ. فهي تعطيك طاقة وتزودك بالأملاح والسوائل دون أن ترفع السكر",
+          "url": "lc0701.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي المرق الصحيّة؟",
+          "nextQuestion": [2],
+           "attribute": [
+            {
+              "lowcarb-7": "checked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "يمكنك دوماََ تناول مرق اللحم الأحمر أو العظام والمواسير (الكوارع)",
+          "url": "lc0702.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [3]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "أو مرق الدجاج أو البط أو غيرها من الطيور",
+          "url": "lc0703.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [4]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "",
+      "pictures": [
+        {
+          "caption":  "يمكنك إضافة كل الخضروات ما عدا البطاطا والبقوليات (حمص, فول, فاصولياء) و امتنع عن إضافة التشويات مثل الرز أو المكرونة",
+          "url": "lc0704.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [5]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "هل تتناول هذه المرق الصحية في غذائك؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "أتناولها مرة في اليوم أو أكثر",
+          "nextQuestion": [6],
+          "attribute": [
+            {
+             "intake-soup": "daily"
+            },
+           {
+               "unlock-next-step": "0"
+            },
+            {
+              "lowcarb-7": "no-need"
+            }
+          ]
+        },
+            {
+          "title": "أتناولها مرة في الأسبوع أو أكثر",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+             "intake-soup": "weekly"
+            }
+          ]
+        },
+        {
+          "title": "لا أتناول هذه المرق إلا نادراََ",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "intake-soup": "rarely"
+             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": " هذه عادة مفيدة جداََ,بالصحة والعافية! يمكنك الانتقال الى التحدي التالي مباشرة. هل أنت مستعد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "إبدأ هذا الأسبوع وحاول تناول المرق الغنية بالدهون الصحيّة يومياََ ولو بكميات صغيرة. ستساعدك على تقليل الكاربوهيدرات و تحميك من نقص السوائل والأملاح. مستعد لهذا التحدي؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "preCondition": [
+        {
+          "lowcarb-7": ""
+        }
+      ],
+      "choices": [
+        {
+          "title": "قبلت التحدي",
+          "nextQuestion": [8],
+          "attribute": [
+            {
+              "lowcarb-7": "accepted"
+            },
+            {
+              "activate-daily-survey": "10"
+            },
+            {
+              "activate-weekly-followup": "11"
+            },
+            {
+               "unlock-next-step": "0"
+            }
+          ]
+        },
+        {
+          "title": "سأحاول تطبيقه",
+          "nextQuestion": [8],
+          "attribute": [
+           {
+               "unlock-next-step": "0"
+            },
+            {
+              "activate-daily-survey": "10"
+            },
+            {
+              "activate-weekly-followup": "11"
+            },
+            {
+            "lowcarb-7": "accepted"
+            }
+          ]
+        },
+        {
+          "title": "لا أريد هذا التحدي",
+          "nextQuestion": [9],
+          "attribute": [
+            {
+               "unlock-next-step": "0"
+            },
+            {
+              "lowcarb-7": "rejected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": " هذا رائع, تمنياتنا لك بالتوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today/"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today/"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+          "id": "10",
+          "title": " كم حصة من المرق تناولت اليوم؟ (الحصة هي كمية بحجم كوب ماء أو صحن صغير)",
+          "type": "question",
+          "choicesType": "range",
+          "canSkip": true,
+          "choices": [
+            {
+              "id": 1,
+              "title": "",
+              "min": "0",
+              "max": "5",
+              "nextQuestion": [ ],
+              "attribute": [
+                {
+                  "daily-soup-portion": " "
+                }
+              ]
+            }
+          ]
+        },
+        {
+      "id": "11",
+      "title": "كيف وجدت التزامك بتناول المرق الصحية خلال الأيام الماضية؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "أحاول أن أتناولها كل يوم",
+          "nextQuestion": [12],
+          "attribute": [
+            {
+              "lowcarb-7": "completed"
+            }
+          ]
+        },
+        {
+          "title": "بدأت قليلا ولكن سأحاول أكثر",
+          "nextQuestion": [12],
+          "attribute": [
+            {
+            "lowcarb-7": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "لم أبدأ بالتحدي بعد",
+          "nextQuestion": [13],
+          "attribute": [
+            {
+              "lowcarb-7": "no-start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "هذا خبر رائع! هل أنت مستعد لتبدأ تحدي جديد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "لا تقلق يمكنك ان تبدأ في أي وقت تريد, فقط تذكر أنها عادة جيدة وستساعدك لتحافظ على صحتك. هل أنت مستعد لتبدأ تحدي جديد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },  {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    }
+  ]
+}
+
+

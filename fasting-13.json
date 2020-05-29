@@ -1,0 +1,140 @@
+{
+  "id": "fasting-13",
+  "title": "المرحلة الثانية عشرة",
+  "type": "questionnaire",
+  "questions": [
+{
+      "id": "1",
+      "title": "هل جربت الصيام المتقطع لمدة 20 ساعة خلال الأسبوع الماضي؟ كيف شعرت بعدها؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "شعرت بالنشاط دون جوع",
+          "nextQuestion": [5],
+          "attribute": [
+            {
+              "fasting-12": "completed"
+            }
+          ]
+        },
+        {
+          "title": "شعرت ببعض الجوع",
+          "nextQuestion": [2],
+          "attribute": [
+            {
+            "fasting-12": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "شعرت بالتعب ونقص النشاط",
+          "nextQuestion": [2],
+          "attribute": [
+            {
+            "fasting-12": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "لم أستطع الصيام خلال الأسبوع الماضي",
+          "nextQuestion": [2],
+          "attribute": [
+            {
+              "fasting-12": "no-start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "تابع على نفس الخطة خلال الأسبوع القادم. قم بالصيام لمدة 13 ساعة ليومين متتاليين ثم 20 ساعة في اليوم الثالث. خذ بعدها يوم أو يومين للراحة ثم أعد الصيام من جديد",
+          "url": "fa1206.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي الشروط؟",
+          "nextQuestion": [3]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "لا تنسا أن تزيد من تناول السوائل والمرق الدسمة والأملاح لتعطي جسمك الطاقة وتمنع التجفاف خلال الصيام. وتناول الطعام فوراََ إذا شعرت بالتعب",
+          "url": "fa0307.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "موافق",
+          "nextQuestion": [4]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "سنتواصل معك بعد أسبوع لنسألك عن تجربتك ونعطيك الخطوة التالية",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرَف على البرامج الأخرى",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "مبروك عليك! لقد قطعت شوطاََ طويلاََ و أنهيت جميع مراحل الصيام المتقطع",
+          "url": "fa1305.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "كيف أتابع؟",
+          "nextQuestion": [6],
+           "attribute": [
+            {
+              "fasting-13": "checked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "يمكنك الآن اختيار النظام الصيام الذي أعجبك والمتابعة عليه حتى تتوافر تحديات جديدة. هل لديك أسئلة؟ لاتتردد باستشارة أخصائيي السكر من خلال تطبيق كنزي",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرَف على البرامج الأخرى",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    }
+  ]
+}
+
+

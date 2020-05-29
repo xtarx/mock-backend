@@ -1,0 +1,327 @@
+{
+  "id": "lowcarb-2",
+  "title": "الخطوة الثانية",
+  "type": "questionnaire",
+  "questions": [
+      {
+      "id": "1",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "هل تعلم أن السكاكر البسيطة لا تعني فقط السكر الأبيض؟",
+          "url": "lc0201.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [2],
+           "attribute": [
+            {
+              "lowcarb-2": "checked"
+            }
+          ]
+        }
+      ]
+    },
+        {
+      "id": "2",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "بل تضم أيضاََ السكر البني وسكر القصب والعسل بجميع أنواعه",
+          "url": "lc0202.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [3]
+        }
+      ]
+    },    {
+      "id": "3",
+      "title": "هل تتناول أي من هذه المحليّات أو تضيفها إلى المشروبات التي تشربها؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "أتناول هذه المحليات بشكل دائم",
+          "nextQuestion": [4],
+          "attribute": [
+            {
+              "using-sweetners": "always"
+            }
+          ]
+        },
+        {
+          "title": "أضيف بعضها بكميات قليلة",
+          "nextQuestion": [4],
+          "attribute": [
+            {
+             "using-sweetners": "sometimes"
+            }
+          ]
+        },
+        {
+          "title": "لا أضيفها أبداََ",
+          "nextQuestion": [5],
+          "attribute": [
+            {
+              "using-sweetners": "never"
+            },
+            {
+               "unlock-next-step": "0"
+            },
+            {
+              "lowcarb-2": "no-need"
+            }
+          ]
+        }
+      ]
+    },
+        {
+      "id": "5",
+      "title": "هذا خبر رائع, أنت على الطريق الصحيح ولا تحتاج هذا التحدي! يمكنك الانتقال الى التحدي التالي مباشرة",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    },
+        {
+      "id": "4",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "هذه السكريات هي سبب أساسي في رفع سكر الدم و إجهاد البنكرياس. حاول أن توقفها بالكامل",
+          "url": "lc0204.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [6]
+        }
+      ]
+    },
+        {
+      "id": "6",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "لحسن الحظ هناك محليات بديلة لاترفع السكر مثل سكر استيفيا الطبيعي ,مونك فروت أو اكزيلتول",
+          "url": "lc0206.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [7]
+        }
+      ]
+    },
+        {
+      "id": "7",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "يمكنك أيضاََ إضافة القليل من الحليب أو القشطة الى القهوة والشاي كبديل عن السكر",
+          "url": "lc0207.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [8]
+        }
+      ]
+    },    {
+      "id": "8",
+      "title": "هل أنت مستعد لتوقف أو تستبدل السكريات الضارة هذا الأسبوع؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "قبلت التحدي",
+          "nextQuestion": [9],
+          "attribute": [
+            {
+              "lowcarb-2": "accepted"
+            },
+            {
+              "activate-daily-survey": "11"
+            },
+            {
+              "activate-weekly-followup": "12"
+            },
+            {
+               "unlock-next-step": "0"
+            }
+          ]
+        },
+        {
+          "title": "سأحاول تطبيقه",
+          "nextQuestion": [9],
+          "attribute": [
+           {
+               "unlock-next-step": "0"
+            },
+            {
+              "activate-daily-survey": "11"
+            },
+            {
+              "activate-weekly-followup": "12"
+            },
+            {
+            "lowcarb-2": "accepted"
+            }
+          ]
+        },
+        {
+          "title": "لا أريد هذا التحدي",
+          "nextQuestion": [10],
+          "attribute": [
+            {
+               "unlock-next-step": "0"
+            },
+            {
+              "lowcarb-2": "rejected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": " هذا رائع, تمنياتنا لك بالتوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today/"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today/"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+          "id": "11",
+          "title": "كم ملعقة من المحليات (سكر بني أو أبيض أو عسل)  تناولت اليوم؟",
+          "type": "question",
+          "choicesType": "range",
+          "canSkip": true,
+          "choices": [
+            {
+              "id": 1,
+              "title": "",
+              "min": "0",
+              "max": "10",
+              "nextQuestion": [ ],
+              "attribute": [
+                {
+                  "daily-sugar-spoons": " "
+                }
+              ]
+            }
+          ]
+        }, 
+            {
+      "id": "13",
+      "title": "كيف كان التزامك بتحدي إيقاف السكريات خلال الأيام الماضية؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "لقد أوقفتها بالكامل",
+          "nextQuestion": [14],
+          "attribute": [
+            {
+              "lowcarb-2": "completed"
+            }
+          ]
+        },
+        {
+          "title": "بدأت بتقليلها أو استبدالها",
+          "nextQuestion": [14],
+          "attribute": [
+            {
+            "lowcarb-2": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "لم أبدأ بالتحدي بعد",
+          "nextQuestion": [15],
+          "attribute": [
+            {
+              "lowcarb-2": "no-start"
+            }
+          ]
+        }
+      ]
+    },
+        {
+      "id": "14",
+      "title": "ماشاء الله, هذا يسعدنا كثيراََ! هل أنت مستعد لتبدأ تحدي جديد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    },
+         {
+      "id": "15",
+      "title": " إن إيقاف تناول السكريات هي عادة بسيطة ولكن مفيدة جداََ لك هل أنت مستعد لتبدأ تحدي جديد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },  {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    }
+  ]
+}
+
+

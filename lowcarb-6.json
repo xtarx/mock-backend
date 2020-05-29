@@ -1,0 +1,415 @@
+{
+  "id": "lowcarb-6",
+  "title": "الخطوة السادسة",
+  "type": "questionnaire",
+  "questions": [
+{
+      "id": "1",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "بعض الخضار فيها كمية كاربوهيدرات (سكر ونشويات) عالية, هذه الكاربوهيدرات تتحول بعد الأكل الى سكر وتسبب اجهاد البنكرياس",
+          "url": "lc0601.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي الخضار النشوية؟",
+          "nextQuestion": [2],
+           "attribute": [
+            {
+              "lowcarb-6": "checked"
+            }, 
+            {
+              "unlock-fasting": "yes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "البطاطا و البطاطا الحلوة: المسموح حبتين كبيرتين في اليوم, بشرط أن لا تجمعها مع مصادر أخرى للنشويات",
+          "url": "lc0602.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [3]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "حبوب العدس والقمح والذرة:المسموح بحجم قبضتي اليدين المغلقتين في اليوم بشرط أن لا تجمعها مع مصادر أخرى للنشويات",
+          "url": "lc0603.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [4]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "",
+      "pictures": [
+        {
+          "caption":  "البقوليات مثل الترمس والفول والحمّص والفاصولياء اليابسة:المسموح بحجم قبضتي اليدين المغلقتين في اليوم, بشرط أن لا تجمعها مع مصادر أخرى للنشويات",
+          "url": "lc0604.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [5]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "هل تتناول هذه الخضروات النشوية في طعامك؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "أتناول هذه الخضار مع كل وجبة",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+              "intake-starchy-vegetables": "always"
+            }
+          ]
+        },
+           {
+          "title": "أتناول هذه الخضار قليلاََ كل يوم",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+             "intake-starchy-vegetables": "daily"
+            }
+          ]
+        },
+            {
+          "title": "أتناولها عدة مرات في الأسبوع",
+          "nextQuestion": [7],
+          "attribute": [
+            {
+             "intake-starchy-vegetables": "weekly"
+            }
+          ]
+        },
+        {
+          "title": "لا أتناول هذه الخضار إلا نادراََ",
+          "nextQuestion": [6],
+          "attribute": [
+            {
+              "intake-starchy-vegetables": "rarely"
+            },
+            {
+               "unlock-next-step": "0"
+            },
+            {
+              "lowcarb-6": "no-need"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "",
+      "pictures": [
+        {
+          "caption":  "أنت تقوم بعمل رائع! حافظ على هذه العادة وتعرّف معنا على الخضار قليلة النشويات والتي يمكنك تناولها من غير قلق",
+          "url": "lc0606.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي الخضار المسموحة؟",
+          "nextQuestion": [8]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "",
+      "pictures": [
+        {
+          "caption":  "هل تعرف أن هناك خضار كثيرة صحيّة ولاتحوي نشويات, حاول أن تتعرف عليها و تتناولها بدلاََ من الخضار النشوية",
+          "url": "lc0607.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي الخضار المسموحة؟",
+          "nextQuestion": [8]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "",
+      "pictures": [
+        {
+          "caption":  "الخضار الصيفية مثل الطماطم, الباذنجان, الخيار, الكوسة, الفليفلة والبابريكا, البصل والثوم, الفاصولياء الخضراء, القرع واليقطين",
+          "url": "lc0608.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [9]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "",
+      "pictures": [
+        {
+          "caption":  "كل الخضار الورقية مثل الخس, النعناع, البقدونس, الجرجير, السبانخ, السلق , الشمر, الكزبرة, ورق العنب",
+          "url": "lc0609.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [10]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "",
+      "pictures": [
+        {
+          "caption":  "الخضار الشتوية مثل القرنبيط, البروكولي, الملفوف, الافوكادو, الجزر, الفجل, الشوندر, الهليون, الفطر والمشروم, ملفوف بروكسل",
+          "url": "lc0610.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [11, 12]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": " رائع! يمكنك الانتقال الى التحدي التالي مباشرة. هل أنت مستعد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+       "preCondition": [
+        {
+          "lowcarb-6": "no-need"
+        }
+      ],
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "حاول الاعتماد على الخضار غير النشوية و تناولها مع كل وجبة. مشوية أو مطبوخة بالزبدة أو الزيت! أما الخضار النشوية فحاول تقليلها والالتزام بالحدود المسموحة منها في اليوم!",
+      "type": "question",
+      "choicesType": "multiselect",
+      "preCondition": [
+        {
+          "lowcarb-6": ""
+        }
+      ],
+      "choices": [
+        {
+          "title": "قبلت التحدي",
+          "nextQuestion": [13],
+          "attribute": [
+            {
+              "lowcarb-6": "accepted"
+            },
+            {
+              "activate-daily-survey": "15"
+            },
+            {
+              "activate-weekly-followup": "16"
+            },
+            {
+               "unlock-next-step": "0"
+            }
+          ]
+        },
+        {
+          "title": "سأحاول تطبيقه",
+          "nextQuestion": [13],
+          "attribute": [
+           {
+               "unlock-next-step": "0"
+            },
+            {
+              "activate-daily-survey": "15"
+            },
+            {
+              "activate-weekly-followup": "16"
+            },
+            {
+            "lowcarb-6": "accepted"
+            }
+          ]
+        },
+        {
+          "title": "لا أريد هذا التحدي",
+          "nextQuestion": [14],
+          "attribute": [
+            {
+               "unlock-next-step": "0"
+            },
+            {
+              "lowcarb-6": "rejected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": " هذا رائع, تمنياتنا لك بالتوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today/"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today/"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+          "id": "15",
+          "title": "كم حصة من الخضار النشوية تناولت اليوم؟ (الحصة هي كمية بحجم قبضة يد مغلقة)",
+          "type": "question",
+          "choicesType": "range",
+          "canSkip": true,
+          "choices": [
+            {
+              "id": 1,
+              "title": "",
+              "min": "0",
+              "max": "10",
+              "nextQuestion": [ ],
+              "attribute": [
+                {
+                  "daily-starchy-vegetables-portion": " "
+                }
+              ]
+            }
+          ]
+        },
+        {
+      "id": "16",
+      "title": "كيف كان التزامك بتقليل الخضار النشوية خلال الأيام الماضية؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "لقد أوقفت الخضار النشوية بالكامل",
+          "nextQuestion": [17],
+          "attribute": [
+            {
+              "lowcarb-6": "completed"
+            }
+          ]
+        },
+        {
+          "title": "بدأت بتقليل الخضار النشوية أو استبداله",
+          "nextQuestion": [17],
+          "attribute": [
+            {
+            "lowcarb-6": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "لم أبدأ بالتحدي بعد",
+          "nextQuestion": [18],
+          "attribute": [
+            {
+              "lowcarb-6": "no-start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "هذا خبر رائع! هل أنت مستعد لتبدأ تحدي جديد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "إن التقليل من الخضار النشوية سيساعدك كثيراََ في ضبط السكر وتقليل مقاومة الانسولين. من فضلك حاول أن تقللها خلال الأسبوع القادم. هل أنت مستعد لتبدأ تحدي جديد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },  {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    }
+  ]
+}
+
+

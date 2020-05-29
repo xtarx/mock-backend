@@ -1,0 +1,329 @@
+{
+  "id": "lowcarb-10",
+  "title": "الخطوة العاشرة",
+  "type": "questionnaire",
+  "questions": [
+{
+      "id": "1",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "هل تعرف أن بعض الفواكه فيها كمية سكر ونشويات مثل البطاطا و الرز أو حتى أكثر؟",
+          "url": "lc1001.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي الفواكه عالية السكر؟",
+          "nextQuestion": [2],
+           "attribute": [
+            {
+              "lowcarb-10": "checked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "الفواكه عالية السكر تضم التمر, التين, العنب , المانجو, الزبيب و كل أنواع الفواكه المجففة بالإضافة الى عصائر الفواكه بكل أنواعها",
+          "url": "lc1002.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي الفواكه متوسطة السكر؟",
+          "nextQuestion": [3]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "الفواكه متوسطة السكر تضم التفاح, البرتقال بأنواعه, الكيوي, الكرز, الدراق, المشمش, الخوخ (البرقوق) , الأناناس ,الإجاص, الجوافة, الرمان",
+          "url": "lc1003.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [4]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "هل تتناول الفواكه بكثرة في نهارك؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "نعم أتناولها يومياََ",
+          "nextQuestion": [6],
+          "attribute": [
+            {
+             "intake-fruits": "daily"
+            }
+          ]
+        },
+            {
+          "title": "أتناولها مرة أو أكثر كل أسبوع",
+          "nextQuestion": [6],
+          "attribute": [
+            {
+              "intake-fruits": "weekly"
+            }
+          ]
+        },
+        {
+          "title": "لا أتناول الفواكه أبداََ",
+          "nextQuestion": [5],
+          "attribute": [
+            {
+              "intake-fruits": "rarely"
+            },
+           {
+               "unlock-next-step": "0"
+            },
+            {
+              "lowcarb-10": "no-need"
+             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "هناك الكثير من الفواكه المفيدة وقليلة السكر مثل الفروالة والتوت البري والبطيخ وجوز الهند. حاول أن تتناولها من وقت لآخر. هل أنت مستعد لتحدي جديد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "حاول أن تمنع الفواكه عالية السكر و أن تقلل الفواكه متوسطة السكر الى أقل من حجم قبضة اليد في اليوم أو أن تتناول فقط الفواكه قليلة السكر",
+          "url": "lc1006.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهي الفواكه قليلة السكر؟",
+          "nextQuestion": [7]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "الفواكه قليلة السكرتضم الفراولة ,التوت البري, الحرنكش, البطيخ الأصفر والأحمر, جوز الهند, الليمون, الأفوكادو, التين الشوكي (الصبار)",
+          "url": "lc1007.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "تابع",
+          "nextQuestion": [8]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "إبدأ هذا الأسبوع بتقليل الفاكهة عالية لسكر واستبدالها بفاكهة قليلة السكر. هل أنت مستعد؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "قبلت التحدي",
+          "nextQuestion": [9],
+          "attribute": [
+            {
+              "lowcarb-10": "accepted"
+            },
+            {
+              "activate-daily-survey": "11"
+            },
+            {
+              "activate-weekly-followup": "12"
+            },
+            {
+               "unlock-next-step": "0"
+            }
+          ]
+        },
+        {
+          "title": "سأحاول تطبيقه",
+          "nextQuestion": [9],
+          "attribute": [
+           {
+               "unlock-next-step": "0"
+            },
+            {
+              "activate-daily-survey": "11"
+            },
+            {
+              "activate-weekly-followup": "12"
+            },
+            {
+            "lowcarb-10": "accepted"
+            }
+          ]
+        },
+        {
+          "title": "لا أريد هذا التحدي",
+          "nextQuestion": [10],
+          "attribute": [
+            {
+               "unlock-next-step": "0"
+            },
+            {
+              "lowcarb-10": "rejected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "رائع, نتمنى لك التوفيق! سنتواصل معك قريباََ لنعرف كيف تشعر و نزودك بتحديات جديدة",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today/"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": " يمكنك أن ترفض تحدي واحد في اليوم. المزيد من التحديات ستصبح متوافرة لك غداََ!",
+      "type": "statement",
+      "choicesType": "navigation",
+      "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today/"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+          "id": "11",
+          "title": "كم حصة من الفواكه عالية السكر تناولت اليوم؟ (الفواكه عالية السكر تضم العنب والموز والتمر والفواكه المحففة والحصة منها هي بحجم الكوب أو قبضة اليد المغلقة)",
+          "type": "question",
+          "choicesType": "range",
+          "canSkip": true,
+          "choices": [
+            {
+              "id": 1,
+              "title": "",
+              "min": "0",
+              "max": "10",
+              "nextQuestion": [ ],
+              "attribute": [
+                {
+                  "daily-sweet-fruits-portion": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+      "id": "12",
+      "title": "كيف وجدت التزامك بتناول الفواكه قليلة السكر خلال الأيام الماضية؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
+        {
+          "title": "أوقفت الفواكه عالية السكر بالكامل",
+          "nextQuestion": [13],
+          "attribute": [
+            {
+              "lowcarb-10": "completed"
+            }
+          ]
+        },
+        {
+          "title": "أحاول تقليل الفواكه عالية السكر",
+          "nextQuestion": [13],
+          "attribute": [
+            {
+            "lowcarb-10": "in-progress"
+            }
+          ]
+        },
+        {
+          "title": "لم أبدأ بالتحدي بعد",
+          "nextQuestion": [14],
+          "attribute": [
+            {
+              "lowcarb-10": "no-start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "هذا خبر رائع! هل أنت مستعد لتبدأ تحدي جديد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },
+        {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "من فضلك حاول أن تراقب أنواع الفواكه التي تتناولها و تجنب الفواكه عالية السكر. هل أنت مستعد لتبدأ تحدي جديد؟",
+      "type": "statement",
+      "choicesType": "navigation",
+      "choices": [
+        {
+          "title": "ابدأ تحدي جديد",
+          "url": "/app/tabs/today"
+        },  {
+          "title": "تعرّف على الخدمات والبرامج الأخرى",
+          "url": "/app/tabs/today"
+        }
+      ]
+    }
+  ]
+}
+
+
