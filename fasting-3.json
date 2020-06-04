@@ -84,7 +84,6 @@
       "title": "سنتواصل معك بعد أسبوع لنسألك عن تجربتك ونعطيك الخطوة التالية",
       "type": "statement",
       "choicesType": "navigation",
-       "checkpoint": true,
       "choices": [
         {
           "title": "تعرَف على البرامج الأخرى",
