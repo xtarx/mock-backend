@@ -128,7 +128,7 @@
       "choices": [
         {
           "title": "تعرَف على البرامج الأخرى",
-          "url": "/app/home"
+          "url": "/app/tabs/today"
         },
         {
           "title": "احصل على متابعة طبية",
@@ -145,7 +145,7 @@
       "choices": [
         {
           "title": "تعرَف على البرامج الأخرى",
-          "url": "/app/home"
+          "url": "/app/tabs/today"
         },
         {
           "title": "احصل على متابعة طبية",
