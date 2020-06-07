@@ -1,0 +1,842 @@
+{
+  "id": "treatment-choice",
+  "title": "خطة علاج السكر",
+  "type": "questionnaire",
+  "questions": [
+{
+      "id": "30",
+      "title": "",
+      "pictures": [
+        {
+          "caption": "هذا البرنامج يساعدك على معرفة علاجات السكر المناسبة لك وهو مبني على المعلومات التي أدخلتها في أماكن و برامج أخرى من تطبيق كنزي",
+          "url": "trch30.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "موافق",
+          "nextQuestion": [1, 2, 3, 4, 5, 6, 7],
+           "attribute": [
+            {
+              "treatment-choice": "checked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+ "id": "1",
+ "title": "للحصول على نصيحة دقيقة, نحتاج أن نعرف مرحلة ونمط السكر عندك. من فضلك قم باتباع برنامج تشخيص السكر وبرنامج تحديد نمط السكر أولاََ وبعدها يمكنك أن تبدأ برنامج الخطة العلاجية.",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+       "preCondition": [
+        {
+          "diagnosis": "not-set"
+        }
+      ],
+      "choices": [
+        {
+          "title": "برنامج تشخيص السكر",
+          "url": "/app/tabs/challenges/challenge/diagnose_diabetes"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+ "id": "2",
+ "title": "للحصول على نصيحة دقيقة, نحتاج أن نعرف نمط السكر عندك. من فضلك قم باتباع برنامج تحديد نمط السكر أولاََ وبعدها يمكنك أن تبدأ برنامج الخطة العلاجية",
+ "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+       "preCondition": [
+        {
+          "diagnosis": "diabetes"
+        },
+       {
+          "diabetes-type": "not-set"
+        }
+      ],
+      "choices": [
+        {
+          "title": "تحديد نمط السكر",
+          "url": "/app/tabs/challenges/challenge/diabetes_type"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+ "id": "3",
+ "title": "إن المعلومات التي أدخلتها سابقاََ تدل أنه ليس عندك سكر ولا تحتاج علاج. قم باتباع برنامج التغذية والصيام المتقطع في تطبيق كنزي لتحمي نفسك من مرض السكر في المستقبل",
+ "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+       "preCondition": [
+        {
+          "diagnosis": "no-diabetes"
+        }
+      ],
+      "choices": [
+        {
+          "title": "تعرَف على البرامج الأخرى",
+          "url": "/app/home"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+ "id": "4",
+      "title": "",
+      "preCondition": [
+        {
+"diagnosis": "pre-diabetes"
+        }
+        ],
+      "pictures": [
+        {
+          "caption": "إن المعلومات التي أدخلتها سابقاََ تدل أنك في مرحلة ماقبل السكر. هذه المرحلة غير خطيرة ويمكن الشفاء منها بالكامل و إيقاف تطورها عن طريق اتباع نظام تغذية صحي وممارسة الرياضة",
+          "url": "trch04.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهو نظام التغذية؟",
+          "nextQuestion": [8]
+        }
+      ]
+    },
+    {
+ "id": "5",
+ "title": "",
+ "preCondition": [
+        {
+"diagnosis": "diabetes"
+        },
+       {
+"diabetes-type": "gestational"
+        }
+        ],
+      "pictures": [
+        {
+          "caption": "إن المعلومات التي أدخلتها سابقاََ تدل أنك مصابة بالسكر الحملي. هذا النوع من السكر يحتاج علاج بالانسولين مع متابعة طبية طيلة الحمل. أما أدوية السكر الأخرى فقد تكون غير آمنة لك",
+          "url": "trch05.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ما أنواع الانسولين المناسبة؟",
+          "nextQuestion": [10]
+        }
+      ]
+    },
+    {
+ "id": "6",
+ "title": "",
+ "preCondition": [
+ {
+"diagnosis": "diabetes"
+        },
+       {
+"diabetes-type": "type-1"
+        }
+        ],
+      "pictures": [
+        {
+          "caption": "إن المعلومات التي أدخلتها سابقاََ تدل أنك مصاب بالسكر من النمط الأول. هذا النوع من السكر يحتاج علاج مستمر بالانسولين لأن الجسم غير قادر على انتاج كمية كافية منه",
+          "url": "trch06.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ما أنواع الانسولين المناسبة؟",
+          "nextQuestion": [10]
+        }
+      ]
+    },
+    {
+ "id": "7",
+ "title": "",
+ "preCondition": [
+ {
+"diagnosis": "diabetes"
+ },
+       {
+"diabetes-type": "type-2"
+        }
+        ],
+      "pictures": [
+        {
+          "caption": "إن المعلومات التي أدخلتها سابقاََ تدل أنك مصاب بالسكر من النمط الثاني. العلاج الأساسي لهذا النمط هو اتباع نظام تغذية صحيح. بعض المرضى يحتاجون أدوية خافضة للسكر أو انسولين لحمايتهم من المضاعفات",
+          "url": "trch07.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ماهو نظام التغذية؟",
+          "nextQuestion": [8]
+        }
+      ]
+    },
+    {
+ "id": "8",
+ "title": "",
+      "pictures": [
+        {
+          "caption": "نحن ننصحك بتطبيق نظام تغذية قليل الكاربوهيدرات مع الاعتماد على الدهون الصحيّة والصيام المتقطّع. قم باختيار برنامج التغذية من الصفحة الرئيسية واتبعه لمدة ثلاثة أشهر لتحصل على النتيجة الكاملة",
+          "url": "trch08.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": " ما الأدوية المناسبة؟",
+          "nextQuestion": [9, 12]
+        }
+      ]
+    },
+    {
+ "id": "9",
+ "title": "",
+      "preCondition": [
+        {
+"diagnosis": "pre-diabetes"
+        }
+        ],
+      "pictures": [
+        {
+          "caption": "الدواء الوحيد المنصوح به في مرحلة ماقبل السكر هو ميتفورمين (جلوكوفاج). هذا الدواء فعال جداََ في السيطرة على السكر ومتوافر على شكل حبوب. يعمل من خلال تقليل مقاومة الانسولين وتقليل انتاج السكر في الكبد",
+          "url": "trch09.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "موافق",
+          "nextQuestion": [29]
+        }
+      ]
+    },
+    {
+ "id": "10",
+ "title": "",
+ "pictures": [
+        {
+          "caption": "النوع الأول هو الانسولين القاعدي و له أنواع مثل لانتوس أو تريسيبا. هذا الانسولين طويل المفعول وتحقنه عادة مرة كل يوم في المساء أو قبل النوم",
+          "url": "trch10.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "ما النوع الثاني؟",
+          "nextQuestion": [11]
+        }
+      ]
+    },
+    {
+ "id": "11",
+ "title": "",
+ "pictures": [
+ {
+          "caption": "الانسولين سريع المفعول وله أنواع مثل أبيدرا أو نوفورابيد أو هيومالوج. هذا الانسولين تحقنه عادة قبل الوجبة بنصف ساعة وبجرعات محسوبة",
+          "url": "trch11.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "موافق",
+          "nextQuestion": [29]
+        }
+      ]
+    },
+    {
+ "id": "12",
+ "title": "",
+ "preCondition": [
+ {
+"diagnosis": "diabetes"
+ },
+ {
+"diabetes-type": "type-2"
+        }
+        ],
+      "pictures": [
+        {
+          "caption": "هناك العديد من الأدوية المرخصة والفعالة في علاج سكر النمط الثاني. ولكن هذه الأدوية ليست مناسبة لجميع الأشخاص. أجبنا على بعض الأسئلة الصحيَة لنعطيك الأدوية المناسبة لك",
+          "url": "trch12.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "إبدأ الأسئلة",
+          "nextQuestion": [13],
+           "attribute": [
+            {
+              "metformin-indicated": "yes"
+            },
+            {
+              "janumet-indicated": "yes"
+             },
+            {
+              "januvia-indicated": "yes"
+             },
+            {
+              "xigduo-indicated": "yes"
+             },
+            {
+              "forxiga-indicated": "yes"
+             },
+            {
+              "insulin-indicated": "yes"
+             },
+             {
+              "victoza-indicated": "yes"
+              },
+             {
+              "trulicity-indicated": "yes"
+              }
+          ]
+        }
+      ]
+    },
+    {
+ "id": "13",
+ "title": "بعض أدوية السكر لا تعمل أو ليست آمنة إلا اذا كانت وظيفة الكلية سليمة. هل قمت بتحليل وظيفة الكلية من قبل؟",
+ "type": "question",
+      "choicesType": "multiselect",
+       "choices": [
+        {
+          "title": "وظيفة الكلى عندي طبيعية",
+          "nextQuestion": [15],
+          "attribute": [
+           {
+               "kidney-function": "normal"
+            }
+          ]
+        },
+        {
+       "title": "وظيفة الكلى ناقصة لكن لا أحتاج الغسل",
+          "nextQuestion": [15],
+          "attribute": [
+           {
+               "kidney-function": "impaired"
+            },
+          {
+               "metformin-indicated": "no"
+            },
+            {
+               "janumet-indicated": "no"
+            },
+           {
+               "xigduo-indicated": "no"
+            },
+           {
+               "forxiga-indicated": "no"
+            }
+          ]
+        },
+       {
+       "title": "أحتاج أن أغسل الكلى باستمرار",
+          "nextQuestion": [15],
+          "attribute": [
+           {
+               "kidney-function": "dialysis"
+            },
+          {
+               "metformin-indicated": "no"
+            },
+            {
+               "janumet-indicated": "no"
+            },
+           {
+               "xigduo-indicated": "no"
+            },
+           {
+               "victoza-indicated": "no"
+            },
+          {
+               "trulicity-indicated": "no"
+            },
+           {
+               "forxiga-indicated": "no"
+            }
+          ]
+        },
+       {
+          "title": "لم أقم بتحليل وظائف الكلى من قبل",
+          "nextQuestion": [14],
+          "attribute": [
+           {
+               "kidney-function": "not-set"
+            }
+          ]
+        }
+      ]
+    },
+    {
+ "id": "14",
+ "title": "إن من الضروري جداََ أن تقوم بإجراء التحاليل الطبية الأساسية قبل أن تبدأ بتناول أي أدوية لعلاج السكر. من فضلك قم بإعادة الاستشارة بعد أن تستكمل التحاليل المطلوبة وخاصة وظائف الكلية والكبد",
+ "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرَف على البرامج الأخرى",
+          "url": "/app/home"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    },
+    {
+ "id": "15",
+ "title": "بعض أدوية السكر لا ننصح بها لمن عندهم قصور في وظيفة الكبد. هل قمت بتحلليل وظيفة الكبد (خمائر الكبد) من قبل؟",
+ "type": "question",
+ "choicesType": "multiselect",
+       "choices": [
+        {
+          "title": "وظيفة الكبد عندي طبيعية",
+          "nextQuestion": [16],
+          "attribute": [
+           {
+               "liver-function": "normal"
+            }
+          ]
+        },
+        {
+       "title": "عندي نقص في وظائف الكبد",
+          "nextQuestion": [16],
+          "attribute": [
+           {
+               "liver-function": "impaired"
+            },
+          {
+               "metformin-indicated": "no"
+            },
+            {
+               "janumet-indicated": "no"
+            },
+           {
+               "januvia-indicated": "no"
+            },
+           {
+               "xigduo-indicated": "no"
+            },
+           {
+               "victoza-indicated": "no"
+            }
+          ]
+        },
+        {
+       "title": "عندي تشمع أو التهاب شديد في الكبد",
+          "nextQuestion": [16],
+          "attribute": [
+           {
+               "liver-function": "impaired"
+            },
+          {
+               "metformin-indicated": "no"
+            },
+            {
+               "janumet-indicated": "no"
+            },
+           {
+               "januvia-indicated": "no"
+            },
+           {
+               "xigduo-indicated": "no"
+            },
+           {
+               "victoza-indicated": "no"
+            }
+          ]
+        },
+        {
+          "title": "لم أقم بتحليل وظائف الكبد من قبل",
+          "nextQuestion": [14],
+          "attribute": [
+           {
+               "liver-function": "not-set"
+            }
+          ]
+        }
+      ]
+    },
+    {
+ "id": "16",
+ "title": "هل مررت بحالة التهاب بنكرياس في السابق؟",
+ "type": "question",
+ "choicesType": "multiselect",
+ "choices": [
+        {
+          "title": "لم أمر بها من قبل",
+          "nextQuestion": [17],
+          "attribute": [
+           {
+               "pancreatitis-history": "no"
+            }
+          ]
+        },
+        {
+       "title": "أصبت بالتهاب البنكرياس في السابق",
+          "nextQuestion": [17],
+          "attribute": [
+           {
+               "pancreatitis-history": "recovered"
+            },
+          {
+               "trulicity-indicated": "no"
+            },
+            {
+               "janumet-indicated": "no"
+            },
+           {
+               "januvia-indicated": "no"
+            },
+           {
+               "victoza-indicated": "no"
+            }
+          ]
+        },
+     {
+       "title": "لدي التهاب بنكرياس مستمر",
+          "nextQuestion": [17],
+          "attribute": [
+           {
+               "pancreatitis-history": "persistent"
+            },
+          {
+               "trulicity-indicated": "no"
+            },
+            {
+               "janumet-indicated": "no"
+            },
+           {
+               "januvia-indicated": "no"
+            },
+           {
+               "victoza-indicated": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+ "id": "17",
+ "title": "هل تعاني من التهاب مستمر في الأمعاء أو اضطرابات متكررة (مثل الاسهال وألم البطن)؟",
+ "type": "question",
+ "choicesType": "multiselect",
+ "choices": [
+ {
+          "title": "لا أعاني من اضطرابات الأمعاء",
+          "nextQuestion": [18],
+          "attribute": [
+           {
+               "intestinal-disorders": "no"
+            }
+          ]
+        },
+        {
+       "title": "أعاني من اضطرابات الأمعاء باستمرار",
+          "nextQuestion": [18],
+          "attribute": [
+           {
+               "intestinal-disorders": "yes"
+            },
+          {
+               "trulicity-indicated": "no"
+            },
+           {
+               "victoza-indicated": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+ "id": "18",
+ "title": "هل تتناول أدوية مدرة للبول أو تعاني من تكرار التجفاف أو هبوط الضغط؟",
+ "type": "question",
+ "choicesType": "multiselect",
+ "choices": [
+ {
+           "title": "ليس لدي أي منها",
+          "nextQuestion": [19]
+        },
+        {
+       "title": "أتناول أدوية مدرة للبول",
+          "nextQuestion": [19],
+          "attribute": [
+           {
+               "taking-diuretics": "yes"
+            },
+          {
+               "xigduo-indicated": "no"
+            },
+           {
+               "forxiga-indicated": "no"
+            }
+          ]
+        },
+       {
+       "title": "أعاني من تكرار التجفاف أوهبوط الضغط",
+          "nextQuestion": [19],
+          "attribute": [
+           {
+               "hypotension-or-dehydration": "yes"
+            },
+          {
+               "xigduo-indicated": "no"
+            },
+           {
+               "forxiga-indicated": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+ "id": "19",
+ "title": "السؤال الأخير: هل تعاني من ضعف في عضلة القلب (قصور قلب)؟",
+ "type": "question",
+ "choicesType": "multiselect",
+ "choices": [
+ {
+ "title": "ليس لدي قصور قلب",
+          "nextQuestion": [20, 22, 23, 24, 25, 26, 27, 28],
+          "attribute": [
+           {
+               "heart-failure": "no"
+            }
+          ]
+        },
+        {
+       "title": "نعم لدي قصور قلب",
+          "nextQuestion": [20, 22, 23, 24, 25, 26, 27, 28],
+          "attribute": [
+           {
+               "heart-failure": "yes"
+            },
+           {
+               "victoza-indicated": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+ "id": "20",
+ "title": "",
+ "preCondition": [
+        {
+"metformin-indicated": "yes"
+        }
+        ],
+      "pictures": [
+        {
+          "caption": "الدواء الأفضل لعلاج سكر النمط الثاني هو ميتفورمين (جلوكوفاج). هذا الدواء فعال جداََ في السيطرة على السكر ومتوافر على شكل حبوب. يعمل من خلال تقليل مقاومة الانسولين وتقليل انتاج السكر في الكبد",
+          "url": "trch09.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "الدواء التالي",
+          "nextQuestion": [21]
+        }
+      ]
+    },
+    {
+ "id": "21",
+ "title": "",
+ "preCondition": [
+ {
+"metformin-indicated": "yes"
+        }
+        ],
+      "pictures": [
+        {
+          "caption": "بعض الأشخاص يشعرون باضطرابات ممعوية عند تناول ميتفورمين مثل ألم البطن أو الإقياء والأسهال. عندها نعطيهم دواء بديل يسمى ميتفورمين اكس ار",
+          "url": "trch21.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "الدواء التالي",
+          "nextQuestion": [22, 23, 24, 25, 26, 27, 28]
+        }
+      ]
+    },
+    {
+ "id": "22",
+ "title": "",
+ "preCondition": [
+ {
+"janumet-indicated": "yes"
+ }
+        ],
+      "pictures": [
+        {
+          "caption": "دواء جانوميت: يحوي مادة ميتفورمين مع مادة فعالة إضافية (سيتاغلبتين) وهو متوافر على شكل حبوب. يعمل من خلال تقليل مقاومة الانسولين وتقليل انتاج السكر في الكبد وتنشيط البنكرياس",
+          "url": "trch22.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "الدواء التالي",
+          "nextQuestion": [23, 24, 25, 26, 27, 28]
+        }
+      ]
+    },
+    {
+ "id": "23",
+ "title": "",
+ "preCondition": [
+ {
+"xigduo-indicated": "yes"
+ }
+ ],
+      "pictures": [
+        {
+          "caption": " دواء زيج دوو: يحوي مادة ميتفورمين مع مادة فعالة إضافية (داباجليفلوزين) وهو متوافر على شكل حبوب. يعمل من خلال تقليل مقاومة الانسولين و زيادة طرح السكر مع البول",
+          "url": "trch23.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "الدواء التالي",
+          "nextQuestion": [24, 25, 26, 27, 28]
+        }
+      ]
+    },
+    {
+ "id": "24",
+ "title": "",
+ "preCondition": [
+ {
+"forxiga-indicated": "yes"
+ }
+ ],
+ "pictures": [
+        {
+          "caption": " دواء فورسيجا: يحوي مادة داباجليفلوزين الخافضة للسكر وهو متوافر على شكل حبوب. يعمل من خلال زيادة طرح السكر مع البول",
+          "url": "trch24.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "الدواء التالي",
+          "nextQuestion": [25, 26, 27, 28]
+        }
+      ]
+    },
+    {
+ "id": "25",
+ "title": "",
+ "preCondition": [
+ {
+"trulicity-indicated": "yes"
+ }
+ ],
+ "pictures": [
+ {
+          "caption": " دواء تروليسيتي: يحوي مادة دولاجلوتايد وهو متوافر على شكل حقنة أسبوعية. يعمل من خلال زيادة تنشيط وظيفة البنكرياس في إفراز الانسولين",
+          "url": "trch25.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "الدواء التالي",
+          "nextQuestion": [26, 27, 28]
+        }
+      ]
+    },
+    {
+ "id": "26",
+ "title": "",
+ "preCondition": [
+ {
+"januvia-indicated": "yes"
+ }
+ ],
+ "pictures": [
+ {
+ "caption": " دواء جانوفيا: هذا الدواء يحوي مادة سيتاغلبتين الخافضة للسكر وهو متوافر على شكل حبوب. هذا الدواء متوسط الفعالية ويعمل من خلال تنشيط وظيفة البنكرياس",
+          "url": "trch26.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "الدواء التالي",
+          "nextQuestion": [27, 28]
+        }
+      ]
+    },
+    {
+ "id": "27",
+ "title": "",
+ "preCondition": [
+ {
+"victoza-indicated": "yes"
+ }
+ ],
+ "pictures": [
+ {
+ "caption": " دواء فيكتوزا: هذا الدواء يحوي مادة ليراجلوتايد وهو متوافر على شكل حقنة يومية. يعمل من خلال زيادة تنشيط وظيفة البنكرياس في إفراز الانسولين",
+ "url": "trch27.png"
+        }
+        ],
+      "choices": [
+        {
+          "title": "الدواء التالي",
+          "nextQuestion": [28]
+        }
+      ]
+    },
+    {
+ "id": "28",
+ "title": "",
+ "preCondition": [
+ {
+"insulin-indicated": "yes"
+ }
+ ],
+ "pictures": [
+ {
+ "caption": "بعض المرضى يحتاجون حقن الانسولين للسيطرة على السكر بشكل كافي. أهم أنواع الانسولين هو الانسولين القاعدي مثل لانتوس أو تريسيبا. هذا الانسولين طويل المفعول وتحقنه عادة مرة في المساء أو قبل النوم",
+ "url": "trch10.png"
+ }
+        ],
+      "choices": [
+        {
+          "title": "ما النوع الثاني؟",
+          "nextQuestion": [11]
+        }
+      ]
+    },
+    {
+ "id": "29",
+ "title": "من فضلك قم باستشارة الطبيب لتحصل على وصفة طبية و تعرف الجرعات المناسبة لك. ولا تتردد بطلب الاستشارة من أخصائيي السكر من خلال تطبيق كنزي",
+      "type": "statement",
+      "choicesType": "navigation",
+       "checkpoint": true,
+      "choices": [
+        {
+          "title": "تعرَف على البرامج الأخرى",
+          "url": "/app/home"
+        },
+        {
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": "lowcarb-9",
-  "title": "الخطوة التاسعة",
+  "title": "الخطوة الثامنة",
   "type": "questionnaire",
   "questions": [
 {
@@ -76,18 +76,18 @@
     },
     {
       "id": "3",
-      "title": "ماشاء الله, هذا يعني أن إرادتك قوية جداََ. يمكنك الانتقال الى التحدي التالي مباشرة. هل أنت مستعد؟",
+      "title": "ماشاء الله, هذا يعني أن إرادتك قوية جداََ. يمكنك الانتقال الى التحدي التالي مباشرة من الصفحة الرئيسية. هل أنت مستعد؟",
       "type": "statement",
       "choicesType": "navigation",
        "checkpoint": true,
       "choices": [
         {
-          "title": "ابدأ تحدي جديد",
-          "url": "/app/tabs/today"
+          "title": "الصفحة الرئيسية",
+          "url": "/app/home"
         },
         {
-          "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today"
+          "title": "تعرّف على البرامج الأخرى",
+          "url": "/app/home"
         }
       ]
     },
@@ -175,7 +175,7 @@
               "activate-weekly-followup": "12"
             },
             {
-               "unlock-next-step": "0"
+               "unlock-next-step": "3"
             }
           ]
         },
@@ -184,7 +184,7 @@
           "nextQuestion": [9],
           "attribute": [
            {
-               "unlock-next-step": "0"
+               "unlock-next-step": "3"
             },
             {
               "activate-daily-survey": "11"
@@ -202,7 +202,7 @@
           "nextQuestion": [10],
           "attribute": [
             {
-               "unlock-next-step": "0"
+               "unlock-next-step": "1"
             },
             {
               "lowcarb-9": "rejected"
@@ -219,8 +219,8 @@
       "checkpoint": true,
       "choices": [
         {
-          "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today/"
+          "title": "تعرّف على البرامج الأخرى",
+          "url": "/app/home/"
         },
         {
           "title": "احصل على متابعة طبية",
@@ -236,8 +236,8 @@
       "checkpoint": true,
       "choices": [
         {
-          "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today/"
+          "title": "تعرّف على البرامج الأخرى",
+          "url": "/app/home/"
         },
         {
           "title": "احصل على متابعة طبية",
@@ -309,11 +309,11 @@
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
-          "url": "/app/tabs/today"
+          "url": "/app/challenge/lowcarb"
         },
         {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today"
+          "url": "/app/home"
         }
       ]
     },
@@ -325,14 +325,12 @@
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
-          "url": "/app/tabs/today"
+          "url": "/app/challenge/lowcarb"
         },  {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today"
+          "url": "/app/home"
         }
       ]
     }
   ]
 }
-
-

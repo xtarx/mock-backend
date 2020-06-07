@@ -1,9 +1,9 @@
 {
   "id": "lowcarb-6",
-  "title": "الخطوة السادسة",
+  "title": "الخطوة الخامسة",
   "type": "questionnaire",
   "questions": [
-    {
+{
       "id": "1",
       "title": "",
       "pictures": [
@@ -11,15 +11,15 @@
           "caption": "بعض الخضار فيها كمية كاربوهيدرات (سكر ونشويات) عالية, هذه الكاربوهيدرات تتحول بعد الأكل الى سكر وتسبب اجهاد البنكرياس",
           "url": "lc0601.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "ماهي الخضار النشوية؟",
           "nextQuestion": [2],
-          "attribute": [
+           "attribute": [
             {
               "lowcarb-6": "checked"
-            },
+            }, 
             {
               "unlock-fasting": "yes"
             }
@@ -35,7 +35,7 @@
           "caption": "البطاطا و البطاطا الحلوة: المسموح حبتين كبيرتين في اليوم, بشرط أن لا تجمعها مع مصادر أخرى للنشويات",
           "url": "lc0602.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
@@ -51,7 +51,7 @@
           "caption": "حبوب العدس والقمح والذرة:المسموح بحجم قبضتي اليدين المغلقتين في اليوم بشرط أن لا تجمعها مع مصادر أخرى للنشويات",
           "url": "lc0603.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
@@ -64,10 +64,10 @@
       "title": "",
       "pictures": [
         {
-          "caption": "البقوليات مثل الترمس والفول والحمّص والفاصولياء اليابسة:المسموح بحجم قبضتي اليدين المغلقتين في اليوم, بشرط أن لا تجمعها مع مصادر أخرى للنشويات",
+          "caption":  "البقوليات مثل الترمس والفول والحمّص والفاصولياء اليابسة:المسموح بحجم قبضتي اليدين المغلقتين في اليوم, بشرط أن لا تجمعها مع مصادر أخرى للنشويات",
           "url": "lc0604.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
@@ -90,21 +90,21 @@
             }
           ]
         },
-        {
+           {
           "title": "أتناول هذه الخضار قليلاََ كل يوم",
           "nextQuestion": [7],
           "attribute": [
             {
-              "intake-starchy-vegetables": "daily"
+             "intake-starchy-vegetables": "daily"
             }
           ]
         },
-        {
+            {
           "title": "أتناولها عدة مرات في الأسبوع",
           "nextQuestion": [7],
           "attribute": [
             {
-              "intake-starchy-vegetables": "weekly"
+             "intake-starchy-vegetables": "weekly"
             }
           ]
         },
@@ -116,7 +116,7 @@
               "intake-starchy-vegetables": "rarely"
             },
             {
-              "unlock-next-step": "0"
+               "unlock-next-step": "0"
             },
             {
               "lowcarb-6": "no-need"
@@ -130,10 +130,10 @@
       "title": "",
       "pictures": [
         {
-          "caption": "أنت تقوم بعمل رائع! حافظ على هذه العادة وتعرّف معنا على الخضار قليلة النشويات والتي يمكنك تناولها من غير قلق",
+          "caption":  "أنت تقوم بعمل رائع! حافظ على هذه العادة وتعرّف معنا على الخضار قليلة النشويات والتي يمكنك تناولها من غير قلق",
           "url": "lc0606.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "ماهي الخضار المسموحة؟",
@@ -146,10 +146,10 @@
       "title": "",
       "pictures": [
         {
-          "caption": "هل تعرف أن هناك خضار كثيرة صحيّة ولاتحوي نشويات, حاول أن تتعرف عليها و تتناولها بدلاََ من الخضار النشوية",
+          "caption":  "هل تعرف أن هناك خضار كثيرة صحيّة ولاتحوي نشويات, حاول أن تتعرف عليها و تتناولها بدلاََ من الخضار النشوية",
           "url": "lc0607.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "ماهي الخضار المسموحة؟",
@@ -162,10 +162,10 @@
       "title": "",
       "pictures": [
         {
-          "caption": "الخضار الصيفية مثل الطماطم, الباذنجان, الخيار, الكوسة, الفليفلة والبابريكا, البصل والثوم, الفاصولياء الخضراء, القرع واليقطين",
+          "caption":  "الخضار الصيفية مثل الطماطم, الباذنجان, الخيار, الكوسة, الفليفلة والبابريكا, البصل والثوم, الفاصولياء الخضراء, القرع واليقطين",
           "url": "lc0608.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
@@ -178,10 +178,10 @@
       "title": "",
       "pictures": [
         {
-          "caption": "كل الخضار الورقية مثل الخس, النعناع, البقدونس, الجرجير, السبانخ, السلق , الشمر, الكزبرة, ورق العنب",
+          "caption":  "كل الخضار الورقية مثل الخس, النعناع, البقدونس, الجرجير, السبانخ, السلق , الشمر, الكزبرة, ورق العنب",
           "url": "lc0609.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
@@ -194,10 +194,10 @@
       "title": "",
       "pictures": [
         {
-          "caption": "الخضار الشتوية مثل القرنبيط, البروكولي, الملفوف, الافوكادو, الجزر, الفجل, الشوندر, الهليون, الفطر والمشروم, ملفوف بروكسل",
+          "caption":  "الخضار الشتوية مثل القرنبيط, البروكولي, الملفوف, الافوكادو, الجزر, الفجل, الشوندر, الهليون, الفطر والمشروم, ملفوف بروكسل",
           "url": "lc0610.png"
         }
-      ],
+        ],
       "choices": [
         {
           "title": "تابع",
@@ -207,23 +207,23 @@
     },
     {
       "id": "11",
-      "title": " رائع! يمكنك الانتقال الى التحدي التالي مباشرة. هل أنت مستعد؟",
+      "title": " رائع! يمكنك الانتقال الى التحدي التالي مباشرةمن الصفحة الرئيسية. هل أنت مستعد؟",
       "type": "statement",
       "choicesType": "navigation",
-      "checkpoint": true,
-      "preCondition": [
+       "checkpoint": true,
+       "preCondition": [
         {
           "lowcarb-6": "no-need"
         }
       ],
       "choices": [
         {
-          "title": "ابدأ تحدي جديد",
-          "url": "/app/tabs/today"
+          "title": "الصفحة الرئيسية",
+          "url": "/app/home"
         },
         {
-          "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today"
+          "title": "تعرّف على البرامج الأخرى",
+          "url": "/app/home"
         }
       ]
     },
@@ -247,7 +247,7 @@
               "activate-weekly-followup": "16"
             },
             {
-              "unlock-next-step": "7"
+               "unlock-next-step": "3"
             }
           ]
         },
@@ -255,8 +255,8 @@
           "title": "سأحاول تطبيقه",
           "nextQuestion": [13],
           "attribute": [
-            {
-              "unlock-next-step": "7"
+           {
+               "unlock-next-step": "3"
             },
             {
               "activate-daily-survey": "15"
@@ -265,7 +265,7 @@
               "activate-weekly-followup": "16"
             },
             {
-              "lowcarb-6": "accepted"
+            "lowcarb-6": "accepted"
             }
           ]
         },
@@ -274,7 +274,7 @@
           "nextQuestion": [14],
           "attribute": [
             {
-              "unlock-next-step": "1"
+               "unlock-next-step": "1"
             },
             {
               "lowcarb-6": "rejected"
@@ -291,8 +291,8 @@
       "checkpoint": true,
       "choices": [
         {
-          "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today/"
+          "title": "تعرّف على البرامج الأخرى",
+          "url": "/app/home/"
         },
         {
           "title": "احصل على متابعة طبية",
@@ -308,8 +308,8 @@
       "checkpoint": true,
       "choices": [
         {
-          "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today/"
+          "title": "تعرّف على البرامج الأخرى",
+          "url": "/app/home/"
         },
         {
           "title": "احصل على متابعة طبية",
@@ -318,27 +318,27 @@
       ]
     },
     {
-      "id": "15",
-      "title": "كم حصة من الخضار النشوية تناولت اليوم؟ (الحصة هي كمية بحجم قبضة يد مغلقة)",
-      "type": "question",
-      "choicesType": "range",
-      "canSkip": true,
-      "choices": [
-        {
-          "id": 1,
-          "title": "",
-          "min": "0",
-          "max": "10",
-          "nextQuestion": [],
-          "attribute": [
+          "id": "15",
+          "title": "كم حصة من الخضار النشوية تناولت اليوم؟ (الحصة هي كمية بحجم قبضة يد مغلقة)",
+          "type": "question",
+          "choicesType": "range",
+          "canSkip": true,
+          "choices": [
             {
-              "daily-starchy-vegetables-portion": " "
+              "id": 1,
+              "title": "",
+              "min": "0",
+              "max": "10",
+              "nextQuestion": [ ],
+              "attribute": [
+                {
+                  "daily-starchy-vegetables-portion": " "
+                }
+              ]
             }
           ]
-        }
-      ]
-    },
-    {
+        },
+        {
       "id": "16",
       "title": "كيف كان التزامك بتقليل الخضار النشوية خلال الأيام الماضية؟",
       "type": "question",
@@ -358,7 +358,7 @@
           "nextQuestion": [17],
           "attribute": [
             {
-              "lowcarb-6": "in-progress"
+            "lowcarb-6": "in-progress"
             }
           ]
         },
@@ -381,11 +381,11 @@
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
-          "url": "/app/tabs/today"
+          "url": "/app/challenge/lowcarb"
         },
         {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today"
+          "url": "/app/home"
         }
       ]
     },
@@ -397,11 +397,10 @@
       "choices": [
         {
           "title": "ابدأ تحدي جديد",
-          "url": "/app/tabs/today"
-        },
-        {
+          "url": "/app/challenge/lowcarb"
+        },  {
           "title": "تعرّف على الخدمات والبرامج الأخرى",
-          "url": "/app/tabs/today"
+          "url": "/app/home"
         }
       ]
     }
