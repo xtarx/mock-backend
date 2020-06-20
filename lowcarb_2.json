@@ -1,5 +1,5 @@
 {
-  "id": "lowcarb-2",
+  "id": "lowcarb_2",
   "title": "الخطوة الأولى",
   "type": "questionnaire",
   "questions": [
@@ -82,14 +82,14 @@
     },
         {
       "id": "5",
-      "title": "هذا خبر رائع, أنت على الطريق الصحيح ولا تحتاج هذا التحدي! يمكنك الانتقال الى الخطوة الثانية مباشرة من الصفحة الرئيسية",
+      "title": "هذا خبر رائع, أنت على الطريق الصحيح ولا تحتاج هذا التحدي! يمكنك الانتقال الى الخطوة الثانية مباشرة",
       "type": "statement",
       "choicesType": "navigation",
       "checkpoint": true,
       "choices": [
         {
-          "title": "الصفحة الرئيسية",
-          "url": "/app/tabs/today"
+          "title": "الخطوة الثانية",
+          "url": "/app/tabs/challenges/challenge/lowcarb_3"
         },
         {
           "title": "احصل على متابعة طبية",

@@ -1,5 +1,5 @@
 {
-  "id": "lowcarb-6",
+  "id": "lowcarb_6",
   "title": "الخطوة الخامسة",
   "type": "questionnaire",
   "questions": [
@@ -207,7 +207,7 @@
     },
     {
       "id": "11",
-      "title": " رائع! يمكنك الانتقال الى الخطوة السادسة مباشرة من الصفحة الرئيسية. هل أنت مستعد؟",
+      "title": " رائع! أنت لاتحتاج هذا التحدي ويمكنك الانتقال الى الخطوة السادسة مباشرة. هل أنت مستعد؟",
       "type": "statement",
       "choicesType": "navigation",
        "checkpoint": true,
@@ -218,12 +218,12 @@
       ],
       "choices": [
         {
-          "title": "الصفحة الرئيسية",
-          "url": "/app/home"
+          "title": "الخطوة السادسة",
+          "url": "/app/tabs/challenges/challenge/lowcarb_7"
         },
         {
-          "title": "تعرّف على البرامج الأخرى",
-          "url": "/app/home"
+          "title": "احصل على متابعة طبية",
+          "url": "/app/tabs/chat"
         }
       ]
     },
@@ -292,7 +292,7 @@
       "choices": [
         {
           "title": "تعرّف على البرامج الأخرى",
-          "url": "/app/home/"
+          "url": "/app/tabs/today"
         },
         {
           "title": "احصل على متابعة طبية",
@@ -309,7 +309,7 @@
       "choices": [
         {
           "title": "تعرّف على البرامج الأخرى",
-          "url": "/app/home/"
+          "url": "/app/tabs/today"
         },
         {
           "title": "احصل على متابعة طبية",

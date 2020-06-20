@@ -1,6 +1,6 @@
 {
-  "id": "fasting-6",
-  "title": "المرحلة الخامسة",
+  "id": "fasting_7",
+  "title": "المرحلة السادسة",
   "type": "questionnaire",
   "questions": [
 {
@@ -14,7 +14,7 @@
           "nextQuestion": [5],
           "attribute": [
             {
-              "fasting-5": "completed"
+              "fasting-6": "completed"
             }
           ]
         },
@@ -23,7 +23,7 @@
           "nextQuestion": [2],
           "attribute": [
             {
-            "fasting-5": "in-progress"
+            "fasting-6": "in-progress"
             }
           ]
         },
@@ -32,7 +32,7 @@
           "nextQuestion": [2],
           "attribute": [
             {
-            "fasting-5": "in-progress"
+            "fasting-6": "in-progress"
             }
           ]
         },
@@ -41,7 +41,7 @@
           "nextQuestion": [2],
           "attribute": [
             {
-              "fasting-5": "no-start"
+              "fasting-6": "no-start"
             }
           ]
         }
@@ -52,8 +52,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": "تابع على نفس الخطة خلال الأسبوع القادم. قم بالصيام لمدة 13 ساعة في اليوم الأول ثم 16 ساعة في اليوم التالي. خذ بعدها يوم أو يومين للراحة ثم أعد الصيام ليومين جديدين",
-          "url": "fa0506.png"
+          "caption": "تابع على نفس الخطة خلال الأسبوع القادم. قم بالصيام لمدة 13 ساعة ليومين متتاليين ثم 16 ساعة في اليوم الثالث. خذ بعدها يوم أو يومين للراحة ثم أعد الصيام من جديد",
+          "url": "fa0606.png"
         }
         ],
       "choices": [
@@ -100,17 +100,17 @@
       "title": "",
       "pictures": [
         {
-          "caption": "ما شاء الله! أنت الآن جاهز لتبدأ المرحلة الخامسة من الصيام المتقطع",
-          "url": "fa0605.png"
+          "caption": "هذا يسعدنا كثيراََ! أنت الآن جاهز لتبدأ المرحلة السادسة من الصيام المتقطع",
+          "url": "fa0705.png"
         }
         ],
       "choices": [
         {
-          "title": "ماهي المرحلة الخامسة؟",
+          "title": "ماهي المرحلة السادسة؟",
           "nextQuestion": [6],
            "attribute": [
             {
-              "fasting-6": "checked"
+              "fasting-7": "checked"
             }
           ]
         }
@@ -121,8 +121,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": " في هذه المرحلة سنطلب منك الصيام لمدة 13 ساعة ليومين متتاليين ثم 16 ساعة في اليوم الثالث. خذ بعدها يوم أو يومين للراحة ثم أعد الصيام من جديد",
-          "url": "fa0606.png"
+          "caption": " في هذه المرحلة سنطلب منك أن تجرب الصيام المتقطّع لمدة 18 ساعة ليومين أو ثلاثة في الأسبوع مع يوم أو يومين راحة بين أيام الصيام",
+          "url": "fa0706.png"
         }
         ],
       "choices": [
@@ -150,7 +150,7 @@
     },
     {
       "id": "8",
-      "title": "إبدأ بتطبيق الصيام المتقطع 13 ساعة ليومين وبعدها 16 ساعة في اليوم الثالث ولكن لا تنسا أن توقف الصيام فوراََ اذا شعرت بالتعب والجوع. هل أنت مستعد؟",
+      "title": "اختر يومين أو ثلاثة خلال الأسبوع القادم وقم بتجربة الصيام المتقطع لمدة 18 ساعة ولكن قم بإيقاف الصيام فوراََ إذا شعرت بالتعب أو الجوع. هل أنت مستعد؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
@@ -159,7 +159,7 @@
           "nextQuestion": [10],
           "attribute": [
             {
-              "fasting-6": "accepted"
+              "fasting-7": "accepted"
             },
             {
               "activate-weekly-followup": "9"
@@ -180,7 +180,7 @@
               "activate-weekly-followup": "9"
             },
             {
-            "fasting-6": "accepted"
+            "fasting-7": "accepted"
             }
           ]
         },
@@ -189,7 +189,7 @@
           "nextQuestion": [9],
           "attribute": [
             {
-              "fasting-6": "rejected"
+              "fasting-7": "rejected"
             }
           ]
         }

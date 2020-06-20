@@ -1,5 +1,5 @@
 {
-  "id": "checkup-frequency",
+  "id": "checkup_frequency",
   "title": "التحاليل والفحوص الدورية",
   "type": "questionnaire",
   "questions": [
@@ -37,8 +37,8 @@
       ],
       "choices": [
         {
-          "title": "تعرَف على البرامج الأخرى",
-          "url": "/app/tabs/today"
+          "title": "برنامج تشخيص السكر",
+          "url": "/app/tabs/challenges/challenge/diagnose_diabetes"
         },
         {
           "title": "احصل على متابعة طبية",
@@ -62,8 +62,8 @@
       ],
       "choices": [
         {
-          "title": "تعرَف على البرامج الأخرى",
-          "url": "/app/tabs/today"
+          "title": "تحديد نمط السكر",
+          "url": "/app/tabs/challenges/challenge/diabetes_type"
         },
         {
           "title": "احصل على متابعة طبية",
@@ -796,5 +796,3 @@
  }
   ]
 }
-
-

@@ -1,5 +1,5 @@
 {
-  "id": "lowcarb-4",
+  "id": "lowcarb_4",
   "title": "الخطوة الثالثة",
   "type": "questionnaire",
   "questions": [
@@ -124,14 +124,14 @@
     },
         {
       "id": "6",
-      "title": " يمكنك الانتقال الى الخطوة الرابعة مباشرة من الصفحة الرئيسية. هل أنت مستعد؟",
+      "title": "رائع, أنت لاتحتاج هذا التحدي ويمكنك الانتقال الى الخطوة الرابعة مباشرة. هل أنت مستعد؟",
       "type": "statement",
       "choicesType": "navigation",
-       "checkpoint": true,
+      "checkpoint": true,
       "choices": [
         {
-          "title": "الصفحة الرئيسية",
-          "url": "/app/tabs/today"
+          "title": "الخطوة الرابعة",
+          "url": "/app/tabs/challenges/challenge/lowcarb_5"
         },
         {
           "title": "احصل على متابعة طبية",

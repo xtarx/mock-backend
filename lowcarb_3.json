@@ -1,5 +1,5 @@
 {
-  "id": "lowcarb-3",
+  "id": "lowcarb_3",
   "title": "الخطوة الثانية",
   "type": "questionnaire",
   "questions": [
@@ -115,14 +115,14 @@
     },
         {
       "id": "6",
-      "title": "أنت تقدم لجسمك خدمة ممتازة بتجنب هذه المشروبات. حافظ على هذه العادة الصحية! يمكنك الانتقال الى الخطوة الثالثة مباشرة من الصفحة الرئيسية",
+      "title": "أنت تقدم لجسمك خدمة ممتازة بتجنب هذه المشروبات. حافظ على هذه العادة الصحية! يمكنك الانتقال الى الخطوة الثالثة مباشرة",
       "type": "statement",
       "choicesType": "navigation",
-       "checkpoint": true,
+      "checkpoint": true,
       "choices": [
         {
-          "title": "الصفحة الرئيسية",
-          "url": "/app/tabs/today"
+          "title": "الخطوة الثالثة",
+          "url": "/app/tabs/challenges/challenge/lowcarb_4"
         },
         {
           "title": "احصل على متابعة طبية",

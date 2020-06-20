@@ -1,11 +1,11 @@
 {
-  "id": "fasting-12",
-  "title": "المرحلة الحادية عشرة",
+  "id": "fasting_5",
+  "title": "المرحلة الرابعة",
   "type": "questionnaire",
   "questions": [
 {
       "id": "1",
-      "title": "هل جربت الصيام المتقطع لمدة 20 ساعة خلال الأسبوع الماضي؟ كيف شعرت بعدها؟",
+      "title": "هل جربت الصيام المتقطع لمدة 16 ساعة خلال الأسبوع الماضي؟ كيف شعرت بعدها؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
@@ -14,7 +14,7 @@
           "nextQuestion": [5],
           "attribute": [
             {
-              "fasting-11": "completed"
+              "fasting-4": "completed"
             }
           ]
         },
@@ -23,7 +23,7 @@
           "nextQuestion": [2],
           "attribute": [
             {
-            "fasting-11": "in-progress"
+            "fasting-4": "in-progress"
             }
           ]
         },
@@ -32,7 +32,7 @@
           "nextQuestion": [2],
           "attribute": [
             {
-            "fasting-11": "in-progress"
+            "fasting-4": "in-progress"
             }
           ]
         },
@@ -41,7 +41,7 @@
           "nextQuestion": [2],
           "attribute": [
             {
-              "fasting-11": "no-start"
+              "fasting-4": "no-start"
             }
           ]
         }
@@ -52,8 +52,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": "تابع على نفس الخطة خلال الأسبوع القادم. قم بالصيام لمدة 13 ساعة في اليوم الأول ثم 20 ساعة في اليوم التالي. خذ بعدها يوم أو يومين للراحة ثم أعد الصيام ليومين جديدين",
-          "url": "fa1106.png"
+          "caption": "تابع على نفس الخطة خلال الأسبوع القادم. قم بالصيام لمدة 16 ساعة ليومين أو ثلاثة في الأسبوع مع يوم أو يومين راحة بين أيام الصيام",
+          "url": "fa0406.png"
         }
         ],
       "choices": [
@@ -100,17 +100,17 @@
       "title": "",
       "pictures": [
         {
-          "caption": "ما شاء الله! أنت الآن جاهز لتبدأ المرحلة الحادية عشرة من الصيام المتقطع",
-          "url": "fa1205.png"
+          "caption": "ما شاء الله! أنت الآن جاهز لتبدأ المرحلة الرابعة من الصيام المتقطع",
+          "url": "fa0505.png"
         }
         ],
       "choices": [
         {
-          "title": "المرحلة الحادية عشرة؟",
+          "title": "ماهي المرحلة الرابعة؟",
           "nextQuestion": [6],
            "attribute": [
             {
-              "fasting-12": "checked"
+              "fasting-5": "checked"
             }
           ]
         }
@@ -121,8 +121,8 @@
       "title": "",
       "pictures": [
         {
-          "caption": " في هذه المرحلة سنطلب منك الصيام لمدة 13 ساعة ليومين متتاليين ثم 20 ساعة في اليوم الثالث. خذ بعدها يوم أو يومين للراحة ثم أعد الصيام من جديد",
-          "url": "fa1206.png"
+          "caption": "في هذه المرحلة سنطلب منك الصيام لمدة 13 ساعة في اليوم الأول ثم 16 ساعة في اليوم التالي. خذ بعدها يوم أو يومين للراحة ثم أعد الصيام ليومين جديدين",
+          "url": "fa0506.png"
         }
         ],
       "choices": [
@@ -132,7 +132,7 @@
         }
       ]
     },
-    {
+{
       "id": "7",
       "title": "",
       "pictures": [
@@ -150,7 +150,7 @@
     },
     {
       "id": "8",
-      "title": "إبدأ بتطبيق الصيام المتقطع 13 ساعة ليومين وبعدها 20 ساعة في اليوم الثالث ولكن لا تنسا أن توقف الصيام فوراََ اذا شعرت بالتعب والجوع. هل أنت مستعد؟",
+      "title": "إبدأ بتطبيق الصيام المتقطع 13 ساعة ثم 16 ساعة في اليوم التالي ولكن لا تنسا أن توقف الصيام فوراََ اذا شعرت بالتعب والجوع. هل أنت مستعد؟",
       "type": "question",
       "choicesType": "multiselect",
       "choices": [
@@ -159,7 +159,7 @@
           "nextQuestion": [10],
           "attribute": [
             {
-              "fasting-12": "accepted"
+              "fasting-5": "accepted"
             },
             {
               "activate-weekly-followup": "9"
@@ -180,7 +180,7 @@
               "activate-weekly-followup": "9"
             },
             {
-            "fasting-12": "accepted"
+            "fasting-5": "accepted"
             }
           ]
         },
@@ -189,7 +189,7 @@
           "nextQuestion": [9],
           "attribute": [
             {
-              "fasting-12": "rejected"
+              "fasting-5": "rejected"
             }
           ]
         }

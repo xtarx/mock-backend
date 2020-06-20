@@ -1,5 +1,5 @@
 {
-  "id": "lowcarb-9",
+  "id": "lowcarb_9",
   "title": "الخطوة الثامنة",
   "type": "questionnaire",
   "questions": [
@@ -76,14 +76,14 @@
     },
     {
       "id": "3",
-      "title": "ماشاء الله, هذا يعني أن إرادتك قوية جداََ. يمكنك الانتقال الى الخطوة التاسعة مباشرة من الصفحة الرئيسية. هل أنت مستعد؟",
+      "title": "ماشاء الله, هذا يعني أن إرادتك قوية جداََ. يمكنك الانتقال الى الخطوة التاسعة مباشرة. هل أنت مستعد؟",
       "type": "statement",
       "choicesType": "navigation",
        "checkpoint": true,
       "choices": [
         {
-          "title": "الصفحة الرئيسية",
-          "url": "/app/tabs/today"
+          "title": "الخطوة التاسعة",
+          "url": "/app/tabs/challenges/challenge/lowcarb_10"
         },
         {
           "title": "احصل على متابعة طبية",
