@@ -3,20 +3,20 @@
   "title": "طبيب السكر لايف",
   "type": "questionnaire",
   "questions": [
-{
+    {
       "id": "1",
       "title": "",
       "pictures": [
         {
           "caption": "الفيديو المباشر القادم سيكون مع الدكتور محمد كامل أخصائي الباطنة والسكر يوم الجمعة 10 يوليو الساعة  8 مساء (بتوقيت مكة المكرمة) 7 مساء (بتوقيت القاهرة)",
-          "url": "livi01.png"
+          "url": "livi-01.png"
         }
-        ],
+      ],
       "choices": [
         {
           "title": "انضم مجاناََ",
           "nextQuestion": [2],
-           "attribute": [
+          "attribute": [
             {
               "live-video": "checked"
             }
@@ -24,18 +24,18 @@
         }
       ]
     },
-{
- "id": "2",
- "title": "هل تريد المشاهدة فقط أو ترغب أن ترسل حالتك الطبية وأسئلتك ليجيب عليها الدكتور خلال البث؟",
- "type": "question",
-  "choicesType": "multiselect",
-    "choices": [
+    {
+      "id": "2",
+      "title": "هل تريد المشاهدة فقط أو ترغب أن ترسل حالتك الطبية وأسئلتك ليجيب عليها الدكتور خلال البث؟",
+      "type": "question",
+      "choicesType": "multiselect",
+      "choices": [
         {
           "title": "أريد المشاهدة فقط",
           "nextQuestion": [7],
           "attribute": [
-           {
-               "live-case": "no"
+            {
+              "live-case": "no"
             }
           ]
         },
@@ -43,84 +43,84 @@
           "title": "أريد أن اترك سؤال",
           "nextQuestion": [3],
           "attribute": [
-           {
-               "live-case": "yes"
+            {
+              "live-case": "yes"
             }
           ]
         }
       ]
     },
     {
- "id": "3",
-          "title": "من فضلك اكتب لنا قياسات السكر التي قمت بها. السكر التراكمي (يسمى أيضاَ التجسسي أو الخضاب السكري أو مخزون السكر) و أيضاَ السكر الصيامي والسكر بعد الطعام",
-          "type": "question",
-          "choicesType": "text",
-          "choices": [
+      "id": "3",
+      "title": "من فضلك اكتب لنا قياسات السكر التي قمت بها. السكر التراكمي (يسمى أيضاَ التجسسي أو الخضاب السكري أو مخزون السكر) و أيضاَ السكر الصيامي والسكر بعد الطعام",
+      "type": "question",
+      "choicesType": "textarea",
+      "choices": [
+        {
+          "id": 1,
+          "title": "قياسات السكر",
+          "inputType": "text",
+          "nextQuestion": [4],
+          "attribute": [
             {
-              "id": 1,
-              "title": "قياسات السكر",
-              "inputType": "text",
-              "nextQuestion": [4],
-              "attribute": [
-                {
-                  "case-tests": ""
-                }
-              ]
+              "case-tests": ""
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "من فضلك اكتب لنا أسماء الأدوية التي تتناولها مع جرعاتها",
+      "type": "question",
+      "choicesType": "textarea",
+      "choices": [
         {
- "id": "4",
- "title": "من فضلك اكتب لنا أسماء الأدوية التي تتناولها مع جرعاتها",
-          "type": "question",
-          "choicesType": "text",
-          "choices": [
+          "id": 1,
+          "title": "أدوية السكر",
+          "inputType": "text",
+          "nextQuestion": [5],
+          "attribute": [
             {
-              "id": 1,
-              "title": "أدوية السكر",
-              "inputType": "text",
-              "nextQuestion": [5],
-              "attribute": [
-                {
-                  "case-meds": ""
-                }
-              ]
+              "case-meds": ""
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "من فضلك اكتب لنا سؤالك بالتفصيل",
+      "type": "question",
+      "choicesType": "textarea",
+      "choices": [
         {
- "id": "5",
- "title": "من فضلك اكتب لنا سؤالك بالتفصيل",
- "type": "question",
-          "choicesType": "text",
-          "choices": [
+          "id": 1,
+          "title": "الأسئلة",
+          "inputType": "text",
+          "nextQuestion": [6],
+          "attribute": [
             {
-              "id": 1,
-              "title": "الأسئلة",
-              "inputType": "text",
-              "nextQuestion": [6],
-              "attribute": [
-                {
-                  "case-question": ""
-                }
-              ]
+              "case-question": ""
             }
           ]
-        },
-        {
- "id": "6",
+        }
+      ]
+    },
+    {
+      "id": "6",
       "title": "",
       "pictures": [
         {
           "caption": "تم تسجيل حالتك بالتفصيل وسنقوم بأرسالها للطبيب ليناقشها خلال الفيديو مع ذكر اسم المستخدم لتعرف أن الإجابة موجهة لك",
-          "url": "livi06.png"
+          "url": "livi-06.png"
         }
-        ],
+      ],
       "choices": [
         {
           "title": "موافق",
           "nextQuestion": [7],
-           "attribute": [
+          "attribute": [
             {
               "live-video": "completed"
             }
@@ -129,11 +129,11 @@
       ]
     },
     {
- "id": "7",
- "title": "شكراََ جزيلاََ لك, سنرسل لك رسالة تذكير مع رابط مشاهدة الفيديو قبل الموعد بساعة",
- "type": "statement",
+      "id": "7",
+      "title": "شكراََ جزيلاََ لك, سنرسل لك رسالة تذكير مع رابط مشاهدة الفيديو قبل الموعد بساعة",
+      "type": "statement",
       "choicesType": "navigation",
-       "checkpoint": true,
+      "checkpoint": true,
       "choices": [
         {
           "title": "تعرَف على البرامج الأخرى",
